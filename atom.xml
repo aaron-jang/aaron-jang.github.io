@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title type="text">종이에 적어놓다</title>
+    <subtitle type="html">MemE is a powerful and highly customizable GoHugo theme for personal blogs.</subtitle>
+    <updated>2020-12-04T20:34:00&#43;09:00</updated>
+    <id>https://example.com/</id>
+    <link rel="alternate" type="text/html" href="https://example.com/" />
+    <link rel="self" type="application/atom&#43;xml" href="https://example.com/atom.xml" />
+    <author>
+            <name>aaron.jang</name>
+            <uri>https://example.com/</uri>
+            
+                <email>aaronjang.k@gmail.com</email>
+            </author>
+    
+    <generator uri="https://gohugo.io/" version="0.79.0">Hugo</generator>
+        <entry>
+            <title type="text">해외주식 배우자에게 증여하기</title>
+            <link rel="alternate" type="text/html" href="https://example.com/posts/%ED%95%B4%EC%99%B8%EC%A3%BC%EC%8B%9D_%EB%B0%B0%EC%9A%B0%EC%9E%90%EC%97%90%EA%B2%8C_%EC%A6%9D%EC%97%AC%ED%95%98%EA%B8%B0/" />
+            <id>https://example.com/posts/%ED%95%B4%EC%99%B8%EC%A3%BC%EC%8B%9D_%EB%B0%B0%EC%9A%B0%EC%9E%90%EC%97%90%EA%B2%8C_%EC%A6%9D%EC%97%AC%ED%95%98%EA%B8%B0/</id>
+            <updated>2020-12-04T20:27:25&#43;09:00</updated>
+            <published>2020-12-04T16:44:20&#43;09:00</published>
+            <author>
+                    <name>aaron.jang</name>
+                    <uri>https://example.com/</uri>
+                    <email>aaronjang.k@gmail.com</email>
+                    </author>
+            <summary type="html">해외주식의 경우 국내 주식과는 다른 세율로 거래 차익에 대해 양도소득세를 내야한다. 해외주식 양도…</summary>
+            
+                <content type="html">&lt;p&gt;해외주식의 경우 국내 주식과는 다른 세율로 거래 차익에 대해 양도소득세를 내야한다.&lt;/p&gt;
+&lt;h4 id=&#34;해외주식-양도소득세-계산방법&#34;&gt;해외주식 양도소득세 계산방법&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;양도소득금액: 1월 1일 ~ 12월 31일 안에 이루어진 &lt;strong&gt;전체 해외주식 거래의 차익&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;기본공제: 250만원 / 년&lt;/li&gt;
+&lt;li&gt;과세표준: 양도소득금액 - 기본공제&lt;/li&gt;
+&lt;li&gt;세율: 양도세율 20% + 지방세율 2%&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h6 id=&#34;ex-양도소득금액이-1000만원이라면&#34;&gt;ex) 양도소득금액이 1,000만원이라면&lt;/h6&gt;
+&lt;ul&gt;
+&lt;li&gt;과세표준: 1,000만원 - 250만원(기본공제) = 750만원&lt;/li&gt;
+&lt;li&gt;양도소득세: 750만원 * 0.22 (양도세율 20% + 지방세율 2%) = 165만원&lt;/li&gt;
+&lt;li&gt;1,000만원 수익이 났지만 수중에 들어온 돈은 835만원&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;양도소득세를-줄이기-위해-배우자에게-증여하기&#34;&gt;양도소득세를 줄이기 위해 배우자에게 증여하기&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;배우자간 증여재산 공재는 10년간 6억까지 가능하다.&lt;/li&gt;
+&lt;li&gt;증여를 하게 되면 취득원가가 증여받을 당시의 단가로 계산되게 된다.&lt;/li&gt;
+&lt;li&gt;즉, 배우자간 6억까지는 증여 후 바로 양도(매도)하게 되면 양도차익이 없거나 크게 줄어든다.&lt;/li&gt;
+&lt;li&gt;배우자에게 증여하는 방법
+&lt;ul&gt;
+&lt;li&gt;HTS, MTS에서 아래 메뉴를 찾는다. (미래에셋의 경우 HTS, MTS에 모두 있음)&lt;/li&gt;
+&lt;li&gt;동일한 증권사일 경우 - &lt;strong&gt;당사대체출고&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;다른 증권사일 경우 - &lt;strong&gt;타사대체출고&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;세금 신고는 홈택스를 통하여 직접 해야 한다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+            
+            
+            
+            
+            
+                
+                    
+                
+                    
+                
+            
+        </entry>
+    
+</feed>
