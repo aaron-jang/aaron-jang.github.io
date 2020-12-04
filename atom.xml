@@ -4,13 +4,13 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
     <title type="text">종이에 적어놓다</title>
     <subtitle type="html">MemE is a powerful and highly customizable GoHugo theme for personal blogs.</subtitle>
-    <updated>2020-12-04T20:34:00&#43;09:00</updated>
-    <id>https://example.com/</id>
-    <link rel="alternate" type="text/html" href="https://example.com/" />
-    <link rel="self" type="application/atom&#43;xml" href="https://example.com/atom.xml" />
+    <updated>2020-12-04T20:39:53&#43;09:00</updated>
+    <id>https://aaron-jang.github.io/</id>
+    <link rel="alternate" type="text/html" href="https://aaron-jang.github.io/" />
+    <link rel="self" type="application/atom&#43;xml" href="https://aaron-jang.github.io/atom.xml" />
     <author>
             <name>aaron.jang</name>
-            <uri>https://example.com/</uri>
+            <uri>https://aaron-jang.github.io/</uri>
             
                 <email>aaronjang.k@gmail.com</email>
             </author>
@@ -18,13 +18,13 @@
     <generator uri="https://gohugo.io/" version="0.79.0">Hugo</generator>
         <entry>
             <title type="text">해외주식 배우자에게 증여하기</title>
-            <link rel="alternate" type="text/html" href="https://example.com/posts/%ED%95%B4%EC%99%B8%EC%A3%BC%EC%8B%9D_%EB%B0%B0%EC%9A%B0%EC%9E%90%EC%97%90%EA%B2%8C_%EC%A6%9D%EC%97%AC%ED%95%98%EA%B8%B0/" />
-            <id>https://example.com/posts/%ED%95%B4%EC%99%B8%EC%A3%BC%EC%8B%9D_%EB%B0%B0%EC%9A%B0%EC%9E%90%EC%97%90%EA%B2%8C_%EC%A6%9D%EC%97%AC%ED%95%98%EA%B8%B0/</id>
+            <link rel="alternate" type="text/html" href="https://aaron-jang.github.io/posts/%ED%95%B4%EC%99%B8%EC%A3%BC%EC%8B%9D_%EB%B0%B0%EC%9A%B0%EC%9E%90%EC%97%90%EA%B2%8C_%EC%A6%9D%EC%97%AC%ED%95%98%EA%B8%B0/" />
+            <id>https://aaron-jang.github.io/posts/%ED%95%B4%EC%99%B8%EC%A3%BC%EC%8B%9D_%EB%B0%B0%EC%9A%B0%EC%9E%90%EC%97%90%EA%B2%8C_%EC%A6%9D%EC%97%AC%ED%95%98%EA%B8%B0/</id>
             <updated>2020-12-04T20:27:25&#43;09:00</updated>
             <published>2020-12-04T16:44:20&#43;09:00</published>
             <author>
                     <name>aaron.jang</name>
-                    <uri>https://example.com/</uri>
+                    <uri>https://aaron-jang.github.io/</uri>
                     <email>aaronjang.k@gmail.com</email>
                     </author>
             <summary type="html">해외주식의 경우 국내 주식과는 다른 세율로 거래 차익에 대해 양도소득세를 내야한다. 해외주식 양도…</summary>

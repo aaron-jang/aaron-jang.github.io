@@ -8,7 +8,7 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>종이에 적어놓다</title>
-        <link>https://example.com/</link>
+        <link>https://aaron-jang.github.io/</link>
         <description>MemE is a powerful and highly customizable GoHugo theme for personal blogs.</description>
         <generator>Hugo 0.79.0 https://gohugo.io/</generator>
         
@@ -21,15 +21,15 @@
             <webMaster>aaronjang.k@gmail.com (aaron.jang)</webMaster>
         
         
-        <lastBuildDate>Fri, 04 Dec 2020 20:34:00 &#43;0900</lastBuildDate>
+        <lastBuildDate>Fri, 04 Dec 2020 20:39:53 &#43;0900</lastBuildDate>
         
-            <atom:link rel="self" type="application/rss&#43;xml" href="https://example.com/rss.xml" />
+            <atom:link rel="self" type="application/rss&#43;xml" href="https://aaron-jang.github.io/rss.xml" />
         
         
             <item>
                 <title>해외주식 배우자에게 증여하기</title>
-                <link>https://example.com/posts/%ED%95%B4%EC%99%B8%EC%A3%BC%EC%8B%9D_%EB%B0%B0%EC%9A%B0%EC%9E%90%EC%97%90%EA%B2%8C_%EC%A6%9D%EC%97%AC%ED%95%98%EA%B8%B0/</link>
-                <guid isPermaLink="true">https://example.com/posts/%ED%95%B4%EC%99%B8%EC%A3%BC%EC%8B%9D_%EB%B0%B0%EC%9A%B0%EC%9E%90%EC%97%90%EA%B2%8C_%EC%A6%9D%EC%97%AC%ED%95%98%EA%B8%B0/</guid>
+                <link>https://aaron-jang.github.io/posts/%ED%95%B4%EC%99%B8%EC%A3%BC%EC%8B%9D_%EB%B0%B0%EC%9A%B0%EC%9E%90%EC%97%90%EA%B2%8C_%EC%A6%9D%EC%97%AC%ED%95%98%EA%B8%B0/</link>
+                <guid isPermaLink="true">https://aaron-jang.github.io/posts/%ED%95%B4%EC%99%B8%EC%A3%BC%EC%8B%9D_%EB%B0%B0%EC%9A%B0%EC%9E%90%EC%97%90%EA%B2%8C_%EC%A6%9D%EC%97%AC%ED%95%98%EA%B8%B0/</guid>
                 <pubDate>Fri, 04 Dec 2020 16:44:20 &#43;0900</pubDate>
                 
                     <author>aaronjang.k@gmail.com (aaron.jang)</author>
