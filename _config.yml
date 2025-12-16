@@ -16,8 +16,8 @@ title: 수수라이프
 author: 수수
 
 # URL of your website
-url: "https://aaron-jang.github.io/blog"
-baseurl: ""
+url: "https://aaron-jang.github.io"
+baseurl: "/blog"
 
 ###############################################
 # --- List of links in the navigation bar --- #
