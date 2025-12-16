@@ -19,7 +19,7 @@ cover-img: /assets/images/teslamate/title.png
 - docker-compose: 여러 개의 작은 프로그램을 함께 사용해야 할 때, docker-compose는 이들을 손쉽게 묶어주는 역할을 함.
 
 ### teslamate에서 확인할 수 있는 정보
-![](/assets/images/teslamate/teslamate_2.png)
+![]({{ "/assets/images/teslamate/teslamate_2.png" | relative_url }})
 - 충전정보
 - 충전과 관련된 이력
 - 운전과 관련된 이력
@@ -127,10 +127,10 @@ $ docker compose up -d
 1. 웹브라우저를 실행하세요.
 2. http://your-ip-address:4000 페이지에 접속하세요.
 3. Tesla 계정으로 로그인 하세요. <br />로그인을 성공적으로 하였다면 아래와 같은 화면을 보실 수 있습니다.
-![](/assets/images/teslamate/teslamate_1.png)
+![]({{ "/assets/images/teslamate/teslamate_1.png" | relative_url }})
 
 4. 대시보드에서 메뉴를 선택하면 grafana의 웹페이지가 열립니다. (사용자: `admin`, 초기암호: `admin`)
-![예시 - teslamate overview 화면](/assets/images/teslamate/teslamate_3.png)
+![예시 - teslamate overview 화면]({{ "/assets/images/teslamate/teslamate_3.png" | relative_url }})
 
 ### 참고자료
 - teslamate 공식 홈페이지: https://docs.teslamate.org
