@@ -43,6 +43,11 @@ layout: base
         {{ content }}
       </div>
 
+      <!-- AdSense after post content -->
+      <div style="margin: 30px 0;">
+        {% include adsense-in-article.html %}
+      </div>
+
       {% if page.tags.size > 0 %}
         <div class="blog-tags">
           <span>Tags:</span>
