@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "Hugo에서 Jekyll로 마이그레이션하기 - GitHub Pages 완벽 가이드"
+title: "Hugo에서 Jekyll로 마이그레이션하기"
 date: 2025-12-16T13:30:00+09:00
 author: 수수
 tags: ["Hugo", "Jekyll", "마이그레이션", "GitHub Pages", "정적 사이트 생성기", "블로그"]
 categories: ["개발"]
-subtitle: Hugo 블로그를 Jekyll로 완벽하게 이전하는 방법
+subtitle: GitHub Pages로 블로그를 이전한 전체 과정
 ---
 
 ## 개요

@@ -17,7 +17,7 @@ author: 수수
 
 # URL of your website
 url: "https://aaron-jang.github.io"
-baseurl: "/blog"
+baseurl: ""
 
 ###############################################
 # --- List of links in the navigation bar --- #
