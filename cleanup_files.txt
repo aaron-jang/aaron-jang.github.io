@@ -1,0 +1,22 @@
+# Beautiful Jekyll 샘플 파일 및 불필요한 파일 목록
+
+## 샘플 포스트
+_posts/2020-02-26-flake-it-till-you-make-it.md
+_posts/2020-02-28-sample-markdown.md
+
+## 샘플 페이지
+aboutme.md
+
+## 테마 관련 불필요 파일
+README.md
+CHANGELOG.md
+screenshot.png
+beautiful-jekyll-theme.gemspec
+Appraisals
+staticman.yml
+
+## .github 디렉토리 (스폰서/이슈 템플릿)
+.github/FUNDING.yml
+.github/issue_template.md
+.github/pull_request_template.md
+.github/workflows/ci.yml
