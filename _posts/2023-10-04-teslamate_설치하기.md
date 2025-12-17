@@ -3,7 +3,7 @@ layout: post
 title: Teslamate 설치하기
 date: 2023-10-04T23:43:45+09:00
 author: 수수
-tags: ["teslamate", "docker", "docker-compose", "tesla", "테슬라메이트"]
+tags: ["테슬라", "teslamate", "docker"]
 categories: ["tesla"]
 cover-img: /assets/images/teslamate/title.png
 ---
