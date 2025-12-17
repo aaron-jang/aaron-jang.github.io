@@ -6,6 +6,7 @@ author: 수수
 tags: ["Hugo", "Jekyll", "마이그레이션", "GitHub Pages", "정적 사이트 생성기", "블로그"]
 categories: ["개발"]
 subtitle: GitHub Pages로 블로그를 이전한 전체 과정
+cover-img: ./assets/images/jekyll.png
 ---
 
 ## 개요
