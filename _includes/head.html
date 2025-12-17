@@ -169,6 +169,13 @@
   <link rel="icon" href="{{ '/favicon.ico' | relative_url }}" />
   {% endif %}
 
+  <!-- Favicon and App Icons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ '/favicon-32x32.png' | relative_url }}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ '/favicon-16x16.png' | relative_url }}">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ '/apple-touch-icon.png' | relative_url }}">
+  <link rel="manifest" href="{{ '/site.webmanifest' | relative_url }}">
+  <meta name="theme-color" content="#ffffff">
+
   {% if page.head-extra %}
     {% for file in page.head-extra %}
       {% include {{ file }} %}
