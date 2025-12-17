@@ -19,3 +19,9 @@ h1, h2, h3, h4, h5, h6,
 .navbar-nav .nav-link {
   font-weight: 700;
 }
+
+/* 접근성: post-meta 색상 대비 개선 */
+.post-preview .post-meta,
+.post-heading .post-meta {
+  color: #616161 !important; /* Material Design - 충분한 대비 */
+}
