@@ -6,6 +6,7 @@ author: 수수
 tags: ["테슬라", "teslamate", "docker"]
 categories: ["tesla"]
 cover-img: /assets/images/teslamate/title.png
+thumbnail-img: /assets/images/teslamate/title_thumb.png
 ---
 
 ### 개요

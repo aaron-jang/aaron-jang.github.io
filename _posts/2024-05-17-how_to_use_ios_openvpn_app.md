@@ -6,6 +6,7 @@ author: 수수
 tags: ["OpenVPN", "iOS"]
 categories: ["How-To"]
 cover-img: /assets/posts/how_to_use_ios_openvpn_app/openvpn_0.png
+thumbnail-img: /assets/posts/how_to_use_ios_openvpn_app/openvpn_0_thumb.png
 subtitle: OpenVPN iOS앱 사용법을 설명합니다.
 ---
 
