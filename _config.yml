@@ -296,5 +296,5 @@ exclude:
 
 plugins:
   - jekyll-paginate
-  - jekyll-sitemap
+  # jekyll-sitemap disabled - using custom sitemap.xml
 
