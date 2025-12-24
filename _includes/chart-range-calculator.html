@@ -1,0 +1,15 @@
+{% assign post_date = page.date | date: "%s" %}
+{% assign current_date = "now" | date: "%s" %}
+{% assign diff_seconds = current_date | minus: post_date %}
+{% assign diff_months = diff_seconds | divided_by: 2592000 %}
+{% if diff_months <= 1 %}
+  {% assign chart_range = "1M" %}
+{% elsif diff_months <= 3 %}
+  {% assign chart_range = "3M" %}
+{% elsif diff_months <= 6 %}
+  {% assign chart_range = "6M" %}
+{% elsif diff_months <= 12 %}
+  {% assign chart_range = "12M" %}
+{% else %}
+  {% assign chart_range = "60M" %}
+{% endif %}
