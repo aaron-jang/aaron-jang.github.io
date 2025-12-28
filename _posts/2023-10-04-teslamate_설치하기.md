@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Teslamate 설치하기
+subtitle: Docker를 활용한 테슬라 차량 데이터 로깅 서비스 설치 완벽 가이드
 date: 2023-10-04T23:43:45+09:00
 author: 수수
 tags: ["테슬라", "teslamate", "docker"]
