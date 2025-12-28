@@ -6,14 +6,22 @@ layout: null
   {% for post in site.posts %}
   <url>
     <loc>{{ site.url }}{{ post.url }}</loc>
-    <lastmod>{{ post.last_modified_at | date_to_xmlschema }}</lastmod>
+    {% if post.lastmod == null %}
+    <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
+    {% else %}
+    <lastmod>{{ post.lastmod | date_to_xmlschema }}</lastmod>
+    {% endif %}
   </url>
   {% endfor %}
   {% for page in site.pages %}
     {% unless page.url contains '/page' or page.url contains 'naver' or page.url contains '.xml' or page.url contains '.txt' or page.url contains '404' or page.url contains '/assets/' or page.url contains '.css' or page.url contains '.js' or page.url contains '.json' or page.sitemap == false %}
   <url>
     <loc>{{ site.url }}{{ page.url }}</loc>
-    <lastmod>{{ page.last_modified_at | date_to_xmlschema }}</lastmod>
+    {% if page.lastmod %}
+    <lastmod>{{ page.lastmod | date_to_xmlschema }}</lastmod>
+    {% elsif page.date %}
+    <lastmod>{{ page.date | date_to_xmlschema }}</lastmod>
+    {% endif %}
   </url>
     {% endunless %}
   {% endfor %}

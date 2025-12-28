@@ -4,7 +4,6 @@ source "https://rubygems.org"
 gem "jekyll", "~> 3.9"
 gem "jekyll-paginate"
 gem "jekyll-sitemap"
-gem "jekyll-last-modified-at"
 gem "kramdown-parser-gfm"
 
 # Ruby 3.4+ 호환성을 위한 라이브러리
