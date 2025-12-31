@@ -135,6 +135,13 @@ $ docker compose up -d
 4. 대시보드에서 메뉴를 선택하면 grafana의 웹페이지가 열립니다. (사용자: `admin`, 초기암호: `admin`)
 ![예시 - teslamate overview 화면]({{ "/assets/images/teslamate/teslamate_3.png" | relative_url }})
 
+## 관련 포스트
+
+- [테슬라 모델Y 후륜구동 판매]({% post_url 2023-07-17-테슬라모델Y후륜구동판매 %}) - 2023.07.17
+- [테슬라모델Y 액세서리 추천]({% post_url 2023-09-05-테슬라모델Y_악세서리_추천 %}) - 2023.09.05
+- [테슬라모델Y 악세서리 추천(2편) - 알리편]({% post_url 2023-10-11-테슬라모델Y_악세서리_추천_2편_알리익스프레스 %}) - 2023.10.11
+- [2025년 테슬라 한국 가격 인하]({% post_url 2025-12-31-테슬라_한국_가격_인하 %}) - 2025.12.31
+
 ### 참고자료
 - teslamate 공식 홈페이지: https://docs.teslamate.org
 - teslamate 스크린샷: https://docs.teslamate.org/docs/screenshots/
