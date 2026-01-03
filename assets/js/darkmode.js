@@ -36,6 +36,15 @@
     const currentTheme = getCurrentTheme();
     const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
     applyTheme(newTheme);
+
+    // 모바일 메뉴가 열려있으면 닫기
+    const navbarCollapse = document.querySelector('#main-navbar');
+    if (navbarCollapse && navbarCollapse.classList.contains('show')) {
+      const navbarToggler = document.querySelector('.navbar-toggler');
+      if (navbarToggler) {
+        navbarToggler.click();
+      }
+    }
   }
 
   // 페이지 로드 시 테마 적용
