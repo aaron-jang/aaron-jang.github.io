@@ -1,0 +1,13 @@
+/* 썸네일 이미지 라운딩 처리 */
+.post-preview .post-image img {
+  border-radius: 12px;
+}
+
+.post-preview .post-image-small img {
+  border-radius: 8px;
+}
+
+/* 블로그 포스트 내 이미지도 약간의 라운딩 적용 (선택사항) */
+.blog-post img {
+  border-radius: 8px;
+}
