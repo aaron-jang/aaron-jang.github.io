@@ -25,4 +25,24 @@ layout: null
   </url>
     {% endunless %}
   {% endfor %}
+
+  <!-- 외부 GitHub Pages 리포지토리 페이지들 -->
+  <url>
+    <loc>https://soosoo.life/todaydone/</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://soosoo.life/tenby-penang-links/</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://soosoo.life/tenby-penang-links/qr-generator.html</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
 </urlset>
