@@ -17,8 +17,10 @@ thumbnail-img: /assets/img/tesla_autopilot_thumb.jpg
 
 일론 머스크는 이 소식에 대해 이렇게 트윗했습니다:
 
-> **"Necessity is the mother of invention. The Tesla AI team is epicly hardcore. No one can match Tesla's real-world AI."**
-> (필요는 발명의 어머니다. 테슬라 AI 팀은 극한의 하드코어다. 누구도 테슬라의 실전 AI를 따라올 수 없다.)
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Necessity is the mother of invention.<br><br>The <a href="https://twitter.com/Tesla_AI?ref_src=twsrc%5Etfw">@Tesla_AI</a> team is epicly hardcore. No one can match Tesla's real-world AI. <a href="https://t.co/example">https://t.co/example</a></p>&mdash; Elon Musk (@elonmusk) <a href="https://twitter.com/elonmusk/status/2012489863652597918">January 19, 2026</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+> **번역:** "필요는 발명의 어머니다. 테슬라 AI 팀은 극한의 하드코어다. 누구도 테슬라의 실전 AI를 따라올 수 없다."
 
 오늘은 이 특허가 왜 중요한지, 그리고 테슬라의 FSD와 Optimus에 어떤 영향을 미치는지 자세히 살펴보겠습니다.
 
