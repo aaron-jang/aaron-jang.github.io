@@ -240,13 +240,20 @@ button.darkmode-toggle.nav-link:focus-visible {
   opacity: 0.9;
 }
 
-/* 모바일 햄버거 메뉴 버튼 다크모드 */
+/* 모바일 햄버거 메뉴 버튼 */
+/* 라이트모드: 어두운 아이콘 (invert 적용) */
+[data-theme="light"] .navbar-toggler-icon,
+:root:not([data-theme="dark"]) .navbar-toggler-icon {
+  filter: invert(1) !important;
+}
+
+/* 다크모드: 밝은 아이콘 (기본 유지) */
 [data-theme="dark"] .navbar-toggler {
   border-color: rgba(255, 255, 255, 0.3) !important;
 }
 
 [data-theme="dark"] .navbar-toggler-icon {
-  filter: invert(1) !important;
+  filter: none !important;
   opacity: 0.9;
 }
 
