@@ -57,6 +57,11 @@
     if (toggleButton) {
       toggleButton.addEventListener('click', toggleTheme);
     }
+
+    // 초기 로드 완료 - transition 활성화
+    requestAnimationFrame(function() {
+      document.documentElement.classList.add('loaded');
+    });
   });
 
   // 시스템 테마 변경 감지

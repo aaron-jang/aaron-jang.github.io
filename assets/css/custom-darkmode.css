@@ -1,5 +1,18 @@
 /* 다크모드 CSS 변수 및 스타일 */
 
+/* 초기 로드 시 깜빡임 방지 - html에 즉시 배경색 적용 */
+html {
+  background-color: #FAFAFA;
+}
+html[data-theme="dark"] {
+  background-color: #1a1a1a;
+}
+
+/* 초기 로드 시 transition 비활성화 */
+html:not(.loaded) * {
+  transition: none !important;
+}
+
 /* 라이트모드 기본 색상 (CSS 변수로 정의) */
 :root {
   --page-col: #FAFAFA;
