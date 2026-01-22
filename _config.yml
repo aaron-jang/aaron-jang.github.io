@@ -269,6 +269,7 @@ paginate: 10
 
 kramdown:
   input: GFM
+  toc_levels: "2"
 
 # Default YAML values (more information on Jekyll's site)
 defaults:
