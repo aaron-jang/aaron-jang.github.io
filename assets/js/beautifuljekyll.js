@@ -4,8 +4,15 @@ let BeautifulJekyllJS = {
 
   bigImgEl : null,
   numImgs : null,
+  supportsWebP : false,
 
   init : function() {
+    // WebP support detection
+    var webpTest = new Image();
+    webpTest.onload = function() { BeautifulJekyllJS.supportsWebP = (webpTest.width > 0 && webpTest.height > 0); };
+    webpTest.onerror = function() { BeautifulJekyllJS.supportsWebP = false; };
+    webpTest.src = 'data:image/webp;base64,UklGRiIAAABXRUJQVlA4IBYAAAAwAQCdASoBAAEADsD+JaQAA3AAAAAA';
+
     setTimeout(BeautifulJekyllJS.initNavbar, 10);
 
     // Shorten the navbar after scrolling a little bit down
@@ -94,8 +101,15 @@ let BeautifulJekyllJS = {
 
   getImgInfo : function() {
     const randNum = Math.floor((Math.random() * BeautifulJekyllJS.numImgs) + 1);
-    const src = BeautifulJekyllJS.bigImgEl.attr("data-img-src-" + randNum);
+    var src = BeautifulJekyllJS.bigImgEl.attr("data-img-src-" + randNum);
     const desc = BeautifulJekyllJS.bigImgEl.attr("data-img-desc-" + randNum);
+
+    if (BeautifulJekyllJS.supportsWebP) {
+      var webpSrc = BeautifulJekyllJS.bigImgEl.attr("data-img-webp-" + randNum);
+      if (webpSrc) {
+        src = webpSrc;
+      }
+    }
 
     return {
       src : src,

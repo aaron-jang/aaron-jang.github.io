@@ -26,11 +26,19 @@ layout: page
       {% endcapture %}
       {% assign thumbnail=thumbnail | strip %}
 
+      {% if thumbnail != "" %}
+        {% assign thumbnail_webp = thumbnail | replace: '.jpg', '.webp' | replace: '.jpeg', '.webp' | replace: '.png', '.webp' %}
+        {% assign thumbnail_480w = thumbnail | replace: '.jpg', '-480w.webp' | replace: '.jpeg', '-480w.webp' | replace: '.png', '-480w.webp' %}
+      {% endif %}
+
       {% if site.feed_show_excerpt == false %}
       {% if thumbnail != "" %}
       <div class="post-image post-image-normal">
         <a href="{{ post.url | absolute_url }}" aria-label="Thumbnail">
-          <img src="{{ thumbnail | absolute_url }}" alt="Post thumbnail">
+          <picture>
+            <source srcset="{{ thumbnail_webp | absolute_url }}" type="image/webp">
+            <img src="{{ thumbnail | absolute_url }}" alt="Post thumbnail" loading="lazy" decoding="async">
+          </picture>
         </a>
       </div>
       {% endif %}
@@ -57,7 +65,10 @@ layout: page
       {% if thumbnail != "" %}
       <div class="post-image post-image-small">
         <a href="{{ post.url | absolute_url }}" aria-label="Thumbnail">
-          <img src="{{ thumbnail | absolute_url }}" alt="Post thumbnail">
+          <picture>
+            <source srcset="{{ thumbnail_480w | absolute_url }}" type="image/webp">
+            <img src="{{ thumbnail | absolute_url }}" alt="Post thumbnail" loading="lazy" decoding="async">
+          </picture>
         </a>
       </div>
       {% endif %}
@@ -66,7 +77,10 @@ layout: page
       {% if thumbnail != "" %}
       <div class="post-image post-image-short">
         <a href="{{ post.url | absolute_url }}" aria-label="Thumbnail">
-          <img src="{{ thumbnail | absolute_url }}" alt="Post thumbnail">
+          <picture>
+            <source srcset="{{ thumbnail_webp | absolute_url }}" type="image/webp">
+            <img src="{{ thumbnail | absolute_url }}" alt="Post thumbnail" loading="lazy" decoding="async">
+          </picture>
         </a>
       </div>
       {% endif %}
