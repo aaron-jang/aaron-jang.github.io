@@ -261,3 +261,9 @@ button.darkmode-toggle.nav-link:focus-visible {
 [data-theme="dark"] .navbar-toggler:hover {
   border-color: rgba(255, 255, 255, 0.5) !important;
 }
+
+/* Ko-fi 배지 라이트/다크 전환 */
+.kofi-badge-dark { display: none; }
+.kofi-badge-light { display: inline; }
+[data-theme="dark"] .kofi-badge-dark { display: inline; }
+[data-theme="dark"] .kofi-badge-light { display: none; }
