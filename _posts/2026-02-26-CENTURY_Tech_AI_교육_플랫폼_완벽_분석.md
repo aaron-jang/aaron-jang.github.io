@@ -3,7 +3,7 @@ layout: post
 title: "CENTURY Tech - AI가 바꾸는 교육의 미래"
 subtitle: "신경과학 + AI로 학생 개개인에게 맞춤 학습 경로를 제공하는 영국 에듀테크"
 date: 2026-02-26T21:00:00+09:00
-lastmod: 2026-02-26T22:52:20+09:00
+lastmod: 2026-02-26T23:13:23+09:00
 author: 수수
 tags: ["CENTURY", "에듀테크", "AI교육", "국제학교", "말레이시아", "영국교육"]
 categories: ["교육", "AI"]
@@ -203,6 +203,21 @@ CENTURY는 단순한 인터넷 강의 플랫폼이 아닙니다. 학생 한 명 
 ---
 
 ## 자주 묻는 질문
+
+<details>
+  <summary><strong>CENTURY Tech는 어떤 학생에게 적합한가요?</strong></summary>
+  <p>영국 커리큘럼(KS1~KS4) 기반의 수학·영어·과학 학습에 적합합니다. 국제학교 재학생, 영국식 커리큘럼을 따르는 학교 학생, 또는 홈스쿨링·보충학습을 원하는 가정에서 활용할 수 있습니다. 초등학생부터 대학 수준(FE)까지 폭넓게 지원합니다.</p>
+</details>
+
+<details>
+  <summary><strong>CENTURY Tech는 무료인가요?</strong></summary>
+  <p>학교 기관용은 별도 계약이 필요하며, 개인 가정용 홈 러닝 플랜은 월 £7.99부터 이용할 수 있습니다. 자녀가 재학 중인 학교가 CENTURY를 도입했다면 학교 계정으로 무료로 사용할 수 있습니다.</p>
+</details>
+
+<details>
+  <summary><strong>CENTURY Tech와 Khan Academy의 차이점은 무엇인가요?</strong></summary>
+  <p>Khan Academy는 방대한 무료 콘텐츠 라이브러리를 제공하지만, 학습 경로는 학생이 직접 선택합니다. CENTURY는 AI가 학생의 모든 학습 데이터를 분석해 개인화된 경로를 자동으로 생성하고, 교사에게 실시간 데이터 대시보드를 제공한다는 점에서 차별화됩니다. 영국 커리큘럼 대응도 CENTURY의 강점입니다.</p>
+</details>
 
 <script type="application/ld+json">
 {
