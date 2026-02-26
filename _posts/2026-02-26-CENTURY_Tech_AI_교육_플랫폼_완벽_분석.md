@@ -3,7 +3,7 @@ layout: post
 title: "CENTURY Tech - AI가 바꾸는 교육의 미래"
 subtitle: "신경과학 + AI로 학생 개개인에게 맞춤 학습 경로를 제공하는 영국 에듀테크"
 date: 2026-02-26T21:00:00+09:00
-lastmod: 2026-02-26T22:31:51+09:00
+lastmod: 2026-02-26T22:35:46+09:00
 author: 수수
 tags: ["CENTURY", "에듀테크", "AI교육", "국제학교", "말레이시아", "영국교육"]
 categories: ["교육", "AI"]
@@ -26,6 +26,11 @@ thumbnail-img: /assets/images/century_logo_thumb.jpg
 ---
 
 ## 창업자 Priya Lakhani OBE
+
+<picture>
+  <source srcset="/assets/images/priya_lakhani.webp" type="image/webp">
+  <img src="/assets/images/priya_lakhani.jpg" alt="Priya Lakhani OBE - CENTURY Tech 창업자 CEO" style="max-width:100%;border-radius:8px;">
+</picture>
 
 CENTURY를 만든 사람은 **Priya Lakhani**입니다. 원래 변호사였던 그녀는 학교 현장의 낮은 학업 성취율에 충격을 받고 에듀테크 창업에 뛰어들었습니다.
 
