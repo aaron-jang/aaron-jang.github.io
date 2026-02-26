@@ -3,7 +3,7 @@ layout: post
 title: "Moltbot - 진짜 일하는 개인 AI 어시스턴트"
 subtitle: "GitHub 89,900+ 스타, 로컬 실행, 완전한 프라이버시 - Siri가 되었어야 할 모습"
 date: 2026-01-29T09:00:00+09:00
-lastmod: 2026-01-29T09:00:00+09:00
+lastmod: 2026-02-26T00:00:00+09:00
 author: 수수
 tags: ["Moltbot", "Clawdbot", "AI어시스턴트", "오픈소스", "자동화", "프라이버시"]
 categories: ["AI", "생산성"]
@@ -469,3 +469,41 @@ Moltbot은 아직 완벽하지 않습니다. 보안 문제도 있고, 설정도 
 > 💬 **여러분의 생각은?**
 >
 > Moltbot 같은 자율 AI 어시스턴트를 사용해보고 싶으신가요? 보안 우려 때문에 망설여지시나요?
+
+---
+
+## 자주 묻는 질문
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Moltbot은 어떤 AI 서비스인가요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Moltbot은 개인 맞춤형 AI 어시스턴트 서비스로, 업무 자동화, 정보 검색, 일정 관리 등을 AI가 도와주는 플랫폼입니다. 개인 데이터를 학습해 사용자에 특화된 어시스턴트 경험을 제공합니다."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Moltbot의 가격과 무료 이용 범위는?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Moltbot은 기본 기능을 무료로 제공하며, 고급 기능과 더 많은 사용량은 유료 구독으로 이용 가능합니다. 정확한 요금제는 Moltbot 공식 홈페이지에서 확인하시기 바랍니다."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Moltbot vs ChatGPT vs Claude, 어떤 차이가 있나요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ChatGPT와 Claude는 범용 AI 챗봇인 반면, Moltbot은 개인 생산성과 업무 자동화에 특화된 에이전트형 서비스입니다. 개인 데이터 연동과 반복 작업 자동화가 필요하다면 Moltbot이, 광범위한 질의응답이 필요하다면 ChatGPT나 Claude가 적합합니다."
+      }
+    }
+  ]
+}
+</script>
+

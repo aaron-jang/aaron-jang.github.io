@@ -3,7 +3,7 @@ layout: post
 title: SpaceX 2026년 IPO 확정 - 빌 애크먼의 SPARC 제안과 1.5조 달러 밸류에이션 완벽 분석
 subtitle: 일론 머스크가 확인한 2026년 SpaceX 상장, 역대 최대 IPO 가능성과 테슬라 주주 우선 투자 기회
 date: 2026-01-08T00:00:00+09:00
-lastmod: 2026-01-08T00:00:00+09:00
+lastmod: 2026-02-26T00:00:00+09:00
 author: 수수
 tags: ["SpaceX", "IPO", "일론머스크", "SPARC", "빌애크먼", "스타링크"]
 categories: ["투자"]
@@ -451,3 +451,41 @@ SpaceX의 2026년 IPO는 **역사적 이벤트**가 될 것입니다. 1.5조 달
 - [Bill Ackman proposes SpaceX IPO via Sparc merger - Seeking Alpha](https://seekingalpha.com/news/4533839-bill-ackman-proposes-spacex-ipo-via-sparc-merger)
 - [SpaceX stock debut is the big market event of 2026 - CNBC](https://www.cnbc.com/2026/01/02/spacex-ipo-musk-2026.html)
 - [Musk Confirms SpaceX IPO 2026, Targets $1 Trillion Valuation](https://www.heygotrade.com/en/news/musk-confirms-spacex-ipo-2026-targets-1-trillion-valuation/)
+
+---
+
+## 자주 묻는 질문
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "SpaceX IPO는 언제 이루어지나요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "일론 머스크는 스타링크 분리 IPO를 언급했으나 SpaceX 본체 IPO 시기는 불확실합니다. SPARC(스페셜 퍼퍼스 애퀴지션 컴퍼니) 구조를 통한 상장 가능성이 논의되고 있으며, 2026~2027년이 가장 유력한 시기로 전망됩니다."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "SpaceX에 개인 투자자가 투자할 수 있는 방법은?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "SpaceX는 비상장 기업이므로 일반 개인 투자자의 직접 투자가 어렵습니다. 증권사 비상장 주식 플랫폼이나 스타트업 투자 펀드를 통해 간접 투자가 가능합니다. 상장 후에는 일반 주식 거래를 통해 투자할 수 있습니다."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "SpaceX의 주요 수익 모델과 성장 잠재력은?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "SpaceX의 주요 수익원은 스타링크 위성 인터넷 서비스, 로켓 발사 서비스(나사, 민간), 스타쉽을 활용한 달·화성 탐사 계약입니다. 스타링크는 2024년 기준 가입자 400만 명 이상으로 빠르게 성장 중이며, 우주 인터넷 시장의 지배적 위치를 차지하고 있습니다."
+      }
+    }
+  ]
+}
+</script>
+
