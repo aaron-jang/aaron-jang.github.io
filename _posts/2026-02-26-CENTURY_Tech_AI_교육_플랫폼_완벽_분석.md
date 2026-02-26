@@ -3,7 +3,7 @@ layout: post
 title: "CENTURY Tech - AI가 바꾸는 교육의 미래"
 subtitle: "신경과학 + AI로 학생 개개인에게 맞춤 학습 경로를 제공하는 영국 에듀테크"
 date: 2026-02-26T21:00:00+09:00
-lastmod: 2026-02-26T22:26:57+09:00
+lastmod: 2026-02-26T22:31:51+09:00
 author: 수수
 tags: ["CENTURY", "에듀테크", "AI교육", "국제학교", "말레이시아", "영국교육"]
 categories: ["교육", "AI"]
@@ -181,17 +181,6 @@ GCSE 시험이 가까워질수록 주 2~3시간으로 사용 시간을 늘리는
 | 홈 러닝 가격 | 월 £7.99부터 |
 
 CENTURY는 단순한 인터넷 강의 플랫폼이 아닙니다. 학생 한 명 한 명의 학습 데이터를 바탕으로 끊임없이 경로를 조정하는, 진짜 의미의 **개인 맞춤형 AI 튜터**에 가깝습니다. 영국 커리큘럼 환경에서 자녀를 교육 중이라면 한 번쯤 살펴볼 가치가 있습니다.
-
----
-
-## 참고 링크
-
-- [CENTURY Tech 공식 홈페이지](https://www.century.tech/)
-- [CENTURY 소개 - About Us](https://www.century.tech/about-us/)
-- [CENTURY Tech - UNESCO 소개](https://www.unesco.org/en/articles/century-ai-powered-teaching-and-learning-platform)
-- [CENTURY Tech - HundrED 혁신 사례](https://hundred.org/en/innovations/century-tech)
-- [Priya Lakhani OBE - AI 교육 리더](https://priyalakhani.com)
-- [CEO 인터뷰: AI를 교실에서 선한 방향으로 - Schools Week](https://schoolsweek.co.uk/ceos-mission-to-make-ai-a-force-for-good-in-classrooms/)
 
 ---
 
