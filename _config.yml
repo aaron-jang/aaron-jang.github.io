@@ -15,6 +15,9 @@ title: 수수라이프
 # Your name to show in the footer
 author: 수수
 
+# Language setting (HTML lang attribute)
+language: ko
+
 # URL of your website
 url: "https://soosoo.life"
 baseurl: ""
