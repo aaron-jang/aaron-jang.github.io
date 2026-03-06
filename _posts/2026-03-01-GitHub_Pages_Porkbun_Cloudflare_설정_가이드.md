@@ -3,7 +3,7 @@ layout: post
 title: "GitHub Pages + Porkbun + Cloudflare 설정 가이드"
 subtitle: 커스텀 도메인 블로그에 Cloudflare CDN과 보안을 추가하는 방법
 date: 2026-03-01T12:00:00+09:00
-lastmod: 2026-03-01T23:44:21+09:00
+lastmod: 2026-03-06T20:15:13+09:00
 author: 수수
 tags: ["GitHub Pages", "Cloudflare", "Porkbun", "CDN", "DNS", "SSL", "커스텀도메인", "블로그"]
 categories: ["테크"]
@@ -464,6 +464,8 @@ cf-cache-status: HIT  (또는 MISS, DYNAMIC)
 ## 관련 포스팅
 
 - [Hugo에서 Jekyll로 마이그레이션하기](/2025-12-16-Hugo에서_Jekyll로_마이그레이션하기/)
+- [피터 레벨스 테크 스택 — 월 3억 1인 개발자가 쓰는 도구 총정리](/2026-02-28-피터레벨스_테크스택_월3억_1인개발자_도구/)
+- [n8n 워크플로우 자동화 시작 가이드](/2026-01-12-n8n_워크플로우_자동화_시작_가이드/)
 
 ---
 
