@@ -30,6 +30,10 @@ navbar-links:
   Posts: "/"
   Categories: "/categories"
   Tags: "/tags"
+  Tools:
+    - 불렛저널 플래너: "/bullet_journal_planner/"
+    - 오늘 뭐 했지?: "/todaydone/"
+    - 텐비 페낭 링크: "/tenby-penang-links/"
   About: "about"
 
 ################
@@ -125,7 +129,7 @@ edit_page_button: false
 # Allow sub-menu items (second-level navigation menu items) to be longer than the top-level menu
 # If this setting is off, then long sub-menu words might get cut off
 # Allow sub-menu items to be longer than the top-level menu
-navbar-var-length: false
+navbar-var-length: true
 
 # The keywords to associate with your website, for SEO purposes
 #keywords: "my,list,of,keywords"
