@@ -36,6 +36,14 @@ let BeautifulJekyllJS = {
     BeautifulJekyllJS.initImgs();
 
     BeautifulJekyllJS.initSearch();
+
+    // Open external links in new tab
+    document.querySelectorAll('.blog-post a[href^="http"]').forEach(function(link) {
+      if (link.hostname !== window.location.hostname) {
+        link.setAttribute('target', '_blank');
+        link.setAttribute('rel', 'noopener noreferrer');
+      }
+    });
   },
 
   initNavbar : function() {
