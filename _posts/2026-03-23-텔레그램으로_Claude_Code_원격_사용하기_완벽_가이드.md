@@ -4,7 +4,7 @@ title: "텔레그램으로 Claude Code 원격 사용하기 완벽 가이드"
 subtitle: "스마트폰에서 코딩 에이전트를 쓴다고? — claude-code-telegram 설치부터 실전 활용까지"
 share-description: "텔레그램 봇으로 Claude Code를 원격 제어하는 방법을 정리합니다. 설치, 설정, 보안, 실전 활용 팁까지 한 번에 알아보세요."
 date: 2026-03-23T09:00:00+09:00
-lastmod: 2026-03-23T11:52:09+09:00
+lastmod: 2026-03-23T12:25:36+09:00
 author: 수수
 tags: ["ClaudeCode", "텔레그램", "AI코딩", "원격개발", "개발도구", "Python", "자동화", "봇"]
 categories: ["IT"]
@@ -87,6 +87,27 @@ claude auth login
 
 또는 `ANTHROPIC_API_KEY` 환경변수를 직접 설정해도 됩니다.
 
+> **EACCES 권한 오류가 발생한다면?**
+>
+> `npm install -g` 실행 시 `/usr/local/lib/node_modules` 권한 오류가 날 수 있습니다. `sudo`로 설치할 수도 있지만, **npm 글로벌 디렉토리를 홈으로 변경하는 방법이 더 안전합니다.**
+>
+> ```bash
+> # 글로벌 패키지 폴더를 홈 디렉토리에 생성
+> mkdir -p ~/.npm-global
+>
+> # npm 글로벌 경로 변경
+> npm config set prefix '~/.npm-global'
+>
+> # PATH에 추가 (~/.bashrc 또는 ~/.zshrc)
+> echo 'export PATH=~/.npm-global/bin:$PATH' >> ~/.bashrc
+> source ~/.bashrc
+>
+> # 이제 sudo 없이 설치 가능
+> npm install -g @anthropic-ai/claude-code
+> ```
+>
+> `sudo`를 쓰면 매번 root 권한이 필요하고, npm 패키지가 root로 실행되는 보안 리스크가 있습니다.
+
 ### 3. 텔레그램 봇 토큰 발급
 
 1. 텔레그램에서 [**@BotFather**](https://t.me/BotFather) 검색
@@ -129,6 +150,23 @@ make dev
 ```bash
 pip install "claude-code-telegram[voice]"
 ```
+
+> **`externally-managed-environment` 오류가 발생한다면?**
+>
+> Ubuntu 23.04+, Debian 12+ 등 최신 리눅스에서는 시스템 Python에 직접 pip 설치를 막습니다 (PEP 668). 가상환경을 만들어서 설치하세요.
+>
+> ```bash
+> # 가상환경 생성
+> python3 -m venv ~/claude-telegram-env
+>
+> # 가상환경 활성화
+> source ~/claude-telegram-env/bin/activate
+>
+> # 이제 pip 설치 가능
+> pip install git+https://github.com/RichardAtCT/claude-code-telegram@v1.3.0
+> ```
+>
+> 이후 봇을 실행할 때도 `source ~/claude-telegram-env/bin/activate`로 가상환경을 먼저 활성화해야 합니다. `--break-system-packages` 옵션은 시스템 패키지를 망가뜨릴 수 있으므로 권장하지 않습니다.
 
 ---
 
@@ -181,13 +219,14 @@ SESSION_TIMEOUT_HOURS=24
 
 ## 실행하기
 
-```bash
-# 일반 실행
-make run
+설치 방법에 따라 실행 명령이 다릅니다.
 
-# 디버그 모드
-make run-debug
-```
+| 설치 방법 | 실행 명령 |
+|-----------|----------|
+| uv로 설치 | `claude-telegram-bot` |
+| pip로 설치 | `claude-telegram-bot` |
+| pip + 가상환경 | `source ~/claude-telegram-env/bin/activate` 후 `claude-telegram-bot` |
+| 소스에서 설치 | `make run` 또는 `make run-debug` |
 
 텔레그램에서 봇에게 `/start`를 보내면 준비 완료입니다.
 
