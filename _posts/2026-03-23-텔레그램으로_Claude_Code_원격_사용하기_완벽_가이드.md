@@ -4,7 +4,7 @@ title: "텔레그램으로 Claude Code 원격 사용하기 완벽 가이드"
 subtitle: "스마트폰에서 코딩 에이전트를 쓴다고? — claude-code-telegram 설치부터 실전 활용까지"
 share-description: "텔레그램 봇으로 Claude Code를 원격 제어하는 방법을 정리합니다. 설치, 설정, 보안, 실전 활용 팁까지 한 번에 알아보세요."
 date: 2026-03-23T09:00:00+09:00
-lastmod: 2026-03-23T12:25:36+09:00
+lastmod: 2026-03-23T12:34:28+09:00
 author: 수수
 tags: ["ClaudeCode", "텔레그램", "AI코딩", "원격개발", "개발도구", "Python", "자동화", "봇"]
 categories: ["IT"]
@@ -361,18 +361,65 @@ CLAUDE_MAX_TURNS=10               # 세션당 최대 10턴
 
 ---
 
-## 서버에 상시 실행하기
+## 서버에 상시 실행하기 (백그라운드)
+
+터미널을 닫아도 봇이 계속 실행되게 하려면 systemd 서비스로 등록합니다.
 
 ### Linux — systemd 서비스
 
-```bash
-# ~/.config/systemd/user/claude-telegram-bot.service 생성 후
-systemctl --user enable claude-telegram-bot
-systemctl --user start claude-telegram-bot
+**1. 서비스 파일 생성**
 
-# 로그아웃 후에도 유지하려면
-loginctl enable-linger $USER
+```bash
+sudo nano /etc/systemd/system/claude-telegram-bot.service
 ```
+
+아래 내용을 붙여넣기합니다. 경로는 본인 환경에 맞게 수정하세요.
+
+```ini
+[Unit]
+Description=Claude Code Telegram Bot
+After=network.target
+
+[Service]
+User=본인_리눅스_사용자명
+WorkingDirectory=/home/본인_사용자명/project
+EnvironmentFile=/home/본인_사용자명/project/.env
+ExecStart=/home/본인_사용자명/.local/bin/claude-telegram-bot
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
+```
+
+> **참고**: `ExecStart` 경로는 `which claude-telegram-bot`으로 확인할 수 있습니다. uv로 설치한 경우 `~/.local/bin/claude-telegram-bot`인 경우가 많습니다.
+
+**2. 서비스 등록 및 시작**
+
+```bash
+# 서비스 등록
+sudo systemctl daemon-reload
+sudo systemctl enable claude-telegram-bot
+
+# 시작
+sudo systemctl start claude-telegram-bot
+
+# 상태 확인
+sudo systemctl status claude-telegram-bot
+
+# 실시간 로그 보기
+sudo journalctl -u claude-telegram-bot -f
+```
+
+**3. 서비스 관리 명령**
+
+| 명령 | 설명 |
+|------|------|
+| `sudo systemctl start claude-telegram-bot` | 시작 |
+| `sudo systemctl stop claude-telegram-bot` | 중지 |
+| `sudo systemctl restart claude-telegram-bot` | 재시작 |
+| `sudo systemctl status claude-telegram-bot` | 상태 확인 |
+| `sudo journalctl -u claude-telegram-bot -f` | 실시간 로그 |
 
 ### macOS — SSH 원격 실행
 
