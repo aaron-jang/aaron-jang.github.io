@@ -27,6 +27,7 @@ sitemap: false
     </h2>
     <div class="post-list">
         {%- for post in site.tags[tag] -%}
+            {%- if post.hidden -%}{%- continue -%}{%- endif -%}
             <div class="tag-entry">
                 <a href="{{ post.url | relative_url }}">{{- post.title | strip_html -}}</a>
                 <div class="entry-date">
