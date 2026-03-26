@@ -204,6 +204,37 @@ AI 추론에 필요한 메모리가 6배 줄어든다
 
 ---
 
+## 터보퀀트 관련 상장업체
+
+터보퀀트의 영향은 **피해주(메모리 반도체)**와 **수혜주(AI 서비스/인프라)** 두 방향으로 갈립니다.
+
+### 하락 압력 — 메모리 반도체 밸류체인
+
+| 종목 | 코드 | 시장 | 이유 |
+|------|------|------|------|
+| **삼성전자** | 005930 | 코스피 | HBM 수요 감소 우려 (3/26 -4.8%) |
+| **SK하이닉스** | 000660 | 코스피 | AI 메모리(HBM) 매출 비중 높음 (3/26 -5.9%) |
+| **마이크론(MU)** | MU | NASDAQ | HBM3E 양산 중, 수요 전망 하향 우려 |
+| **한미반도체** | 042700 | 코스피 | HBM 후공정 TC 본더 장비 — HBM 물량 연동 |
+| **ISC** | 095340 | 코스닥 | HBM 테스트 소켓 납품 |
+| **리노공업** | 058470 | 코스닥 | 반도체 테스트 핀 — HBM 검사 관련 |
+| **HPSP** | 403870 | 코스닥 | 고압 수소 어닐링 장비 — HBM 공정 필수 |
+| **피에스케이** | 319660 | 코스닥 | HBM용 PR Strip 장비 |
+
+### 잠재적 수혜 — AI 서비스/인프라 (추론 비용 절감)
+
+| 종목 | 코드 | 시장 | 이유 |
+|------|------|------|------|
+| **알파벳(구글)** | GOOGL | NASDAQ | 터보퀀트 개발사, Gemini 추론 비용 절감 |
+| **NVIDIA** | NVDA | NASDAQ | GPU당 처리량 증가(+) vs HBM 탑재 감소(-), 복합적 |
+| **네이버** | 035420 | 코스피 | 하이퍼클로바X 추론 비용 절감 가능 |
+| **카카오** | 035720 | 코스피 | AI 서비스 인프라 비용 절감 |
+| **솔트룩스** | 304100 | 코스닥 | 국내 LLM 개발사 — 추론 비용 절감 수혜 |
+
+> ⚠️ 터보퀀트는 아직 **연구 논문 단계**입니다. 상용화 시점이 불확실하므로, 이 테마 기반 단기 매매는 리스크가 큽니다. DeepSeek 때처럼 **과잉 반응 후 회복** 패턴 가능성도 열어둬야 합니다.
+
+---
+
 ## 투자자가 봐야 할 포인트
 
 ### 단기 (1~3개월)
@@ -235,3 +266,33 @@ AI 추론에 필요한 메모리가 6배 줄어든다
 기술의 방향은 맞지만, **타이밍과 영향의 크기**는 시장이 과대평가하고 있을 가능성이 있습니다.
 
 > **투자에 대한 최종 판단과 책임은 투자자 본인에게 있습니다. 이 글은 정보 제공 목적이며 특정 투자를 권유하지 않습니다.**
+
+---
+
+## 논문 및 참고 자료
+
+### 논문
+
+- **TurboQuant**: [arXiv:2504.19874](https://arxiv.org/abs/2504.19874){:target="_blank"} (ICLR 2026)
+- **PolarQuant**: [arXiv:2502.02617](https://arxiv.org/abs/2502.02617){:target="_blank"} (AISTATS 2026)
+- **QJL (Quantized Johnson-Lindenstrauss)**: [arXiv:2406.03482](https://arxiv.org/abs/2406.03482){:target="_blank"} (AAAI 2025)
+
+### 공식 블로그 및 코드
+
+- [TurboQuant: Redefining AI efficiency with extreme compression — Google Research Blog](https://research.google/blog/turboquant-redefining-ai-efficiency-with-extreme-compression/){:target="_blank"}
+- [tonbistudio/turboquant-pytorch — GitHub (커뮤니티 PyTorch 구현)](https://github.com/tonbistudio/turboquant-pytorch){:target="_blank"}
+- [TheTom/turboquant_plus — GitHub (llama.cpp 통합)](https://github.com/TheTom/turboquant_plus){:target="_blank"}
+
+### 해외 보도
+
+- [Google unveils TurboQuant — TechCrunch](https://techcrunch.com/2026/03/25/google-turboquant-ai-memory-compression-silicon-valley-pied-piper/){:target="_blank"}
+- [Google's new TurboQuant algorithm speeds up AI memory 8x — VentureBeat](https://venturebeat.com/infrastructure/googles-new-turboquant-algorithm-speeds-up-ai-memory-8x-cutting-costs-by-50){:target="_blank"}
+- [TurboQuant compresses LLM KV caches to 3 bits — Tom's Hardware](https://www.tomshardware.com/tech-industry/artificial-intelligence/googles-turboquant-compresses-llm-kv-caches-to-3-bits-with-no-accuracy-loss){:target="_blank"}
+- [MU, WDC, SNDK fall: Why Google's TurboQuant is rattling memory stocks — Yahoo Finance](https://finance.yahoo.com/sectors/technology/articles/mu-wdc-sndk-fall-why-141945272.html){:target="_blank"}
+
+### 국내 보도
+
+- [메모리의 딥시크 모먼트...구글 터보퀀트 출시에 삼성/하이닉스 급락 — 한국경제](https://www.hankyung.com/article/202603267801i){:target="_blank"}
+- [구글 터보퀀트 신기술 충격, 삼전/하닉 급락 — 머니투데이](https://www.mt.co.kr/stock/2026/03/26/2026032608573341316){:target="_blank"}
+- [메모리 6배 줄였다...구글, AI 압축 알고리즘 터보퀀트 공개 — 디지털투데이](https://www.digitaltoday.co.kr/news/articleView.html?idxno=645920){:target="_blank"}
+- [구글 AI 메모리 6배로 줄여 비용 50% 절감하는 터보퀀트 기술 공개 — AI타임스](https://www.aitimes.com/news/articleView.html?idxno=208377){:target="_blank"}
