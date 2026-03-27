@@ -7,7 +7,7 @@ date: 2026-03-10T13:00:00+09:00
 lastmod: 2026-03-13T08:52:13+09:00
 author: 수수
 tags: ["ClaudeCode", "AI", "에이전트", "멀티에이전트", "서브에이전트", "AgentTeams", "개발도구", "바이브코딩", "Anthropic"]
-categories: ["테크"]
+categories: ["AI"]
 cover-img: /assets/images/claude_agent_team.webp
 thumbnail-img: /assets/images/claude_agent_team_thumb.webp
 share-img: /assets/images/claude_agent_team.png

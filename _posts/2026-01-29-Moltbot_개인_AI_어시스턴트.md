@@ -6,7 +6,7 @@ date: 2026-01-29T09:00:00+09:00
 lastmod: 2026-02-26T23:19:55+09:00
 author: 수수
 tags: ["Moltbot", "Clawdbot", "AI어시스턴트", "오픈소스", "자동화", "프라이버시"]
-categories: ["AI", "생산성"]
+categories: ["AI", "교육"]
 cover-img: /assets/images/moltbot/cover.jpg
 thumbnail-img: /assets/images/moltbot/thumb.jpg
 ---

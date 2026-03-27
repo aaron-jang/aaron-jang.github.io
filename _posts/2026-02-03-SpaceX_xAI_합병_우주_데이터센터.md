@@ -6,7 +6,7 @@ date: 2026-02-03T00:00:00+09:00
 lastmod: 2026-02-26T23:19:55+09:00
 author: 수수
 tags: ["SpaceX", "xAI", "일론머스크", "합병", "우주", "AI", "데이터센터", "IPO", "Tesla", "X", "트위터"]
-categories: ["테크"]
+categories: ["AI"]
 cover-img: /assets/images/spacex_xai_merger.jpg
 thumbnail-img: /assets/images/spacex_xai_merger.jpg
 ---

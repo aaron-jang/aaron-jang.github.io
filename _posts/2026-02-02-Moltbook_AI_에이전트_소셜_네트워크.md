@@ -6,7 +6,7 @@ date: 2026-02-02T00:00:00+09:00
 lastmod: 2026-02-26T23:19:55+09:00
 author: 수수
 tags: ["Moltbook", "AI에이전트", "소셜네트워크", "Moltbot", "AI", "미래"]
-categories: ["AI", "테크"]
+categories: ["AI"]
 cover-img: /assets/images/moltbook/mascot.png
 thumbnail-img: /assets/images/moltbook/mascot.png
 ---

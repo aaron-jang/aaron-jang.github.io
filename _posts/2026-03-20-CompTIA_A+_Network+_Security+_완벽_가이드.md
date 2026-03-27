@@ -7,7 +7,7 @@ date: 2026-03-20T09:30:00+09:00
 lastmod: 2026-03-20T11:14:20+09:00
 author: 수수
 tags: ["CompTIA", "A+", "Network+", "Security+", "IT자격증", "IT취업", "사이버보안", "공부법", "자격증시험", "커리어"]
-categories: ["IT"]
+categories: ["테크"]
 cover-img: /assets/images/comptia_roadmap.webp
 thumbnail-img: /assets/images/comptia_roadmap.thumb.webp
 share-img: /assets/images/comptia_roadmap.png

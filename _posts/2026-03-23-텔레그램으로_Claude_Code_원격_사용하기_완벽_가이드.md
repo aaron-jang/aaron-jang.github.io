@@ -7,7 +7,7 @@ date: 2026-03-23T09:00:00+09:00
 lastmod: 2026-03-25T10:28:30+09:00
 author: 수수
 tags: ["ClaudeCode", "텔레그램", "AI코딩", "원격개발", "개발도구", "Python", "자동화", "봇"]
-categories: ["IT"]
+categories: ["테크"]
 ---
 
 안녕하세요. 수수입니다.

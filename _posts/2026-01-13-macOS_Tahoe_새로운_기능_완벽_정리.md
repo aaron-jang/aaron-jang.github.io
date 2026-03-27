@@ -6,7 +6,7 @@ date: 2026-01-13T00:00:00+09:00
 lastmod: 2026-02-26T23:19:55+09:00
 author: 수수
 tags: ["macOS", "Tahoe", "Apple", "업데이트", "리뷰", "Apple Intelligence"]
-categories: ["Tech"]
+categories: ["가젯"]
 cover-img: /assets/img/macos-tahoe-hero.jpg
 thumbnail-img: /assets/img/macos-tahoe-hero.jpg
 ---

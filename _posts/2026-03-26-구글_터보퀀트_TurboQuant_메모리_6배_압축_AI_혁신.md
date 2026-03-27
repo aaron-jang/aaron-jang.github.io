@@ -7,7 +7,7 @@ date: 2026-03-26T12:00:00+09:00
 lastmod: 2026-03-26T12:00:00+09:00
 author: 수수
 tags: ["구글", "TurboQuant", "터보퀀트", "AI압축", "KV캐시", "메모리반도체", "삼성전자", "SK하이닉스", "HBM", "LLM"]
-categories: ["테크"]
+categories: ["AI"]
 ---
 
 안녕하세요. 수수입니다.
