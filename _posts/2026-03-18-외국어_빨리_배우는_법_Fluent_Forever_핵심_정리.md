@@ -7,7 +7,7 @@ date: 2026-03-18T12:00:00+09:00
 lastmod: 2026-03-18T16:11:53+09:00
 author: 수수
 tags: ["외국어", "영어공부", "언어학습", "FluentForever", "SRS", "간격반복", "발음", "어휘", "문법", "가브리엘와이너"]
-categories: ["추천"]
+categories: ["생활"]
 cover-img: /assets/images/fluent_forever.webp
 thumbnail-img: /assets/images/fluent_forever.thumb.webp
 share-img: /assets/images/fluent_forever_share.jpg

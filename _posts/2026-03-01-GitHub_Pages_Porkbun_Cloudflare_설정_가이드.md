@@ -6,7 +6,7 @@ date: 2026-03-01T12:00:00+09:00
 lastmod: 2026-03-06T20:15:13+09:00
 author: 수수
 tags: ["GitHub Pages", "Cloudflare", "Porkbun", "CDN", "DNS", "SSL", "커스텀도메인", "블로그"]
-categories: ["테크"]
+categories: ["개발"]
 ---
 
 안녕하세요. 수수입니다. <br />

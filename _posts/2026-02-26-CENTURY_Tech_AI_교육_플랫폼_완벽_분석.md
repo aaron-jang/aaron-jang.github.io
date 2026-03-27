@@ -6,7 +6,7 @@ date: 2026-02-26T21:00:00+09:00
 lastmod: 2026-02-26T23:19:55+09:00
 author: 수수
 tags: ["CENTURY", "에듀테크", "AI교육", "국제학교", "말레이시아", "영국교육"]
-categories: ["교육", "AI"]
+categories: ["AI"]
 cover-img: /assets/images/century_cover.jpg
 thumbnail-img: /assets/images/century_logo_thumb.jpg
 ---
