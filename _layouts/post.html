@@ -48,6 +48,15 @@ layout: base
         {% include adsense-in-article.html %}
       </div>
 
+      {% if page.categories.size > 0 %}
+        <div class="blog-tags">
+          <span>Categories:</span>
+          {% for category in page.categories %}
+            <a href="{{ '/categories' | relative_url }}#{{- category -}}">{{- category -}}</a>
+          {% endfor %}
+        </div>
+      {% endif %}
+
       {% if page.tags.size > 0 %}
         <div class="blog-tags">
           <span>Tags:</span>
