@@ -267,3 +267,52 @@ AI 추론에 필요한 메모리가 6배 줄어든다
 - [구글 터보퀀트 신기술 충격, 삼전/하닉 급락 — 머니투데이](https://www.mt.co.kr/stock/2026/03/26/2026032608573341316){:target="_blank"}
 - [메모리 6배 줄였다...구글, AI 압축 알고리즘 터보퀀트 공개 — 디지털투데이](https://www.digitaltoday.co.kr/news/articleView.html?idxno=645920){:target="_blank"}
 - [구글 AI 메모리 6배로 줄여 비용 50% 절감하는 터보퀀트 기술 공개 — AI타임스](https://www.aitimes.com/news/articleView.html?idxno=208377){:target="_blank"}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "구글 터보퀀트(TurboQuant)가 뭔가요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "터보퀀트는 구글 리서치가 공개한 AI 압축 알고리즘으로, LLM의 KV 캐시 메모리를 32비트에서 3비트로 압축하여 메모리 사용량을 6배 줄입니다. 정확도 손실이 없고 별도의 학습이나 캘리브레이션도 필요 없다는 것이 핵심 특징입니다."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "터보퀀트 때문에 삼성전자와 SK하이닉스 주가가 왜 떨어졌나요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "AI 추론에 필요한 메모리가 6배 줄어들면 GPU당 HBM 탑재량을 줄일 수 있고, 이는 HBM 수요 감소로 이어질 수 있다는 우려 때문입니다. 다만 아직 연구 논문 단계이며, 제본스 역설에 따라 효율화가 오히려 총 수요를 늘릴 수 있다는 반론도 있습니다."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "터보퀀트의 PolarQuant와 QJL은 각각 무엇인가요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "PolarQuant는 벡터를 극좌표로 변환해 데이터 분포를 예측 가능하게 만들어 최적 양자화를 적용하는 기법입니다. QJL은 1비트를 활용해 압축 후 남은 내적 추정 편향을 보정하는 오차 보정기입니다. 이 두 기법을 결합하여 3비트에서 정확도 손실 없는 압축을 달성합니다."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "터보퀀트는 이미 상용화된 기술인가요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "아닙니다. 터보퀀트는 ICLR 2026에서 발표된 연구 논문 단계이며, 구글 클라우드나 Vertex AI에 공식 통합된 것은 아닙니다. 커뮤니티에서 PyTorch 구현과 llama.cpp 통합 등이 진행되고 있지만, 실제 데이터센터 적용까지는 상당한 시간이 필요합니다."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "터보퀀트가 메모리 반도체 시장에 미치는 실제 영향은 어느 정도인가요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "터보퀀트가 줄이는 것은 KV 캐시뿐이며 모델 가중치는 별개이므로 전체 GPU 메모리를 6배 줄이는 것은 아닙니다. 또한 DeepSeek R1 때와 마찬가지로 효율화가 AI 사용량 증가로 이어져 메모리 총 수요가 오히려 늘어나는 제본스 역설 시나리오도 유력합니다."
+      }
+    }
+  ]
+}
+</script>
