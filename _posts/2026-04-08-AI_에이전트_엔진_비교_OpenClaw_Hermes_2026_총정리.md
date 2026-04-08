@@ -4,7 +4,7 @@ title: "AI 에이전트 엔진 완벽 비교 — OpenClaw, Hermes, LangGraph, Cr
 subtitle: "내 AI 비서를 만들려면 어떤 프레임워크를 골라야 할까? 2026년 최신 에이전트 엔진 10종 비교"
 share-description: "2026년 AI 에이전트 프레임워크 완벽 비교. OpenClaw, Hermes Agent, LangGraph, CrewAI, OpenAI Agents SDK, Claude Agent SDK, Mastra, Google ADK 등 10종의 특징·장단점·용도별 추천을 정리합니다."
 date: 2026-04-08T12:00:00+09:00
-lastmod: 2026-04-08T12:38:33+09:00
+lastmod: 2026-04-08T12:49:04+09:00
 author: 수수
 tags: ["AI에이전트", "OpenClaw", "Hermes", "LangGraph", "CrewAI", "OpenAI", "Claude", "Mastra", "GoogleADK", "AutoGen", "오픈소스", "프레임워크"]
 categories: ["AI"]
@@ -384,6 +384,15 @@ AI 에이전트 프레임워크의 선택은 **"최고의 엔진"이 아니라 "
 - **특정 AI 생태계**에 올인했다면 → 해당 빅테크의 **공식 SDK**
 
 어떤 엔진을 선택하든, 2026년은 AI가 "말하는 도구"에서 **"일하는 동료"**로 전환되는 원년입니다. 직접 설치하고 써보는 것이 가장 좋은 비교 방법입니다.
+
+---
+
+## 관련 포스팅
+
+- [AI 에이전트에 어떤 LLM을 써야 할까? — 2026년 클라우드 API 완벽 비교](/2026-04-08-AI_에이전트용_LLM_엔진_추천_클라우드_API_비교/)
+  - 이 포스팅의 후편 — 에이전트에 연결할 LLM 엔진 13종 가격·성능 비교
+- ["구글은 틀렸습니다, 메모리 수만 배 필요합니다" — AI 에이전트 시대의 메모리 폭발 공식](/2026-04-08-구글은_틀렸다_AI_메모리_수만배_필요_김정호교수/)
+  - AI 에이전트 시대에 메모리 수요가 폭발하는 이유 (김정호 교수)
 
 ---
 
