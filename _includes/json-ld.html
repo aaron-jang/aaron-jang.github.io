@@ -41,7 +41,7 @@
   "author": {
     "@type": "Person",
     "name": "{% if page.author %}{{ page.author }}{% else %}{{ site.author }}{% endif %}",
-    "url": "{{ site.url }}"
+    "url": "{{ site.url }}/about/"
   },
   "publisher": {
     "@type": "Organization",
@@ -50,8 +50,57 @@
       "@type": "ImageObject",
       "url": "{{ site.avatar | absolute_url }}"
     }
-  }{% if page.tags.size > 0 %},
+  },
+  "speakable": {
+    "@type": "SpeakableSpecification",
+    "cssSelector": [".blog-post h2", ".blog-post p:first-of-type", ".blog-post blockquote"]
+  },
+  "isAccessibleForFree": true{% if page.tags.size > 0 %},
   "keywords": "{{ page.tags | join: ', ' }}"{% endif %}
+}
+</script>
+{% endif %}
+
+{% if page.faq %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {% for item in page.faq %}
+    {
+      "@type": "Question",
+      "name": "{{ item.question | escape }}",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "{{ item.answer | escape }}"
+      }
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ]
+}
+</script>
+{% endif %}
+
+{% if page.howto %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "{{ page.howto.name | default: page.title | escape }}",
+  "description": "{{ page.howto.description | default: page.subtitle | escape }}",
+  {% if page.howto.totalTime %}"totalTime": "{{ page.howto.totalTime }}",{% endif %}
+  "step": [
+    {% for step in page.howto.steps %}
+    {
+      "@type": "HowToStep",
+      "position": {{ forloop.index }},
+      "name": "{{ step.name | escape }}",
+      "text": "{{ step.text | escape }}"{% if step.image %},
+      "image": "{{ step.image | absolute_url }}"{% endif %}
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ]
 }
 </script>
 {% endif %}
@@ -64,9 +113,15 @@
   "name": "{{ site.title }}",
   "url": "{{ site.url }}",
   "description": "{{ site.rss-description | escape }}",
+  "inLanguage": "ko",
   "author": {
     "@type": "Person",
     "name": "{{ site.author }}"
+  },
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "{{ site.url }}/?q={search_term_string}",
+    "query-input": "required name=search_term_string"
   }
 }
 </script>
@@ -84,6 +139,20 @@
   "name": "{{ page.title | escape }}",
   "description": "{% if page.subtitle %}{{ page.subtitle | escape }}{% endif %}",
   "url": "{{ page.url | absolute_url }}"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "{{ site.author }}",
+  "url": "{{ site.url }}/about/",
+  "sameAs": [
+    {% if site.social-network-links.email %}"mailto:{{ site.social-network-links.email }}"{% endif %}
+  ],
+  "jobTitle": "Blogger",
+  "knowsAbout": ["IT", "Technology", "Finance", "Lifestyle"],
+  "knowsLanguage": ["ko", "en"]
 }
 </script>
 {% endif %}

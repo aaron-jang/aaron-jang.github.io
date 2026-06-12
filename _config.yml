@@ -131,8 +131,8 @@ edit_page_button: false
 # Allow sub-menu items to be longer than the top-level menu
 navbar-var-length: true
 
-# The keywords to associate with your website, for SEO purposes
-#keywords: "my,list,of,keywords"
+# The keywords to associate with your website, for SEO/GEO purposes
+keywords: "수수라이프,IT,테크,재테크,생활정보,가이드,리뷰,블로그,soosoo"
 
 ######################################
 # --- Colours / background image --- #

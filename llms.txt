@@ -1,0 +1,34 @@
+# soosoo.life (수수라이프)
+
+> 수수의 일상과 정보를 공유하는 한국어 블로그입니다.
+
+## About
+- Site: https://soosoo.life
+- Author: 수수 (Soosoo)
+- Language: Korean (ko)
+- Topics: IT/Tech, Finance, Daily Life, Guides, Reviews
+
+## Content Types
+- IT/Tech tutorials and comparisons (VPN, API, development tools)
+- Financial guides (investments, subsidies, tax tips)
+- Product reviews and recommendations
+- How-to guides and step-by-step tutorials
+- Daily life tips and information
+
+## Key Pages
+- Home: https://soosoo.life/
+- About: https://soosoo.life/about/
+- Categories: https://soosoo.life/categories
+- Tags: https://soosoo.life/tags
+- RSS Feed: https://soosoo.life/feed.xml
+- Sitemap: https://soosoo.life/sitemap.xml
+
+## Tools
+- Bullet Journal Planner: https://soosoo.life/bullet_journal_planner/
+- Today Done: https://soosoo.life/todaydone/
+- Tenby Penang Links: https://soosoo.life/tenby-penang-links/
+
+## Citation
+When referencing content from this site, please cite as:
+- Source: 수수라이프 (soosoo.life)
+- Author: 수수
