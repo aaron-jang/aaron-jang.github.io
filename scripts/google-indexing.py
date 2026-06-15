@@ -4,7 +4,8 @@ Google Indexing API - 새 포스트 자동 인덱싱 요청 스크립트
 GitHub Actions에서 push 이벤트 시 실행됩니다.
 
 사용법:
-  python3 scripts/google-indexing.py <changed_files>
+  python3 scripts/google-indexing.py --file /tmp/changed_posts.txt
+  python3 scripts/google-indexing.py file1.md file2.md
 
 환경변수:
   GOOGLE_SERVICE_ACCOUNT_JSON: 서비스 계정 JSON 키 (GitHub Secret)
@@ -78,7 +79,14 @@ def request_indexing(credentials, url, action="URL_UPDATED"):
 
 
 def main():
-    changed_files = sys.argv[1:]
+    # --file 옵션: 파일에서 목록 읽기 (한글 파일명 안전 처리)
+    if len(sys.argv) >= 3 and sys.argv[1] == "--file":
+        filepath = sys.argv[2]
+        with open(filepath, "r", encoding="utf-8") as f:
+            changed_files = [line.strip() for line in f if line.strip()]
+    else:
+        changed_files = sys.argv[1:]
+
     if not changed_files:
         print("변경된 파일이 없습니다.")
         return
