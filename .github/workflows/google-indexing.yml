@@ -1,0 +1,50 @@
+name: Google Indexing API
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '_posts/**'
+
+jobs:
+  index:
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push'
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: 변경된 포스트 파일 감지
+        id: changed
+        run: |
+          FILES=$(git diff --name-only --diff-filter=ACMR HEAD~1 HEAD -- '_posts/*.md' || true)
+          echo "files<<EOF" >> $GITHUB_OUTPUT
+          echo "$FILES" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+          if [ -z "$FILES" ]; then
+            echo "has_posts=false" >> $GITHUB_OUTPUT
+          else
+            echo "has_posts=true" >> $GITHUB_OUTPUT
+            echo "변경된 포스트:"
+            echo "$FILES"
+          fi
+
+      - name: Python 세팅
+        if: steps.changed.outputs.has_posts == 'true'
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: 의존성 설치
+        if: steps.changed.outputs.has_posts == 'true'
+        run: pip install google-auth
+
+      - name: Google Indexing API 요청
+        if: steps.changed.outputs.has_posts == 'true'
+        env:
+          GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
+        run: |
+          python3 scripts/google-indexing.py ${{ steps.changed.outputs.files }}
