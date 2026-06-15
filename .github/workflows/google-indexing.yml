@@ -20,16 +20,13 @@ jobs:
       - name: 변경된 포스트 파일 감지
         id: changed
         run: |
-          FILES=$(git diff --name-only --diff-filter=ACMR HEAD~1 HEAD -- '_posts/*.md' || true)
-          echo "files<<EOF" >> $GITHUB_OUTPUT
-          echo "$FILES" >> $GITHUB_OUTPUT
-          echo "EOF" >> $GITHUB_OUTPUT
-          if [ -z "$FILES" ]; then
-            echo "has_posts=false" >> $GITHUB_OUTPUT
-          else
+          git diff --name-only --diff-filter=ACMR HEAD~1 HEAD -- '_posts/*.md' > /tmp/changed_posts.txt || true
+          if [ -s /tmp/changed_posts.txt ]; then
             echo "has_posts=true" >> $GITHUB_OUTPUT
             echo "변경된 포스트:"
-            echo "$FILES"
+            cat /tmp/changed_posts.txt
+          else
+            echo "has_posts=false" >> $GITHUB_OUTPUT
           fi
 
       - name: Python 세팅
@@ -47,4 +44,4 @@ jobs:
         env:
           GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
         run: |
-          python3 scripts/google-indexing.py ${{ steps.changed.outputs.files }}
+          cat /tmp/changed_posts.txt | xargs python3 scripts/google-indexing.py
