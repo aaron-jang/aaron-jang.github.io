@@ -40,7 +40,7 @@ jobs:
 
       - name: 의존성 설치
         if: steps.changed.outputs.has_posts == 'true'
-        run: pip install google-auth
+        run: pip install google-auth requests
 
       - name: Google Indexing API 요청
         if: steps.changed.outputs.has_posts == 'true'
