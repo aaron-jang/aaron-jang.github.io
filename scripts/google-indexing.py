@@ -15,6 +15,7 @@ import json
 import os
 import re
 import sys
+import urllib.parse
 
 import google.auth.transport.requests
 from google.oauth2 import service_account
@@ -46,7 +47,9 @@ def extract_post_urls(changed_files):
         match = re.match(r"_posts/(\d{4})-(\d{2})-(\d{2})-(.+)\.md$", filepath)
         if match:
             year, month, day, slug = match.groups()
-            url = f"{SITE_URL}/{year}/{month}/{day}/{slug}/"
+            # permalink 형식: /:year-:month-:day-:title/ (sitemap canonical과 동일)
+            slug_enc = urllib.parse.quote(slug, safe="")
+            url = f"{SITE_URL}/{year}-{month}-{day}-{slug_enc}/"
             urls.append(url)
     return urls
 

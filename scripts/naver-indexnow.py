@@ -40,8 +40,9 @@ def extract_post_urls(changed_files):
         if match:
             year, month, day, slug = match.groups()
             # 슬러그(한글 포함)를 안전하게 URL 인코딩
+            # permalink 형식: /:year-:month-:day-:title/ (sitemap canonical과 동일)
             slug_enc = urllib.parse.quote(slug, safe="")
-            url = f"{SITE_URL}/{year}/{month}/{day}/{slug_enc}/"
+            url = f"{SITE_URL}/{year}-{month}-{day}-{slug_enc}/"
             urls.append(url)
     return urls
 
