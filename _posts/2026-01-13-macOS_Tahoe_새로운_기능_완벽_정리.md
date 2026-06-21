@@ -3,9 +3,9 @@ layout: post
 title: macOS Tahoe 완벽 정리 - 새로운 기능과 업데이트 총정리
 subtitle: Liquid Glass 디자인부터 Apple Intelligence까지, 달라진 모든 것
 date: 2026-01-13T00:00:00+09:00
-lastmod: 2026-02-26T23:19:55+09:00
+lastmod: 2026-06-22T00:32:56+09:00
 author: 수수
-tags: ["macOS", "Tahoe", "Apple", "업데이트", "리뷰", "Apple Intelligence"]
+tags: ["macOS", "Tahoe", "Apple", "업데이트", "리뷰", "AppleIntelligence"]
 categories: ["가젯"]
 cover-img: /assets/img/macos-tahoe-hero.jpg
 thumbnail-img: /assets/img/macos-tahoe-hero.jpg

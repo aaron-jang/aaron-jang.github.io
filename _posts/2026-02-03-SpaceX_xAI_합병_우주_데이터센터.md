@@ -3,9 +3,9 @@ layout: post
 title: "SpaceX-xAI 합병 공식 발표 - 1조 달러 우주 AI 제국의 탄생"
 subtitle: "머스크, AI의 미래는 우주에 있다며 우주 데이터센터 구상 공개"
 date: 2026-02-03T00:00:00+09:00
-lastmod: 2026-04-13T12:33:07+09:00
+lastmod: 2026-06-22T00:32:56+09:00
 author: 수수
-tags: ["SpaceX", "xAI", "일론머스크", "합병", "우주", "AI", "데이터센터", "IPO", "Tesla", "X", "트위터"]
+tags: ["SpaceX", "xAI", "일론머스크", "합병", "우주", "AI", "데이터센터", "IPO", "테슬라", "X", "트위터"]
 categories: ["AI"]
 cover-img: /assets/images/spacex_xai_merger.jpg
 thumbnail-img: /assets/images/spacex_xai_merger.jpg

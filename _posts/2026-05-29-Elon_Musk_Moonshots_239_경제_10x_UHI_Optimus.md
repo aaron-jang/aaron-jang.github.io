@@ -4,9 +4,9 @@ title: "일론 머스크 — '경제는 10년 내 10배가 된다' | Moonshots #
 subtitle: "Hard takeoff은 이미 시작됐다 — Optimus 3 양산, UHI, 다이슨 스웜, 달 매스드라이버, 그리고 *money가 무의미해지는 미래*"
 share-description: "피터 디아만디스 Moonshots #239에 출연한 일론 머스크의 발언을 정리합니다. 재귀적 자기개선 'hard takeoff' 현재진행형, 10년 내 글로벌 경제 10배, Optimus 3 2026년 여름 양산, UHI와 디플레이션, 머스크가 인용한 *Iain M. Banks의 Culture* 사회까지."
 date: 2026-05-29T01:00:00+09:00
-lastmod: 2026-05-29T10:10:47+09:00
+lastmod: 2026-06-22T00:32:56+09:00
 author: 수수
-tags: ["일론머스크", "ElonMusk", "Moonshots", "PeterDiamandis", "SpaceX", "xAI", "Optimus", "Optimus3", "Grok", "Grok420", "AGI", "ASI", "하드테이크오프", "hardtakeoff", "재귀적자기개선", "UHI", "보편적고소득", "10배경제", "디플레이션", "다이슨스웜", "DysonSwarm", "매스드라이버", "GerardONeill", "Tesla", "기가팩토리", "특이점", "Singularity", "IainBanks", "Culture", "Colossal", "BenLamm", "매머드", "JurassicPark"]
+tags: ["일론머스크", "Moonshots", "PeterDiamandis", "SpaceX", "xAI", "Optimus", "Optimus3", "Grok", "Grok420", "AGI", "ASI", "하드테이크오프", "hardtakeoff", "재귀적자기개선", "UHI", "보편적고소득", "10배경제", "디플레이션", "다이슨스웜", "DysonSwarm", "매스드라이버", "GerardONeill", "테슬라", "기가팩토리", "특이점", "Singularity", "IainBanks", "Culture", "Colossal", "BenLamm", "매머드", "JurassicPark"]
 categories: ["AI"]
 ---
 
