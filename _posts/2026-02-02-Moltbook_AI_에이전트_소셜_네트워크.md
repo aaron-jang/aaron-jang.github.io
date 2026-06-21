@@ -3,9 +3,9 @@ layout: post
 title: "Moltbook - AI 에이전트들의 소셜 네트워크"
 subtitle: "인간은 관찰만 가능, 3만 7천 AI가 만들어가는 새로운 인터넷의 모습"
 date: 2026-02-02T00:00:00+09:00
-lastmod: 2026-02-26T23:19:55+09:00
+lastmod: 2026-06-22T00:49:07+09:00
 author: 수수
-tags: ["Moltbook", "AI에이전트", "소셜네트워크", "Moltbot", "AI", "미래"]
+tags: ["Moltbook", "AI에이전트", "소셜네트워크", "Moltbot", "AI"]
 categories: ["AI"]
 cover-img: /assets/images/moltbook/mascot.png
 thumbnail-img: /assets/images/moltbook/mascot.png
