@@ -9,6 +9,10 @@
 # --- Required options --- #
 ############################
 
+# 테마: Beautiful Jekyll 을 remote_theme 으로 사용
+# master 브랜치의 특정 커밋에 고정 (2026-05-25). 업데이트는 이 SHA만 교체.
+remote_theme: daattali/beautiful-jekyll@d1eb82a5ecac
+
 # Name of website
 title: 수수라이프
 
@@ -307,5 +311,6 @@ exclude:
 
 plugins:
   - jekyll-paginate
+  - jekyll-remote-theme
   # jekyll-sitemap disabled - using custom sitemap.xml
 

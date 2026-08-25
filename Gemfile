@@ -5,6 +5,7 @@ gem "jekyll", "~> 3.9"
 gem "jekyll-paginate"
 gem "jekyll-sitemap"
 gem "kramdown-parser-gfm"
+gem "jekyll-remote-theme"
 
 # Ruby 3.4+ 호환성을 위한 라이브러리
 gem "base64"
