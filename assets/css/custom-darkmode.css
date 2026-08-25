@@ -267,3 +267,30 @@ button.darkmode-toggle.nav-link:focus-visible {
 .kofi-badge-light { display: inline; }
 [data-theme="dark"] .kofi-badge-dark { display: inline; }
 [data-theme="dark"] .kofi-badge-light { display: none; }
+
+/* ── FAQ 블록 (post.html의 page.faq 렌더링) ───────────────── */
+.blog-post-faq {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border-left: 4px solid var(--link-col, #2196F3);
+}
+.blog-post-faq h2 { margin-top: 0; }
+.blog-post-faq details { margin-bottom: 1rem; }
+.blog-post-faq summary {
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1.05rem;
+  padding: 0.5rem 0;
+}
+.blog-post-faq details p { padding: 0.5rem 0 0 1rem; margin: 0; }
+
+[data-theme="dark"] .blog-post-faq {
+  background: #252525;
+  border-left-color: var(--link-col, #64b5f6);
+}
+[data-theme="dark"] .blog-post-faq,
+[data-theme="dark"] .blog-post-faq h2,
+[data-theme="dark"] .blog-post-faq summary,
+[data-theme="dark"] .blog-post-faq p { color: var(--text-col, #e0e0e0); }
