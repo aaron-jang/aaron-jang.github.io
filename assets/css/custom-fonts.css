@@ -1,11 +1,7 @@
-/* Pretendard 폰트 - 최적화된 로딩 */
-@font-face {
-  font-family: 'Pretendard Variable';
-  font-weight: 45 920;
-  font-style: normal;
-  font-display: swap;
-  src: url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/woff2/PretendardVariable.woff2') format('woff2-variations');
-}
+/* Pretendard 폰트
+   폰트 파일은 _layouts/base.html 의 common-ext-css 에서 <link> 로 불러온다.
+   (@import 는 CSS 로딩이 직렬화되어 렌더링이 늦어지므로 사용하지 않음)
+   dynamic-subset 방식이라 페이지에 실제로 쓰인 글자 조각만 전송된다. */
 
 /* 폰트 변수 덮어쓰기 */
 :root {
