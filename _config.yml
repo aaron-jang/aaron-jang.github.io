@@ -185,6 +185,9 @@ site-js:
 # Fill in your Google Analytics tag ID (or "Measurement ID") to track your website usage
 gtag: "G-FVWYZ3MFW9"
 
+# 네이버 애널리틱스 (발급ID)
+naver-analytics: "187319d03136db0"
+
 # Fill in your Cloudflare Analytics beacon token to track your website using Cloudflare Analytics
 #cloudflare_analytics: ""
 
