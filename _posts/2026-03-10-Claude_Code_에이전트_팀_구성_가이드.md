@@ -4,7 +4,7 @@ title: "Claude Code 에이전트 팀 — AI 개발자 여러 명을 동시에 �
 subtitle: "서브에이전트와 에이전트 팀, 두 가지 방식으로 병렬 AI 개발 환경 만들기"
 share-description: "Claude Code의 커스텀 서브에이전트와 에이전트 팀 기능을 활용해 AI 개발자 여러 명이 동시에 일하는 환경을 구성하는 방법을 총정리합니다. 설정법, 실전 예시, 비용까지."
 date: 2026-03-10T13:00:00+09:00
-lastmod: 2026-03-13T08:52:13+09:00
+lastmod: 2026-08-30T23:37:00+09:00
 author: 수수
 tags: ["ClaudeCode", "AI", "에이전트", "멀티에이전트", "서브에이전트", "AgentTeams", "개발도구", "바이브코딩", "Anthropic"]
 categories: ["AI"]
@@ -480,47 +480,6 @@ Claude Code의 멀티에이전트 시스템을 정리하면 이렇습니다.
 이상, 수수였습니다. 궁금한 점은 댓글로 남겨주세요!
 
 ---
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Claude Code 서브에이전트와 에이전트 팀의 차이는 무엇인가요?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "서브에이전트는 메인 세션 안에서 작업을 위임하고 결과만 돌려받는 구조입니다. 에이전트 팀은 여러 독립된 Claude Code 세션이 팀 리더 아래에서 공유 태스크 리스트와 메시지 시스템을 통해 직접 소통하며 협업합니다. 서브에이전트는 토큰 비용이 낮고, 에이전트 팀은 약 2.5배 비용이 들지만 2배 빠릅니다."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Claude Code 에이전트 팀을 활성화하는 방법은?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "에이전트 팀은 실험적 기능으로, settings.json에 { \"env\": { \"CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS\": \"1\" } }을 추가하거나, 환경 변수로 export CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1을 설정하면 활성화됩니다."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "커스텀 서브에이전트는 어떻게 만드나요?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Claude Code에서 /agents 명령어로 대화형 생성하거나, .claude/agents/ 폴더에 YAML 프론트매터가 포함된 마크다운 파일을 직접 만들면 됩니다. name, description은 필수이며, tools, model, memory 등을 설정할 수 있습니다. 프로젝트 레벨(.claude/agents/)은 Git으로 팀과 공유 가능합니다."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "에이전트 팀의 적정 인원은 몇 명인가요?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "대부분의 작업에서 3~5명이 최적입니다. 팀원당 5~6개 태스크를 할당하면 생산성과 조율 비용의 균형이 맞습니다. 팀원이 많을수록 토큰 비용이 선형으로 증가하고 조율 오버헤드도 커지므로, 작업이 실제로 병렬화 가능한 경우에만 인원을 늘리는 것이 좋습니다."
-      }
-    }
-  ]
-}
-</script>
 
 ## 참고 자료
 

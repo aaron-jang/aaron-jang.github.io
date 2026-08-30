@@ -4,7 +4,7 @@ title: "텔레그램으로 Claude Code 원격 사용하기 완벽 가이드"
 subtitle: "스마트폰에서 코딩 에이전트를 쓴다고? — claude-code-telegram 설치부터 실전 활용까지"
 share-description: "텔레그램 봇으로 Claude Code를 원격 제어하는 방법을 정리합니다. 설치, 설정, 보안, 실전 활용 팁까지 한 번에 알아보세요."
 date: 2026-03-23T09:00:00+09:00
-lastmod: 2026-03-25T10:28:30+09:00
+lastmod: 2026-08-30T23:37:00+09:00
 author: 수수
 tags: ["ClaudeCode", "텔레그램", "AI코딩", "원격개발", "개발도구", "Python", "자동화", "봇"]
 categories: ["개발"]
@@ -454,26 +454,6 @@ make remote-stop     # 세션 중지
 
 ---
 
-## 자주 묻는 질문
-
-### Q. Claude Code CLI 없이 API 키만으로 쓸 수 있나요?
-
-네. `ANTHROPIC_API_KEY`를 설정하면 CLI 없이도 사용 가능합니다. Claude Code SDK를 직접 사용합니다.
-
-### Q. 여러 프로젝트를 동시에 다룰 수 있나요?
-
-`/repo` 명령으로 작업 디렉토리를 변경할 수 있습니다. 단, `APPROVED_DIRECTORY` 하위 폴더여야 합니다. 또한 Project Thread Mode(`ENABLE_PROJECT_THREADS=true`)를 사용하면 텔레그램 그룹의 포럼 토픽별로 프로젝트를 분리할 수 있습니다.
-
-### Q. 다른 사람과 함께 사용할 수 있나요?
-
-`ALLOWED_USERS`에 여러 ID를 추가하면 됩니다. 사용자별로 세션과 비용이 분리 추적됩니다.
-
-### Q. MCP 서버도 연결할 수 있나요?
-
-네. `ENABLE_MCP=true`로 설정하고 `MCP_CONFIG_PATH`에 설정 파일 경로를 지정하면 됩니다.
-
----
-
 ## 마무리
 
 claude-code-telegram은 **"어디서든 Claude Code를"** 이라는 단순한 아이디어를 꽤 완성도 높게 구현한 프로젝트입니다.
@@ -487,52 +467,3 @@ claude-code-telegram은 **"어디서든 Claude Code를"** 이라는 단순한 �
 보안 레이어가 잘 되어 있긴 하지만, **서버에서 코드를 실행하는 봇**이라는 점은 항상 인지하고 `APPROVED_DIRECTORY`와 `ALLOWED_USERS` 설정을 꼼꼼히 확인하세요.
 
 프로젝트 GitHub: [RichardAtCT/claude-code-telegram](https://github.com/RichardAtCT/claude-code-telegram)
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "claude-code-telegram이란 무엇인가요?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "claude-code-telegram은 Anthropic의 AI 코딩 에이전트인 Claude Code를 텔레그램 봇으로 원격 제어할 수 있게 해주는 오픈소스 프로젝트입니다. 스마트폰에서 대화하듯 코드를 읽고, 수정하고, 실행할 수 있습니다."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "텔레그램으로 Claude Code를 사용하려면 무엇이 필요한가요?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Python 3.11 이상, Claude Code CLI(또는 ANTHROPIC_API_KEY), 텔레그램 봇 토큰, 본인의 텔레그램 사용자 ID가 필요합니다. 설치는 uv 또는 pip를 통해 간단히 할 수 있습니다."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "claude-code-telegram의 보안은 안전한가요?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "사용자 화이트리스트, 디렉토리 샌드박스, 속도 제한, 위험 명령 차단, 감사 로깅 등 5중 보안 레이어가 적용되어 있습니다. ALLOWED_USERS와 APPROVED_DIRECTORY 설정을 반드시 확인하고 최소 권한 원칙을 적용하세요."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Agentic 모드와 Classic 모드의 차이점은 무엇인가요?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Agentic 모드는 자연어로 대화하듯 사용하는 기본 모드이고, Classic 모드는 터미널처럼 명령어 기반으로 세밀한 제어가 가능한 모드입니다. 대부분의 사용자에게는 Agentic 모드가 권장됩니다."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "claude-code-telegram 사용 비용은 얼마나 드나요?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Claude Code API 호출 비용이 발생하며, 사용자별 비용 한도(CLAUDE_MAX_COST_PER_USER)와 요청당 비용 한도(CLAUDE_MAX_COST_PER_REQUEST)를 설정하여 과금을 제한할 수 있습니다. /status 명령으로 현재 사용량을 확인할 수 있습니다."
-      }
-    }
-  ]
-}
-</script>

@@ -4,7 +4,7 @@ title: "외국어 빨리 배우는 법: Fluent Forever 핵심 정리"
 subtitle: "발음 먼저·번역 금지·간격 반복 — 언어학자가 검증한 가브리엘 와이너의 3원칙"
 share-description: "베스트셀러 Fluent Forever(가브리엘 와이너)의 핵심을 정리했습니다. 발음 우선 학습, 번역 없이 이미지로 기억하기, 간격 반복 시스템(SRS)까지 — 언어학자 리뷰를 바탕으로 실전에 바로 쓸 수 있는 외국어 학습법을 소개합니다."
 date: 2026-03-18T12:00:00+09:00
-lastmod: 2026-03-18T16:11:53+09:00
+lastmod: 2026-08-30T23:37:00+09:00
 author: 수수
 tags: ["외국어", "영어공부", "언어학습", "FluentForever", "SRS", "간격반복", "발음", "어휘", "문법", "가브리엘와이너"]
 categories: ["생활"]
@@ -242,54 +242,5 @@ share-img: /assets/images/fluent_forever_share.jpg
 - [Fluent Forever — Gabriel Wyner 공식 사이트](https://fluent-forever.com/)
 - [Anki — 무료 SRS 플래시카드 앱](https://apps.ankiweb.net/)
 - [원본 영상 — Julesy, "This book changed the way I think about language learning"](https://www.youtube.com/watch?v=jC-0KNtkCkE)
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Fluent Forever 책의 핵심 원칙은 무엇인가요?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "세 가지 핵심 원칙이 있습니다. 첫째, 발음을 먼저 배울 것. 둘째, 모국어로 번역하지 말고 이미지와 경험으로 기억할 것. 셋째, 간격 반복 시스템(SRS)을 활용해 잊을 타이밍에 복습할 것입니다."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "SRS(간격 반복 시스템)는 꼭 써야 하나요?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "필수는 아닙니다. SRS 없이도 유창해진 사례가 있습니다. 다만 빠르게 배우고 장기 기억을 유지하고 싶다면 효과적인 도구입니다. 대표적인 앱으로 Anki가 있으며 무료로 사용할 수 있습니다."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "어른도 아이처럼 외국어를 배울 수 있나요?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "네, 가능합니다. 아이가 언어를 잘 배우는 이유는 뇌가 특별해서가 아니라 24시간 무료 언어 튜터(부모)가 이해 가능한 입력을 끊임없이 제공하기 때문입니다. 어른도 충분한 입력과 올바른 방법을 사용하면 효율적으로 배울 수 있습니다."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "단어는 어떤 순서로 외워야 하나요?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "빈도수가 높은 단어부터 배우는 것이 가장 효율적입니다. Fluent Forever에서는 625개 필수 단어 리스트를 제공하며, 이 단어들은 거의 모든 언어에 존재하는 고빈도 단어입니다. 교재처럼 주제별로 한꺼번에 외우기보다, 실제로 자주 쓰는 단어를 우선 학습하세요."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "한 번 배운 외국어를 절대 안 잊을 수 있나요?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "SRS가 장기 기억에 도움을 주지만, 언어를 꾸준히 사용하지 않으면 결국 잊게 됩니다. 여러 언어를 유지하려면 지속적인 노출과 사용이 필수입니다. 완전히 안 잊는 시스템은 현실적으로 존재하지 않습니다."
-      }
-    }
-  ]
-}
-</script>
 
 *면책 조항: 이 글은 YouTube 영상 리뷰를 바탕으로 작성된 정보 제공 목적의 콘텐츠입니다. 언어 학습 효과는 개인의 상황, 목표 언어, 학습 환경에 따라 달라질 수 있습니다.*

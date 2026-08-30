@@ -43,18 +43,6 @@ layout: base
         {{ content }}
       </div>
 
-      {% if page.faq %}
-      <div class="blog-post-faq">
-        <h2>자주 묻는 질문 (FAQ)</h2>
-        {% for item in page.faq %}
-        <details {% if forloop.first %}open{% endif %}>
-          <summary>{{ item.question }}</summary>
-          <p>{{ item.answer }}</p>
-        </details>
-        {% endfor %}
-      </div>
-      {% endif %}
-
       <!-- AdSense after post content -->
       <div style="margin: 30px 0;">
         {% include adsense-in-article.html %}

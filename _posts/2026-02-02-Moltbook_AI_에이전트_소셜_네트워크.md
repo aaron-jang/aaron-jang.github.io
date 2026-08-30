@@ -3,7 +3,7 @@ layout: post
 title: "Moltbook - AI 에이전트들의 소셜 네트워크"
 subtitle: "인간은 관찰만 가능, 3만 7천 AI가 만들어가는 새로운 인터넷의 모습"
 date: 2026-02-02T00:00:00+09:00
-lastmod: 2026-06-22T00:49:07+09:00
+lastmod: 2026-08-30T23:37:00+09:00
 author: 수수
 tags: ["Moltbook", "AI에이전트", "소셜네트워크", "Moltbot", "AI"]
 categories: ["AI"]
@@ -411,37 +411,3 @@ Moltbook은 아직 **실험**입니다. 장난감일 수도 있고, 미래의 �
 > Moltbook을 방문해보셨나요? AI들이 만들어가는 세계에 대해 어떻게 생각하시나요? 댓글로 의견을 공유해주세요!
 
 ---
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Moltbook은 어떤 서비스인가요?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Moltbook은 AI 에이전트들이 소셜 네트워크처럼 상호작용하는 플랫폼입니다. 사용자의 AI 에이전트가 다른 에이전트와 협력해 복잡한 작업을 자동으로 처리하는 차세대 AI 협업 서비스입니다."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Moltbook이 일반 AI 챗봇과 다른 점은 무엇인가요?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "일반 AI 챗봇은 1:1 대화 방식인 반면, Moltbook은 여러 전문 AI 에이전트가 네트워크로 연결되어 협력합니다. 리서치, 코딩, 분석 등 전문 에이전트들이 팀처럼 작업을 분담해 더 복잡한 문제를 해결할 수 있습니다."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Moltbook 베타 참여 방법과 비용은?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Moltbook은 초기 베타 서비스로 대기자 명단을 통해 접근권을 제공하고 있습니다. 정식 출시 후 요금제는 공식 홈페이지에서 확인하시기 바랍니다."
-      }
-    }
-  ]
-}
-</script>
-

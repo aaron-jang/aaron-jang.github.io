@@ -3,7 +3,7 @@ layout: post
 title: macOS Tahoe 완벽 정리 - 새로운 기능과 업데이트 총정리
 subtitle: Liquid Glass 디자인부터 Apple Intelligence까지, 달라진 모든 것
 date: 2026-01-13T00:00:00+09:00
-lastmod: 2026-06-22T00:49:07+09:00
+lastmod: 2026-08-30T23:37:00+09:00
 author: 수수
 tags: ["macOS", "Tahoe", "Apple", "업데이트", "AppleIntelligence"]
 categories: ["가젯"]
@@ -362,37 +362,3 @@ macOS Tahoe는 **디자인, 생산성, 지능**이라는 세 가지 축을 중�
 업그레이드 전 반드시 백업을 진행하시기 바랍니다.
 
 ---
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "macOS Tahoe의 주요 새 기능은 무엇인가요?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "macOS Tahoe는 Apple Intelligence 기능 확장, 개선된 Siri, 더 자연스러운 AI 기반 작업 자동화가 핵심입니다. 또한 새로운 디자인 언어와 향상된 개인정보 보호 기능이 포함되었습니다."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "macOS Tahoe는 어떤 Mac에서 지원되나요?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "macOS Tahoe는 Apple Silicon(M1 이상) Mac과 일부 인텔 기반 Mac을 지원합니다. Apple Intelligence 기능은 M1 이상의 칩을 탑재한 기기에서만 완전히 지원됩니다. 지원 목록은 애플 공식 홈페이지에서 확인할 수 있습니다."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "macOS Tahoe로 업그레이드해도 안전한가요?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "메이저 OS 업그레이드는 중요 작업 전 Time Machine으로 백업 후 진행하는 것을 권장합니다. 출시 후 1~2개월 내 업그레이드하면 초기 버그 수정 업데이트를 통해 더 안정적인 환경을 경험할 수 있습니다."
-      }
-    }
-  ]
-}
-</script>
-

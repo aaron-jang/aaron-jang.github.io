@@ -3,7 +3,7 @@ layout: post
 title: "GitHub Pages + Porkbun + Cloudflare 설정 가이드"
 subtitle: 커스텀 도메인 블로그에 Cloudflare CDN과 보안을 추가하는 방법
 date: 2026-03-01T12:00:00+09:00
-lastmod: 2026-03-06T20:15:13+09:00
+lastmod: 2026-08-30T23:37:00+09:00
 author: 수수
 tags: ["GitHub Pages", "Cloudflare", "Porkbun", "CDN", "DNS", "SSL", "커스텀도메인", "블로그"]
 categories: ["개발"]
@@ -483,52 +483,3 @@ cf-cache-status: HIT  (또는 MISS, DYNAMIC)
 DNS 설정 변경 시 기존 서비스 접근에 영향을 줄 수 있으니 신중하게 진행하세요.
 
 ---
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "GitHub Pages에 Cloudflare를 추가하면 비용이 드나요?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "아니요. Cloudflare Free 플랜으로 CDN, DDoS 방어, WAF, SSL, 성능 최적화 기능을 무료로 사용할 수 있습니다. GitHub Pages와 Porkbun 도메인도 무료(도메인 등록비 제외)이므로 추가 비용 없이 전문적인 웹 인프라를 구성할 수 있습니다."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Cloudflare SSL 모드는 무엇을 선택해야 하나요?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Full (Strict) 모드를 권장합니다. GitHub Pages는 Let's Encrypt를 통해 유효한 SSL 인증서를 제공하므로 Full (Strict) 모드를 사용할 수 있습니다. Flexible 모드를 사용하면 리다이렉트 루프(ERR_TOO_MANY_REDIRECTS)가 발생할 수 있으니 반드시 Full (Strict)를 선택하세요."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "네임서버 변경 후 사이트에 접속이 안 되면 어떻게 하나요?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "네임서버 변경은 전파(propagation)에 시간이 걸립니다. 보통 수 분에서 최대 24시간까지 소요될 수 있습니다. Cloudflare 대시보드에서 'Check nameservers' 버튼으로 상태를 확인하고, dig 명령어로 DNS 전파 여부를 확인할 수 있습니다. 전파가 완료될 때까지 기다려주세요."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Cloudflare를 추가하면 GitHub Pages의 HTTPS가 깨지나요?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "아니요. Cloudflare를 Proxied 모드로 설정하면 SSL이 이중으로 적용됩니다(브라우저↔Cloudflare, Cloudflare↔GitHub Pages). Full (Strict) 모드를 사용하면 양쪽 모두 유효한 인증서로 암호화됩니다. 다만 Cloudflare 추가 직후 GitHub Pages에서 인증서 재발급이 필요할 수 있으니, 문제가 있으면 일시적으로 DNS only 모드로 전환 후 인증서 발급을 기다리세요."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Cloudflare에서 Porkbun으로 다시 되돌릴 수 있나요?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "네, 언제든지 가능합니다. Porkbun 대시보드에서 네임서버를 원래 Porkbun 네임서버(curitiba.ns.porkbun.com 등)로 되돌리고, Porkbun DNS에서 GitHub Pages A/AAAA 레코드를 다시 설정하면 됩니다. 되돌리는 과정도 네임서버 전파 시간이 필요합니다."
-      }
-    }
-  ]
-}
-</script>

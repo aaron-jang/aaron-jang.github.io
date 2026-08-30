@@ -4,7 +4,7 @@ title: "한국투자증권 오픈API(KIS Developers) 완벽 가이드 — 국내
 subtitle: "계좌 개설부터 API 키 발급, Python 자동매매, 실시간 시세까지 한 번에 정리"
 share-description: "한국투자증권 KIS Developers 오픈API의 가입 절차, 인증 방식, 주요 기능, Python 라이브러리, 증권사 API 비교까지. REST API로 주식 자동매매를 시작하는 완벽 가이드."
 date: 2026-03-25T18:00:00+09:00
-lastmod: 2026-03-25T18:00:00+09:00
+lastmod: 2026-08-30T23:37:00+09:00
 author: 수수
 tags: ["한국투자증권", "KIS Developers", "오픈API", "자동매매", "Python", "REST API", "주식API", "시스템트레이딩", "TQQQ", "해외주식"]
 categories: ["투자"]
@@ -387,52 +387,3 @@ MCP 프로토콜을 통해 **Claude나 ChatGPT**에게 "삼성전자 현재가 �
 다만 API를 사용한 자동매매는 **버그 한 줄이 실제 손실**로 이어질 수 있습니다. 반드시 모의투자에서 충분히 테스트하고, 주문 로직에는 안전장치(최대 주문 금액 제한, 비정상 체결 알림 등)를 넣어두세요.
 
 > **투자에 대한 최종 판단과 책임은 투자자 본인에게 있습니다. 이 글은 정보 제공 목적이며 특정 투자를 권유하지 않습니다.**
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "한국투자증권 KIS Developers API는 맥북이나 리눅스에서도 사용할 수 있나요?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "네, KIS Developers는 국내 유일의 순수 REST API 기반 증권사 플랫폼으로 OS 제약이 없습니다. macOS, Linux, 클라우드 서버(AWS·GCP·Azure) 등 어디서든 HTTP 요청만으로 주식 매매가 가능합니다."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "KIS Developers API 키 발급 방법은 어떻게 되나요?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "한국투자증권 종합 계좌 개설 후, 홈페이지에서 KIS Developers 서비스를 신청하고 본인 인증을 완료하면 App Key와 App Secret이 발급됩니다. 이 키로 OAuth Access Token을 발급받아 API를 호출할 수 있습니다."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "한국투자증권 API로 해외주식 자동매매도 가능한가요?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "네, 미국(NYSE·NASDAQ·AMEX), 일본, 홍콩, 중국, 베트남 등 9개 해외 거래소의 주식을 API로 거래할 수 있습니다. REST API로 해외주식 현재가 조회, 매수·매도 주문, 잔고 확인 등이 모두 가능합니다."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "KIS Developers API 호출 제한은 어떻게 되나요?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "실전 기준 초당 약 20건의 API 호출이 가능하며, 슬라이딩 윈도우 방식으로 제한됩니다. 안정적인 운영을 위해 초당 15건 이하로 설정하고, 요청 사이에 0.07초 이상 간격을 두는 것이 권장됩니다."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "키움증권 API와 한국투자증권 API의 차이점은 무엇인가요?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "키움증권 Open API+는 OCX 모듈 기반으로 Windows에서만 사용 가능하지만, 한국투자증권 KIS Developers는 REST API 기반으로 모든 운영체제에서 사용할 수 있습니다. 키움은 자료와 커뮤니티가 풍부한 반면, 한국투자증권은 클라우드 배포와 AI 연동(MCP 프로토콜)에 강점이 있습니다."
-      }
-    }
-  ]
-}
-</script>

@@ -3,7 +3,7 @@ layout: post
 title: "SpaceX-xAI 합병 공식 발표 - 1조 달러 우주 AI 제국의 탄생"
 subtitle: "머스크, AI의 미래는 우주에 있다며 우주 데이터센터 구상 공개"
 date: 2026-02-03T00:00:00+09:00
-lastmod: 2026-06-22T00:32:56+09:00
+lastmod: 2026-08-30T23:37:00+09:00
 author: 수수
 tags: ["SpaceX", "xAI", "일론머스크", "합병", "우주", "AI", "데이터센터", "IPO", "테슬라", "X", "트위터"]
 categories: ["AI"]
@@ -254,37 +254,3 @@ Tesla 주주 입장에서는 머스크의 관심이 분산되는 것에 대한 �
 > 우주 데이터센터, 실현 가능할까요? Tesla 주주라면 이번 합병을 어떻게 보시나요?
 
 ---
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "SpaceX와 xAI가 합병한다는 것은 무슨 의미인가요?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "SpaceX와 xAI의 합병 논의는 우주 인프라(스타링크)와 AI(xAI Grok)를 결합해 우주 기반 AI 데이터센터를 구축하려는 전략으로 해석됩니다. 지구 궤도의 위성을 AI 연산 노드로 활용하면 지상 데이터센터 한계를 극복할 수 있습니다."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "우주 데이터센터의 실현 가능성은 얼마나 되나요?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "우주 데이터센터는 기술적으로 극도로 높은 도전 과제입니다. 극한 온도, 방사선 노출, 유지보수 불가 등의 문제가 있으나 스타쉽의 발사 비용 절감과 스타링크 연결로 점진적 실현 가능성이 높아지고 있습니다. 2030년대 이후에나 실질적 상용화가 가능할 것으로 전망됩니다."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "이 소식이 테슬라와 xAI 투자자에게 어떤 의미인가요?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "SpaceX-xAI 협력 강화는 일론 머스크의 기업 생태계 가치 제고와 연결됩니다. xAI가 독립 상장하거나 SpaceX와 합병할 경우 기업 가치 재평가가 이루어질 수 있습니다. 테슬라는 옵티머스 로봇을 통해 이 생태계와 연결되어 있습니다."
-      }
-    }
-  ]
-}
-</script>
-

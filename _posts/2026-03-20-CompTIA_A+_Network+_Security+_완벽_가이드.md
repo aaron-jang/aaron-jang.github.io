@@ -4,7 +4,7 @@ title: "CompTIA A+ / Network+ / Security+ 완벽 가이드"
 subtitle: "시험 구성·도메인별 비중·공부법·추천 교재까지 — 3대 핵심 자격증 한 번에 정리"
 share-description: "CompTIA A+, Network+, Security+ 시험의 도메인별 비중, 합격 점수, 추천 공부 순서, 무료·유료 교재, 합격 전략을 한 글로 정리했습니다. IT 자격증 시리즈 2편."
 date: 2026-03-20T09:30:00+09:00
-lastmod: 2026-03-20T11:14:20+09:00
+lastmod: 2026-08-30T23:37:00+09:00
 author: 수수
 tags: ["CompTIA", "A+", "Network+", "Security+", "IT자격증", "IT취업", "사이버보안", "공부법", "자격증시험", "커리어"]
 categories: ["개발"]
@@ -372,54 +372,5 @@ A+ → Network+ → Security+를 모두 취득했다면, 이제 **전문 분야*
 - [CompTIA 공식 — Security+ 자격증](https://www.comptia.org/certifications/security)
 - [Professor Messer — 무료 강의](https://www.professormesser.com/)
 - [TryHackMe — 보안 실습](https://tryhackme.com/)
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "CompTIA A+는 시험이 몇 개인가요?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "A+는 Core 1(220-1201)과 Core 2(220-1202) 두 개의 시험을 모두 통과해야 자격증이 발급됩니다. 비용은 총 $530(시험당 $265)이며, Core 1을 먼저 합격한 후 Core 2를 응시하는 것을 추천합니다."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "A+, Network+, Security+ 중 어떤 것이 가장 어렵나요?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Security+가 가장 어렵습니다. 합격 점수가 750/900으로 가장 높고, 보안 개념의 깊이와 범위가 넓습니다. A+는 범위가 넓지만 난이도는 낮고, Network+는 서브넷팅 등 이해가 필요한 개념이 있어 중간 수준입니다."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "CompTIA 시험 공부는 어떤 자료로 하나요?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "가장 인기 있는 조합은 Professor Messer의 무료 유튜브 강의와 Jason Dion의 Udemy 모의시험입니다. Professor Messer는 시험 범위에 정확히 맞춘 체계적 강의를 제공하고, Jason Dion의 모의시험은 실제 시험과 유사한 난이도로 평가받습니다."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "PBQ(Performance-Based Questions)는 어떻게 준비하나요?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "PBQ는 가상 환경에서 실제 작업을 수행하는 문제입니다. 실습 경험이 핵심이므로 VirtualBox로 OS 설치, Wireshark로 패킷 분석, 명령줄 도구 연습 등을 해두세요. 시험 당일에는 PBQ를 건너뛰고 객관식을 먼저 푼 후, 남은 시간에 PBQ를 풀는 전략이 효과적입니다."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Security+ 공부 기간은 얼마나 필요한가요?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "네트워크와 OS 기초가 있다면 주 10~15시간 기준 약 6~8주가 적당합니다. 기초가 없다면 A+와 Network+를 먼저 취득한 후 도전하는 것을 추천합니다. 모의시험에서 합격 점수+50점 이상 꾸준히 나오면 응시 타이밍입니다."
-      }
-    }
-  ]
-}
-</script>
 
 *면책 조항: 이 글은 정보 제공 목적이며, 시험 코드·비용·도메인 비중은 CompTIA의 공식 발표에 따라 변경될 수 있습니다. 최신 정보는 반드시 [CompTIA 공식 사이트](https://www.comptia.org/)에서 확인하세요.*

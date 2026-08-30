@@ -4,7 +4,7 @@ title: "CompTIA 자격증 로드맵: IT 커리어를 시작하는 가장 확실�
 subtitle: "자격증 종류·순서·시험 절차·갱신까지 — 비전공자도 이해하는 CompTIA 완벽 가이드"
 share-description: "CompTIA 자격증 전체 로드맵을 정리했습니다. A+, Network+, Security+부터 CySA+, PenTest+까지 순서와 선택 기준, Pearson VUE 시험 접수·당일 절차·결과 확인, 3년 갱신(CEU) 방법까지 한 글로 끝내세요."
 date: 2026-03-20T09:00:00+09:00
-lastmod: 2026-03-20T11:14:20+09:00
+lastmod: 2026-08-30T23:37:00+09:00
 author: 수수
 tags: ["CompTIA", "IT자격증", "A+", "Network+", "Security+", "CySA+", "PenTest+", "IT취업", "사이버보안", "커리어"]
 categories: ["개발"]
@@ -300,54 +300,5 @@ CompTIA 자격증은 **3년 유효**입니다. 갱신하지 않으면 만료됩�
 - [Pearson VUE — CompTIA 시험 예약](https://www.pearsonvue.com/comptia)
 - [CompTIA Continuing Education — 갱신 안내](https://www.comptia.org/certifications/continuing-education/)
 - [CompTIA 시험 예약 가이드](https://help.comptia.org/hc/en-us/articles/14001749726996-How-Do-I-Schedule-My-Exam)
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "CompTIA 자격증은 어떤 순서로 따야 하나요?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "IT 비전공자라면 A+ → Network+ → Security+ 순서를 추천합니다. A+는 IT 기초, Network+는 네트워크 기초, Security+는 보안 기초를 다룹니다. 이미 IT 경력이 있다면 Security+부터 시작해도 됩니다."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "CompTIA 시험은 어디서 볼 수 있나요?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Pearson VUE 공인 시험 센터 또는 자택에서 온라인(OnVUE)으로 응시할 수 있습니다. 온라인 응시 시 웹캠, 조용한 방, 안정적 인터넷이 필요하며, 시험 전날 시스템 점검을 반드시 실행해야 합니다."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "CompTIA 자격증 유효 기간은 얼마인가요?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "CompTIA 자격증은 3년간 유효합니다. 갱신 방법은 CEU(Continuing Education Unit) 제출, 상위 자격증 취득, 또는 최신 시험 재응시입니다. 갱신 비용은 자격증당 $75이며, Security+를 취득하면 A+와 Network+가 자동 갱신됩니다."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "CompTIA 시험 비용은 얼마인가요?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "자격증에 따라 다릅니다. A+는 $530(2과목), Network+는 $369, Security+는 $425입니다. 학생은 .edu 이메일로 최대 50% 할인을 받을 수 있고, 공인 리셀러에서 바우처를 구매하면 10~15% 할인이 가능합니다."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "PBQ(Performance-Based Questions)란 무엇인가요?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "PBQ는 가상 환경에서 실제 작업을 수행하는 실기형 문제입니다. 네트워크 구성, 방화벽 설정, 명령 프롬프트 문제 해결 등이 출제됩니다. 시험당 3~5개 정도 나오며, 시간이 많이 걸리므로 객관식을 먼저 풀고 PBQ를 나중에 푸는 전략을 추천합니다."
-      }
-    }
-  ]
-}
-</script>
 
 *면책 조항: 이 글은 정보 제공 목적이며, 시험 비용·형식·정책은 CompTIA와 Pearson VUE의 공식 발표에 따라 변경될 수 있습니다. 최신 정보는 반드시 공식 사이트에서 확인하세요.*
