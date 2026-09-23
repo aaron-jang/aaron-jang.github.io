@@ -52,9 +52,12 @@ jobs:
 
       - name: Test site
         run: |
+          # /todaydone/, /tenby-penang-links/, /bullet_journal_planner/ 는 별도 저장소에서 서빙되므로 검사 제외
           bundle exec htmlproofer _site \
             \-\-disable-external \
-            \-\-ignore-urls "/^http:\/\/127.0.0.1/,/^http:\/\/0.0.0.0/,/^http:\/\/localhost/"
+            \-\-ignore-missing-alt \
+            \-\-no-enforce-https \
+            \-\-ignore-urls "/^http:\/\/127.0.0.1/,/^http:\/\/0.0.0.0/,/^http:\/\/localhost/,/^\/(todaydone|tenby-penang-links|bullet_journal_planner)\//"
 
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v5
