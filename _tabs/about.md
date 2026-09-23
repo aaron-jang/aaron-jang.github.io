@@ -43,7 +43,6 @@ description: "수수라이프 - IT, 재테크, 생활정보 블로그"
 
 **블로그가 도움이 되셨나요?** 커피 한 잔으로 응원해주시면 더 좋은 콘텐츠를 만드는 데 큰 힘이 됩니다 :)
 
-<a href="https://ko-fi.com/soosoolab" target="_blank" rel="noopener">
-  <img class="kofi-badge-light" src="/assets/images/support_me_on_kofi_badge_beige.png" alt="Support me on Ko-fi" height="48">
-  <img class="kofi-badge-dark" src="/assets/images/support_me_on_kofi_badge_dark.png" alt="Support me on Ko-fi" height="48">
-</a>
+<!-- Chirpy 는 <img> 바로 뒤에 </a> 가 붙어 있어야 기존 링크를 유지한다 (아니면 확대 팝업 링크로 감쌈) -->
+<a href="https://ko-fi.com/soosoolab" target="_blank" rel="noopener"><img class="kofi-badge-light" src="/assets/images/support_me_on_kofi_badge_beige.png" alt="Support me on Ko-fi" height="48"></a>
+<a href="https://ko-fi.com/soosoolab" target="_blank" rel="noopener"><img class="kofi-badge-dark" src="/assets/images/support_me_on_kofi_badge_dark.png" alt="Support me on Ko-fi" height="48"></a>
