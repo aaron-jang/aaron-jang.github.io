@@ -1,8 +1,9 @@
 ---
-layout: page
+# the default layout is 'page'
+icon: fas fa-info-circle
+order: 4
 title: About
-subtitle: "수수라이프 - IT, 재테크, 생활정보 블로그"
-permalink: /about/
+description: "수수라이프 - IT, 재테크, 생활정보 블로그"
 ---
 
 ## 수수라이프 소개

@@ -1,14 +1,15 @@
 ---
 layout: post
 title: "Moltbot - 진짜 일하는 개인 AI 어시스턴트"
-subtitle: "GitHub 89,900+ 스타, 로컬 실행, 완전한 프라이버시 - Siri가 되었어야 할 모습"
+description: "GitHub 89,900+ 스타, 로컬 실행, 완전한 프라이버시 - Siri가 되었어야 할 모습"
 date: 2026-01-29T09:00:00+09:00
-lastmod: 2026-08-30T23:37:00+09:00
+lastmod: 2026-09-23T16:21:19+09:00
+last_modified_at: 2026-08-30T23:37:00+09:00
 author: 수수
 tags: ["Moltbot", "Clawdbot", "AI어시스턴트", "오픈소스", "자동화", "프라이버시"]
 categories: ["AI"]
-cover-img: /assets/images/moltbot/cover.jpg
-thumbnail-img: /assets/images/moltbot/thumb.jpg
+image:
+  path: /assets/images/moltbot/cover.jpg
 ---
 
 ### 0. 개요
@@ -26,13 +27,6 @@ Moltbot은 다릅니다. **실제로 일을 하는** AI 어시스턴트입니다
 
 ---
 
-## 목차
-{: .no_toc}
-
-* TOC
-{:toc}
-
----
 
 ## 1. Moltbot이란?
 

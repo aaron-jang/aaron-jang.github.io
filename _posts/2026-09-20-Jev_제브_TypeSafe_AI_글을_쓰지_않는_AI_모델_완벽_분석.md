@@ -1,16 +1,15 @@
 ---
 layout: post
 title: "Jev(제브) 완벽 분석 — 글을 쓰지 않는 AI가 Vercel 최고 속도 채택 기록을 세운 이유"
-subtitle: "ChatGPT 공동 개발자가 2년간 숨어서 만든 '결정 전용 모델'. 193배 빠르다는 숫자, 어디까지 믿어야 할까"
-share-description: "TypeSafe AI가 2026년 9월 15일 공개한 Jev(제브)는 텍스트 대신 선택지와 확률을 돌려주는 System One 모델입니다. 작동 원리, 가격, 자체 벤치마크와 외부 실측, 평가 설계 비판, 한국에서 쓸 때 주의점까지 정리합니다."
+description: "ChatGPT 공동 개발자가 2년간 숨어서 만든 '결정 전용 모델'. 193배 빠르다는 숫자, 어디까지 믿어야 할까"
 date: 2026-09-20T16:00:00+09:00
-lastmod: 2026-09-20T15:31:55+09:00
+lastmod: 2026-09-23T16:21:19+09:00
+last_modified_at: 2026-09-20T16:00:00+09:00
 author: 수수
 tags: ["Jev", "제브", "TypeSafe", "SystemOne", "AI모델", "AI에이전트", "LLM", "Vercel", "분류모델", "RLCD"]
 categories: ["AI"]
-cover-img: /assets/images/jev_typesafe_cover.jpg
-thumbnail-img: /assets/images/jev_typesafe_cover.jpg
-share-img: /assets/images/jev_typesafe_cover.jpg
+image:
+  path: /assets/images/jev_typesafe_cover.jpg
 ---
 
 안녕하세요. 수수입니다.
@@ -21,13 +20,6 @@ share-img: /assets/images/jev_typesafe_cover.jpg
 
 그런데 왜 이렇게 난리일까요? Jev가 뭘 하는 모델인지, 회사가 내세운 숫자가 어디까지 사실인지, 그리고 한국에서 쓰려면 뭘 확인해야 하는지 정리합니다.
 
-## 목차
-{: .no_toc}
-
-* TOC
-{:toc}
-
----
 
 ## 30초 핵심 요약
 

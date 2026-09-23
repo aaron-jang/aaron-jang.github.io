@@ -1,10 +1,10 @@
 ---
 layout: post
 title: "hermes-agent 셀프호스팅 가이드 — Ubuntu Docker Compose + LLM·구글·옵시디언 연동, 안드로이드(Termux)까지"
-subtitle: "Nous Research의 자기 개선 AI 에이전트를 내 서버·PC·폰까지 한 번에 연결하기"
-share-description: "hermes-agent를 Ubuntu에 Docker Compose로 띄우고, OpenRouter·Anthropic LLM을 연결하고, Google Workspace와 Obsidian vault까지 연동한 다음, 안드로이드 Termux로 폰에서도 쓰는 방법을 정리합니다."
+description: "Nous Research의 자기 개선 AI 에이전트를 내 서버·PC·폰까지 한 번에 연결하기"
 date: 2026-05-02T00:00:00+09:00
-lastmod: 2026-05-04T12:39:17+09:00
+lastmod: 2026-09-23T16:21:19+09:00
+last_modified_at: 2026-05-04T12:39:17+09:00
 author: 수수
 tags: ["hermes-agent", "AI에이전트", "NousResearch", "Docker", "DockerCompose", "Ubuntu", "셀프호스팅", "Obsidian", "구글연동", "GoogleWorkspace", "Termux", "안드로이드", "OpenRouter", "Anthropic", "Claude", "ClaudeCode", "ClaudeMax"]
 categories: ["IT"]
@@ -29,13 +29,6 @@ categories: ["IT"]
 | **옵시디언** | 서버 vault를 `OBSIDIAN_VAULT_PATH`로 마운트, Syncthing으로 PC·폰 동기화 |
 | **안드로이드** | F-Droid Termux + 한 줄 설치 스크립트 |
 
-## 목차
-{: .no_toc}
-
-* TOC
-{:toc}
-
----
 
 ## hermes-agent란?
 

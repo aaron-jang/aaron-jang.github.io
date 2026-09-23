@@ -1,16 +1,15 @@
 ---
 layout: post
 title: "한국투자증권 오픈API(KIS Developers) 완벽 가이드 — 국내 유일 REST API로 자동매매 시작하기"
-subtitle: "계좌 개설부터 API 키 발급, Python 자동매매, 실시간 시세까지 한 번에 정리"
-share-description: "한국투자증권 KIS Developers 오픈API의 가입 절차, 인증 방식, 주요 기능, Python 라이브러리, 증권사 API 비교까지. REST API로 주식 자동매매를 시작하는 완벽 가이드."
+description: "계좌 개설부터 API 키 발급, Python 자동매매, 실시간 시세까지 한 번에 정리"
 date: 2026-03-25T18:00:00+09:00
-lastmod: 2026-08-30T23:37:00+09:00
+lastmod: 2026-09-23T16:21:19+09:00
+last_modified_at: 2026-08-30T23:37:00+09:00
 author: 수수
 tags: ["한국투자증권", "KIS Developers", "오픈API", "자동매매", "Python", "REST API", "주식API", "시스템트레이딩", "TQQQ", "해외주식"]
 categories: ["투자"]
-cover-img: /assets/images/kis_developers.jpg
-thumbnail-img: /assets/images/kis_developers.jpg
-share-img: /assets/images/kis_developers.jpg
+image:
+  path: /assets/images/kis_developers.jpg
 ---
 
 안녕하세요. 수수입니다.
@@ -21,13 +20,6 @@ share-img: /assets/images/kis_developers.jpg
 
 오늘은 KIS Developers의 가입부터 인증, 핵심 기능, Python 라이브러리, 그리고 다른 증권사 API와의 비교까지 깔끔하게 정리합니다.
 
-## 목차
-{: .no_toc}
-
-* TOC
-{:toc}
-
----
 
 ## 30초 핵심 요약
 

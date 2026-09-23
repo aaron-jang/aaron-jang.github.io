@@ -1,16 +1,15 @@
 ---
 layout: post
 title: "외국어 빨리 배우는 법: Fluent Forever 핵심 정리"
-subtitle: "발음 먼저·번역 금지·간격 반복 — 언어학자가 검증한 가브리엘 와이너의 3원칙"
-share-description: "베스트셀러 Fluent Forever(가브리엘 와이너)의 핵심을 정리했습니다. 발음 우선 학습, 번역 없이 이미지로 기억하기, 간격 반복 시스템(SRS)까지 — 언어학자 리뷰를 바탕으로 실전에 바로 쓸 수 있는 외국어 학습법을 소개합니다."
+description: "발음 먼저·번역 금지·간격 반복 — 언어학자가 검증한 가브리엘 와이너의 3원칙"
 date: 2026-03-18T12:00:00+09:00
-lastmod: 2026-08-30T23:37:00+09:00
+lastmod: 2026-09-23T16:21:19+09:00
+last_modified_at: 2026-08-30T23:37:00+09:00
 author: 수수
 tags: ["외국어", "영어공부", "언어학습", "FluentForever", "SRS", "간격반복", "발음", "어휘", "문법", "가브리엘와이너"]
 categories: ["생활"]
-cover-img: /assets/images/fluent_forever.webp
-thumbnail-img: /assets/images/fluent_forever.thumb.webp
-share-img: /assets/images/fluent_forever_share.jpg
+image:
+  path: /assets/images/fluent_forever.webp
 ---
 
 안녕하세요. 수수입니다.
@@ -24,13 +23,6 @@ share-img: /assets/images/fluent_forever_share.jpg
 
 ---
 
-## 목차
-{: .no_toc}
-
-* TOC
-{:toc}
-
----
 
 ## 30초 핵심 요약
 

@@ -1,16 +1,15 @@
 ---
 layout: post
 title: "AI 에이전트 엔진 완벽 비교 — OpenClaw, Hermes, LangGraph, CrewAI 등 2026년 총정리"
-subtitle: "내 AI 비서를 만들려면 어떤 프레임워크를 골라야 할까? 2026년 최신 에이전트 엔진 10종 비교"
-share-description: "2026년 AI 에이전트 프레임워크 완벽 비교. OpenClaw, Hermes Agent, LangGraph, CrewAI, OpenAI Agents SDK, Claude Agent SDK, Mastra, Google ADK 등 10종의 특징·장단점·용도별 추천을 정리합니다."
+description: "내 AI 비서를 만들려면 어떤 프레임워크를 골라야 할까? 2026년 최신 에이전트 엔진 10종 비교"
 date: 2026-04-08T12:00:00+09:00
-lastmod: 2026-04-08T13:09:58+09:00
+lastmod: 2026-09-23T16:21:19+09:00
+last_modified_at: 2026-04-08T13:09:58+09:00
 author: 수수
 tags: ["AI에이전트", "OpenClaw", "Hermes", "LangGraph", "CrewAI", "OpenAI", "Claude", "Mastra", "GoogleADK", "AutoGen", "오픈소스", "프레임워크"]
 categories: ["AI"]
-cover-img: /assets/images/ai_agent_engine_compare.webp
-thumbnail-img: /assets/images/ai_agent_engine_compare.webp
-share-img: /assets/images/ai_agent_engine_compare.webp
+image:
+  path: /assets/images/ai_agent_engine_compare.webp
 ---
 
 안녕하세요. 수수입니다.
@@ -21,13 +20,6 @@ share-img: /assets/images/ai_agent_engine_compare.webp
 
 이번 포스팅에서는 2026년 4월 기준, 주목할 만한 **AI 에이전트 엔진 10종**을 비교 분석합니다.
 
-## 목차
-{: .no_toc}
-
-* TOC
-{:toc}
-
----
 
 ## 30초 핵심 요약
 

@@ -1,16 +1,15 @@
 ---
 layout: post
 title: "CompTIA 자격증 로드맵: IT 커리어를 시작하는 가장 확실한 방법"
-subtitle: "자격증 종류·순서·시험 절차·갱신까지 — 비전공자도 이해하는 CompTIA 완벽 가이드"
-share-description: "CompTIA 자격증 전체 로드맵을 정리했습니다. A+, Network+, Security+부터 CySA+, PenTest+까지 순서와 선택 기준, Pearson VUE 시험 접수·당일 절차·결과 확인, 3년 갱신(CEU) 방법까지 한 글로 끝내세요."
+description: "자격증 종류·순서·시험 절차·갱신까지 — 비전공자도 이해하는 CompTIA 완벽 가이드"
 date: 2026-03-20T09:00:00+09:00
-lastmod: 2026-08-30T23:37:00+09:00
+lastmod: 2026-09-23T16:21:19+09:00
+last_modified_at: 2026-08-30T23:37:00+09:00
 author: 수수
 tags: ["CompTIA", "IT자격증", "A+", "Network+", "Security+", "CySA+", "PenTest+", "IT취업", "사이버보안", "커리어"]
 categories: ["개발"]
-cover-img: /assets/images/comptia_roadmap.webp
-thumbnail-img: /assets/images/comptia_roadmap.thumb.webp
-share-img: /assets/images/comptia_roadmap.png
+image:
+  path: /assets/images/comptia_roadmap.webp
 ---
 
 안녕하세요. 수수입니다.
@@ -21,13 +20,6 @@ IT 분야로 취업·이직하고 싶은데 **어떤 자격증부터 따야 할�
 
 ---
 
-## 목차
-{: .no_toc}
-
-* TOC
-{:toc}
-
----
 
 ## 30초 핵심 요약
 

@@ -1,14 +1,15 @@
 ---
 layout: post
 title: macOS Tahoe 완벽 정리 - 새로운 기능과 업데이트 총정리
-subtitle: Liquid Glass 디자인부터 Apple Intelligence까지, 달라진 모든 것
+description: Liquid Glass 디자인부터 Apple Intelligence까지, 달라진 모든 것
 date: 2026-01-13T00:00:00+09:00
-lastmod: 2026-08-30T23:37:00+09:00
+lastmod: 2026-09-23T16:21:19+09:00
+last_modified_at: 2026-08-30T23:37:00+09:00
 author: 수수
 tags: ["macOS", "Tahoe", "Apple", "업데이트", "AppleIntelligence"]
 categories: ["가젯"]
-cover-img: /assets/img/macos-tahoe-hero.jpg
-thumbnail-img: /assets/img/macos-tahoe-hero.jpg
+image:
+  path: /assets/img/macos-tahoe-hero.jpg
 ---
 
 안녕하세요. 수수입니다. <br />
@@ -17,12 +18,6 @@ Apple이 공개한 **macOS Tahoe**의 새로운 기능들을 정리해봤습니�
 
 기존 macOS와는 확연히 다른 디자인 언어 **Liquid Glass**부터 강력해진 **Apple Intelligence**, Mac에서 전화를 받을 수 있는 **Phone 앱**까지, 달라진 모든 것을 살펴보겠습니다.
 
-## 목차
-
-* TOC
-{:toc}
-
----
 
 ## 🎨 완전히 새로워진 디자인: Liquid Glass
 

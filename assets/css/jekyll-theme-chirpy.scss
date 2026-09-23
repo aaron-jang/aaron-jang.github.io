@@ -1,0 +1,61 @@
+---
+---
+
+@use 'abstracts/variables' with (
+  $theme: '{{ site.theme_mode }}'
+);
+
+/* prettier-ignore */
+@use 'main
+{%- if jekyll.environment == 'production' -%}
+  .bundle
+{%- endif -%}
+';
+
+/* append your custom style below */
+
+/* Pretendard 폰트 — 폰트 파일은 _includes/metadata-hook.html 에서 <link> 로 불러온다 */
+:root {
+  --bs-body-font-family: 'Pretendard Variable', -apple-system, BlinkMacSystemFont, system-ui, Roboto,
+    'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+}
+
+body,
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--bs-body-font-family);
+}
+
+/* 유튜브 등 반응형 임베드 (포스트 본문의 .video-container) */
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  margin: 1.5rem 0;
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+}
+
+/* Ko-fi 배지 — 라이트/다크 모드별 표시 전환 */
+.kofi-badge-dark { display: none; }
+.kofi-badge-light { display: inline; }
+
+html[data-mode='dark'] {
+  .kofi-badge-dark { display: inline; }
+  .kofi-badge-light { display: none; }
+}
+
+@media (prefers-color-scheme: dark) {
+  html:not([data-mode='light']) {
+    .kofi-badge-dark { display: inline; }
+    .kofi-badge-light { display: none; }
+  }
+}
