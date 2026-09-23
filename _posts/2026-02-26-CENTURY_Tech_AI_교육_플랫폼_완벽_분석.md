@@ -3,7 +3,6 @@ layout: post
 title: "CENTURY Tech - AI가 바꾸는 교육의 미래"
 description: "신경과학 + AI로 학생 개개인에게 맞춤 학습 경로를 제공하는 영국 에듀테크"
 date: 2026-02-26T21:00:00+09:00
-lastmod: 2026-09-23T16:21:19+09:00
 last_modified_at: 2026-08-30T23:37:00+09:00
 author: 수수
 tags: ["CENTURY", "에듀테크", "AI교육", "국제학교", "말레이시아", "영국교육"]

@@ -3,7 +3,6 @@ layout: post
 title: "외국어 빨리 배우는 법: Fluent Forever 핵심 정리"
 description: "발음 먼저·번역 금지·간격 반복 — 언어학자가 검증한 가브리엘 와이너의 3원칙"
 date: 2026-03-18T12:00:00+09:00
-lastmod: 2026-09-23T16:21:19+09:00
 last_modified_at: 2026-08-30T23:37:00+09:00
 author: 수수
 tags: ["외국어", "영어공부", "언어학습", "FluentForever", "SRS", "간격반복", "발음", "어휘", "문법", "가브리엘와이너"]

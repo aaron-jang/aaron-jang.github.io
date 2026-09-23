@@ -3,7 +3,7 @@ layout: post
 title: "BYD 씨라이언 6 DM-i 한국 출시 - 3,750만원 PHEV의 등장"
 description: "BYD 최초 국내 PHEV, 씨라이언 6 DM-i가 부산모빌리티쇼에서 공개되었습니다"
 date: 2026-07-04T00:00:00+09:00
-lastmod: 2026-09-23T16:21:19+09:00
+last_modified_at: 2026-07-04T00:00:00+09:00
 author: 수수
 tags: ["BYD", "씨라이언6", "Sealion6", "PHEV", "플러그인하이브리드", "DM-i", "부산모빌리티쇼"]
 categories: ["자동차"]

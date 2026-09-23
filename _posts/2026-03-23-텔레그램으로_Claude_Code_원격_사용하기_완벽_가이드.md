@@ -3,7 +3,6 @@ layout: post
 title: "텔레그램으로 Claude Code 원격 사용하기 완벽 가이드"
 description: "스마트폰에서 코딩 에이전트를 쓴다고? — claude-code-telegram 설치부터 실전 활용까지"
 date: 2026-03-23T09:00:00+09:00
-lastmod: 2026-09-23T16:21:19+09:00
 last_modified_at: 2026-08-30T23:37:00+09:00
 author: 수수
 tags: ["ClaudeCode", "텔레그램", "AI코딩", "원격개발", "개발도구", "Python", "자동화", "봇"]

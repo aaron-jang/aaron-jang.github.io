@@ -2,7 +2,6 @@
 layout: post
 title: "Hugo에서 Jekyll로 마이그레이션하기"
 date: 2025-12-16T13:30:00+09:00
-lastmod: 2026-09-23T16:21:19+09:00
 last_modified_at: 2025-12-17T21:15:51+09:00
 author: 수수
 tags: ["Hugo", "Jekyll", "마이그레이션", "GitHub Pages", "정적 사이트 생성기", "블로그"]
@@ -174,7 +173,7 @@ featuredImage = "/images/cover.jpg"
 layout: post
 title: "제목"
 date: 2024-01-01T00:00:00+09:00
-lastmod: 2026-09-23T16:21:19+09:00
+lastmod: 2024-01-02T00:00:00+09:00
 cover-img: /assets/posts/포스트명/cover.jpg
 ---
 ```

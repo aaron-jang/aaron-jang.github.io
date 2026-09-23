@@ -3,7 +3,6 @@ layout: post
 title: "CompTIA 자격증 로드맵: IT 커리어를 시작하는 가장 확실한 방법"
 description: "자격증 종류·순서·시험 절차·갱신까지 — 비전공자도 이해하는 CompTIA 완벽 가이드"
 date: 2026-03-20T09:00:00+09:00
-lastmod: 2026-09-23T16:21:19+09:00
 last_modified_at: 2026-08-30T23:37:00+09:00
 author: 수수
 tags: ["CompTIA", "IT자격증", "A+", "Network+", "Security+", "CySA+", "PenTest+", "IT취업", "사이버보안", "커리어"]

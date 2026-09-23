@@ -3,7 +3,6 @@ layout: post
 title: "일론 머스크 이코노미스트 풀 인터뷰 정리 — '5년 뒤 AI가 인류 지능 총합을 넘는다'"
 description: "초지능 타임라인, 돈이 무의미해지는 경제, p(doom) 10~20%, 그리고 유럽을 두고 벌어진 40분간의 정면충돌"
 date: 2026-08-03T09:00:00+09:00
-lastmod: 2026-09-23T16:21:19+09:00
 last_modified_at: 2026-08-03T11:14:47+09:00
 author: 수수
 tags: ["일론머스크", "이코노미스트", "재니민턴베도스", "AI", "초지능", "ASI", "AGI", "특이점", "Singularity", "UHI", "보편적고소득", "디플레이션", "Optimus", "로봇", "휴머노이드로봇", "SpaceX", "Starlink", "테슬라", "xAI", "Anthropic", "OpenAI", "중국AI", "우주데이터센터", "DOGE", "AI안전", "IainBanks", "Culture"]

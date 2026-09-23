@@ -3,7 +3,6 @@ layout: post
 title: "구글 터보퀀트(TurboQuant) — AI 메모리 6배 압축, 삼성·하이닉스가 흔들린 이유"
 description: "KV 캐시를 3비트로 줄이면서 정확도 손실 제로, 학습도 불필요 — '메모리의 딥시크 모먼트'가 온 걸까?"
 date: 2026-03-26T12:00:00+09:00
-lastmod: 2026-09-23T16:21:19+09:00
 last_modified_at: 2026-08-30T23:37:00+09:00
 author: 수수
 tags: ["구글", "TurboQuant", "터보퀀트", "AI압축", "KV캐시", "메모리반도체", "삼성전자", "SK하이닉스", "HBM", "LLM"]

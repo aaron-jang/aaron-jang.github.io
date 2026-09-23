@@ -3,7 +3,6 @@ layout: post
 title: "Claude Code 에이전트 팀 — AI 개발자 여러 명을 동시에 굴리는 법"
 description: "서브에이전트와 에이전트 팀, 두 가지 방식으로 병렬 AI 개발 환경 만들기"
 date: 2026-03-10T13:00:00+09:00
-lastmod: 2026-09-23T16:21:19+09:00
 last_modified_at: 2026-08-30T23:37:00+09:00
 author: 수수
 tags: ["ClaudeCode", "AI", "에이전트", "멀티에이전트", "서브에이전트", "AgentTeams", "개발도구", "바이브코딩", "Anthropic"]

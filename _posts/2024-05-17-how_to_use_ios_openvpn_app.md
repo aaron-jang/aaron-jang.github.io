@@ -2,7 +2,6 @@
 layout: post
 title: OpenVPN iOS앱 사용법
 date: 2024-05-17T13:54:02+09:00
-lastmod: 2026-09-23T16:21:19+09:00
 last_modified_at: 2025-12-20T10:45:55+09:00
 author: 수수
 tags: ["OpenVPN", "iOS"]
