@@ -1,15 +1,15 @@
 ---
 layout: post
 title: "일론 머스크 이코노미스트 풀 인터뷰 정리 — '5년 뒤 AI가 인류 지능 총합을 넘는다'"
-subtitle: "초지능 타임라인, 돈이 무의미해지는 경제, p(doom) 10~20%, 그리고 유럽을 두고 벌어진 40분간의 정면충돌"
-share-description: "The Economist 'The Insider'에 출연한 일론 머스크의 풀 인터뷰를 정리합니다. 5년 내 AI가 인류 지능 총합 초월, 2036년엔 돈이 무의미, 경쟁사 상호 안전검증 제안, 중국의 전기 vs 미국의 칩, Stockfish 레벨 일자리 대체, Starlink 지정학, 그리고 유럽·이민을 둘러싼 진행자와의 격한 논쟁까지."
+description: "초지능 타임라인, 돈이 무의미해지는 경제, p(doom) 10~20%, 그리고 유럽을 두고 벌어진 40분간의 정면충돌"
 date: 2026-08-03T09:00:00+09:00
-lastmod: 2026-08-03T11:14:47+09:00
+lastmod: 2026-09-23T16:21:19+09:00
+last_modified_at: 2026-08-03T11:14:47+09:00
 author: 수수
 tags: ["일론머스크", "이코노미스트", "재니민턴베도스", "AI", "초지능", "ASI", "AGI", "특이점", "Singularity", "UHI", "보편적고소득", "디플레이션", "Optimus", "로봇", "휴머노이드로봇", "SpaceX", "Starlink", "테슬라", "xAI", "Anthropic", "OpenAI", "중국AI", "우주데이터센터", "DOGE", "AI안전", "IainBanks", "Culture"]
 categories: ["AI"]
-cover-img: /assets/images/musk_economist_interview.webp
-thumbnail-img: /assets/images/musk_economist_interview_thumb.webp
+image:
+  path: /assets/images/musk_economist_interview.webp
 ---
 
 안녕하세요. 수수입니다.
@@ -48,13 +48,6 @@ thumbnail-img: /assets/images/musk_economist_interview_thumb.webp
 | **유럽** | "현 추세면 **영국 내전은 불가피**. 다만 시점은 *20년 뒤*" |
 | **최종 정리** | "**AI 특이점 10년, 영국 내전 20년.** 앞의 것이 먼저 온다" |
 
-## 목차
-{: .no_toc}
-
-* TOC
-{:toc}
-
----
 
 ## 1. "5년 안에 인류 지능 총합을 넘는다"
 

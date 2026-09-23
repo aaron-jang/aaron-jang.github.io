@@ -1,10 +1,10 @@
 ---
 layout: post
 title: "앤드류 양의 경고 — UBI 없이 UHI 없다, AI 시대 일자리·사회불안·2028 정치격변"
-subtitle: "Moonshots #236 인터뷰 정리 — 화이트칼라 50% 자동화, 사회계약 붕괴, 그리고 빌리어네어 주도 UBI 시나리오"
-share-description: "Peter Diamandis의 Moonshots 팟캐스트에 출연한 앤드류 양 인터뷰를 정리합니다. UBI vs UHI, AI에 의한 일자리 소멸, 2028년 미국 제3당 가능성, 칼리지·부동산·결혼·출산 트렌드까지 — AI 시대 사회계약이 어떻게 무너지고 있는지 한눈에 보세요."
+description: "Moonshots #236 인터뷰 정리 — 화이트칼라 50% 자동화, 사회계약 붕괴, 그리고 빌리어네어 주도 UBI 시나리오"
 date: 2026-05-29T00:00:00+09:00
-lastmod: 2026-05-29T10:10:47+09:00
+lastmod: 2026-09-23T16:21:19+09:00
+last_modified_at: 2026-05-29T10:10:47+09:00
 author: 수수
 tags: ["앤드류양", "AndrewYang", "UBI", "보편적기본소득", "UHI", "보편적고소득", "AI일자리", "자동화", "사회계약", "2028미국대선", "ForwardParty", "AmericaParty", "일론머스크", "PeterDiamandis", "Moonshots", "DarioAmodei", "Anthropic", "화이트칼라", "AI에이전트", "휴머노이드로봇", "Optimus", "기술실업", "긱이코노미", "AI여친", "출산율"]
 categories: ["AI"]
@@ -42,13 +42,6 @@ UBI vs UHI(Universal High Income), AI에 의한 화이트칼라 50% 자동화, �
 | **AI 여친·출산율** | 중국 출생률 75년래 최저, 청년의 8명 중 1명이 AI 챗봇에서 정서적 위안 |
 | **결론** | "유토피아와 디스토피아의 경주는 *마지막 순간*에 결정될 것" — 버크민스터 풀러 |
 
-## 목차
-{: .no_toc}
-
-* TOC
-{:toc}
-
----
 
 ## 1. UBI vs UHI — 머스크는 "둘 다 온다"
 

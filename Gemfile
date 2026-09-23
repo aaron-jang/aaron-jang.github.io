@@ -1,18 +1,20 @@
 source "https://rubygems.org"
 
-# Jekyll 및 기본 플러그인
-gem "jekyll", "~> 3.9"
-gem "jekyll-paginate"
-gem "jekyll-sitemap"
-gem "kramdown-parser-gfm"
-gem "jekyll-remote-theme"
+gem "jekyll-theme-chirpy", "~> 7.6"
 
-# Ruby 3.4+ 호환성을 위한 라이브러리
+# Ruby 3.4+ 호환성
 gem "base64"
-gem "logger"
 gem "csv"
 gem "bigdecimal"
+gem "logger"
 
-# GitHub Pages 호환성을 위한 webrick
-gem "webrick", "~> 1.8"
+group :test do
+  gem "html-proofer", "~> 5.0"
+end
 
+platforms :mingw, :x64_mingw, :mswin, :jruby do
+  gem "tzinfo", ">= 1", "< 3"
+  gem "tzinfo-data"
+end
+
+gem "wdm", "~> 0.2.0", :platforms => [:mingw, :x64_mingw, :mswin]

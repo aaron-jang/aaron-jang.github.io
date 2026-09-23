@@ -1,10 +1,10 @@
 ---
 layout: post
 title: "OpenVPN vs Tailscale — 개인 VPN, 뭘 써야 할까?"
-subtitle: "직접 구축하는 OpenVPN과 제로 설정 Tailscale, 목적별 완벽 비교"
-share-description: "OpenVPN과 Tailscale의 구조, 설치, 보안, 속도, 비용을 비교합니다. 홈서버 접속, 원격 근무, NAS 연결 등 목적별로 어떤 VPN이 맞는지 정리합니다."
+description: "직접 구축하는 OpenVPN과 제로 설정 Tailscale, 목적별 완벽 비교"
 date: 2026-04-30T00:00:00+09:00
-lastmod: 2026-04-30T00:00:00+09:00
+lastmod: 2026-09-23T16:21:19+09:00
+last_modified_at: 2026-04-30T00:00:00+09:00
 author: 수수
 tags: ["VPN", "OpenVPN", "Tailscale", "WireGuard", "홈서버", "네트워크", "보안", "셀프호스팅"]
 categories: ["IT"]

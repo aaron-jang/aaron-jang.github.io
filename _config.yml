@@ -1,319 +1,155 @@
-###########################################################
-### Welcome to Beautiful Jekyll!
-### This config file is meant for settings that affect your entire website. When you first
-### set up your website you should go through all these settings and edit them, but after
-### the initial set up you won't need to come back to this file often.
-###########################################################
+# 수수라이프 — Jekyll Chirpy 테마 설정
+# 테마 문서: https://github.com/cotes2020/jekyll-theme-chirpy/wiki
 
-############################
-# --- Required options --- #
-############################
+theme: jekyll-theme-chirpy
 
-# 테마: Beautiful Jekyll 을 remote_theme 으로 사용
-# master 브랜치의 특정 커밋에 고정 (2026-05-25). 업데이트는 이 SHA만 교체.
-remote_theme: daattali/beautiful-jekyll@d1eb82a5ecac
+lang: ko-KR
+timezone: Asia/Seoul
 
-# Name of website
+# ---------- 사이트 정보 ----------
 title: 수수라이프
-
-# Your name to show in the footer
-author: 수수
-
-# Language setting (HTML lang attribute)
-language: ko
-
-# URL of your website
+tagline: 수수의 일상기록
+description: >-
+  IT/테크, 재테크, 생활 정보를 다루는 한국어 블로그. 복잡한 정보를 누구나 이해할 수 있도록 쉽고 명확하게 정리합니다.
 url: "https://soosoo.life"
 baseurl: ""
 
-###############################################
-# --- List of links in the navigation bar --- #
-###############################################
+github:
+  username: aaron-jang
 
-navbar-links:
-  Posts: "/"
-  Categories: "/categories"
-  Tags: "/tags"
-  Tools:
-    - 불렛저널 플래너: "/bullet_journal_planner/"
-    - 오늘 뭐 했지?: "/todaydone/"
-    - 텐비 페낭 링크: "/tenby-penang-links/"
-  About: "about"
+social:
+  name: 수수
+  email: soosoolife.k@gmail.com
+  links:
+    - https://soosoo.life/about/
 
-################
-# --- Logo --- #
-################
+# ---------- 분석 / 광고 ----------
+analytics:
+  google:
+    id: G-FVWYZ3MFW9
 
-# Image to show in the navigation bar - works best with a square image
-# Remove this parameter if you don't want an image in the navbar
-avatar: "/assets/img/avatar-icon.webp"
-
-# By default, the image is cut into a circle. You can disable this behaviour by setting 'round-avatar: false'
-round-avatar: true
-
-# If you want to have an image logo in the top-left corner instead of having the title of the website,
-# then specify the following parameter
-#title-img: /path/to/image
-
-
-#####################################
-# --- Footer social media links --- #
-#####################################
-
-# Select the social network links that you want to show in the footer.
-# You can change the order that they show up on the page by changing the order here.
-# Uncomment the links you want to show and add your information to each one.
-social-network-links:
-  email: "soosoolife.k@gmail.com"
-  rss: true  # remove this line if you don't want to show an RSS link at the bottom
-#  medium: yourname
-#  reddit: yourname or r/yoursubreddit
-#  linkedin: yourname
-#  xing: yourname
-#  stackoverflow: "youruserid/username"
-#  snapchat: deanat78
-#  instagram: deanat78
-#  spotify: yourname
-#  telephone: +14159998888
-#  steam: deanat78
-#  twitch: yourname
-#  yelp: yourname
-#  telegram: yourname
-#  calendly: yourname
-#  mastodon: instance.url/@username
-#  bluesky: yourname
-#  ORCID: your ORCID ID
-#  google-scholar: your google scholar
-#  discord: "invite_code" or "users/userid" or "invite/invite_code"
-#  kaggle: yourname
-#  hackerrank: yourname
-#  gitlab: yourname
-#  itchio: yourname
-#  untappd: yourname
-#  strava: youruserid
-
-# If you want your website to generate an RSS feed, provide a description
-# The URL for the feed will be https://<your_website>/feed.xml
-rss-description: 수수의 일상과 정보를 공유하는 블로그입니다
-
-###########################
-# --- General options --- #
-###########################
-
-# Select which social network share links to show in posts
-share-links-active:
-  twitter: true
-  facebook: true
-  linkedin: true
-  vk: false
-  reddit: false
-
-# How to display the link to your website in the footer
-# Remove this if you don't want a link in the footer
-url-pretty: "soosoo.life"
-
-# Add the website title to the title of every page
-title-on-all-pages: true
-
-# Excerpt word length - Truncate the excerpt of each post on the feed page to the specified number of words
-excerpt_length: 50
-
-# Whether or not to show an excerpt for every blog post in the feed page
-feed_show_excerpt: true
-
-# Whether or not to show a list of tags below each post preview in the feed page
-feed_show_tags: true
-
-# Add a search button to the navbar
-post_search: true
-
-# Add a button in the footer to edit the current page. Only works if your website is hosted on GitHub
-edit_page_button: false
-
-# Allow sub-menu items (second-level navigation menu items) to be longer than the top-level menu
-# If this setting is off, then long sub-menu words might get cut off
-# Allow sub-menu items to be longer than the top-level menu
-navbar-var-length: true
-
-# The keywords to associate with your website, for SEO/GEO purposes
-keywords: "수수라이프,IT,테크,재테크,생활정보,가이드,리뷰,블로그,soosoo"
-
-######################################
-# --- Colours / background image --- #
-######################################
-
-# Personalize the colours in your website. Colour values can be any valid CSS colour
-# Material Design Theme
-
-page-col: "#FAFAFA"           # 밝은 회색 배경
-text-col: "#212121"           # 진한 회색 텍스트
-link-col: "#2196F3"           # Material Blue (링크)
-hover-col: "#FF4081"          # Pink Accent (호버)
-navbar-col: "#FFFFFF"         # 순백 네비게이션
-navbar-text-col: "#212121"    # 진한 회색
-navbar-border-col: "#E0E0E0"  # 연한 회색 테두리
-footer-col: "#F5F5F5"         # 연한 회색 푸터
-footer-text-col: "#616161"    # 중간 회색
-footer-link-col: "#424242"    # 어두운 회색
-footer-hover-col: "#FF4081"   # Pink Accent
-
-# Alternatively, the navbar, footer, and page background can be set to an image
-# instead of colour
-
-#navbar-img: "/assets/img/bgimage.png"
-#footer-img: "/assets/img/bgimage.png"
-#page-img: "/assets/img/bgimage.png"
-
-# Suggest a colour for mobile browsers to use as the browser's theme. This is only supported by a few mobile browsers.
-#mobile-theme-col: "#0085A1"
-
-# For any extra visual customization, you can include additional CSS files in every page on your site. List any custom CSS files here
-site-css:
-  - "/assets/css/custom-fonts.css"
-  - "/assets/css/custom-table.css"
-  - "/assets/css/custom-thumbnail.css"
-  - "/assets/css/custom-darkmode.css"
-
-# If you have common JavaScript files that should be included in every page, list them here
-site-js:
-  - "/assets/js/darkmode.js"
-
-#################################
-# --- Web Analytics Section --- #
-#################################
-
-# Fill in your Google Analytics tag ID (or "Measurement ID") to track your website usage
-gtag: "G-FVWYZ3MFW9"
-
-# 네이버 애널리틱스 (발급ID)
+# Beautiful Jekyll 시절부터 쓰던 자체 설정 (_includes/metadata-hook.html 에서 사용)
 naver-analytics: "187319d03136db0"
+adsense-client: "ca-pub-8723414546149679"
 
-# Fill in your Cloudflare Analytics beacon token to track your website using Cloudflare Analytics
-#cloudflare_analytics: ""
+pageviews:
+  provider:
 
-# Google Tag Manager ID
-#gtm: ""
+# ---------- 외관 ----------
+theme_mode: # light | dark — 비우면 시스템 설정을 따름
+cdn:
+avatar: /assets/img/avatar-icon.webp
+social_preview_image:
+toc: true
 
-# Matomo (aka Piwik) Web statistics
-# Uncomment the following section to enable Matomo. The opt-out parameter controls
-# whether or not you want to allow users to opt out of tracking.
-#matomo:
-#  site_id: "9"
-#  uri: "demo.wiki.pro"
-#  opt-out: true
+actions:
+  edit_post:
+    enabled: false
 
-# Google Universal Analytics ID -- deprecated
-# As of July 2023 this is no longer supported by Google! If you are still using `google_analytics`,
-# you should switch to using the `gtag` field above instead.
-#google_analytics: "UA-XXXXXXXX-X"
+# ---------- 댓글 ----------
+comments:
+  provider: giscus
+  giscus:
+    repo: aaron-jang/aaron-jang.github.io
+    repo_id: R_kgDOQpIR0A
+    category: Announcements
+    category_id: DIC_kwDOQpIR0M4C0-Hd
+    mapping: title
+    strict: 0
+    input_position: bottom
+    lang: ko
+    reactions_enabled: 1
 
-####################
-# --- Comments --- #
-####################
+assets:
+  self_host:
+    enabled:
+    env:
 
-# To use Disqus comments, sign up to https://disqus.com and fill in your Disqus shortname (NOT the userid)
-#disqus: ""
+pwa:
+  enabled: true
+  cache:
+    enabled: true
+    deny_paths:
 
-# To use Facebook Comments, create a Facebook app and fill in the Facebook App ID
-#fb_comment_id: ""
-
-# To use CommentBox, sign up for a Project ID on https://commentbox.io
-#commentbox: "" # Project ID, e.g. "5694267682979840-proj"
-
-# To use Utterances comments: (0) uncomment the following section, (1) fill in
-# "repository" (make sure the repository is public), (2) Enable Issues in your repository,
-# (3) Install the Utterances app in your repository https://github.com/apps/utterances
-# See more details about the parameters below at https://utteranc.es/
-#utterances:
-#  repository: # GitHub username/repository eg. "username/repository"
-#  issue-term: title   # Mapping between blog posts and GitHub issues
-#  theme: github-light # Utterances theme
-#  label: blog-comments # Label that will be assigned to GitHub Issues created by Utterances
-
-# To use Staticman comments, uncomment the following section. You may leave the reCaptcha
-# section commented if you aren't using reCaptcha for spam protection.
-# Using Staticman requires advanced knowledge, please consult
-# https://github.com/eduardoboucas/staticman/ and https://staticman.net/ for further
-# instructions. For any support with staticman please direct questions to staticman and
-# not to BeautifulJekyll.
-#staticman:
-#  repository : # GitHub username/repository eg. "username/repository"
-#  branch     : master # If you're not using `master` branch, then you also need to update the `branch` parameter in `staticman.yml`
-#  endpoint   : # URL of your deployment, with a trailing slash eg. "https://<your-api>/v3/entry/github/"
-#  reCaptcha:   # (optional, set these parameters in `staticman.yml` as well)
-#    siteKey  : # You need to apply for a site key on Google
-#    secret   : # Encrypt your password by going to https://<your-own-api>/v3/encrypt/<your-site-secret>
-
-# To use giscus comments:
-# (0) Uncomment the following giscus section, (1) Enable Discussions in your GitHub repository,
-# (2) Install the giscus app in your repository (details at https://giscus.app),
-# (3) Fill in *all* the parameters below
-# See more details about giscus and each of the following parameters at https://giscus.app
-giscus:
-  hostname: giscus.app # Replace with your giscus instance's hostname if self-hosting
-  repository: aaron-jang/aaron-jang.github.io # GitHub username/repository eg. "username/repository"
-  repository-id: R_kgDOQpIR0A # ID of your repository, retrieve this info from https://giscus.app
-  category: Announcements # Category name of your GitHub Discussion posts
-  category-id: DIC_kwDOQpIR0M4C0-Hd # ID of your category, retrieve this info from https://giscus.app
-  mapping: title
-  reactions-enabled: 1
-  emit-metadata: 0
-  theme: preferred_color_scheme
-
-################
-# --- Misc --- #
-################
-
-# Ruby Date Format to show dates of posts
-date_format: "%B %-d, %Y"
-
-# Facebook App ID
-#fb_app_id: ""
-
-#################################################################################
-# --- You don't need to touch anything below here (but you can if you want) --- #
-#################################################################################
-
-# Output options (more information on Jekyll's site)
-timezone: "Asia/Seoul"
-markdown: kramdown
-highlighter: rouge
-permalink: /:year-:month-:day-:title/
 paginate: 10
 
+# ---------- 빌드 ----------
+markdown: kramdown
 kramdown:
   input: GFM
-  toc_levels: "2"
+  footnote_backlink: "&#8617;&#xfe0e;"
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: highlight
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
 
-# Default YAML values (more information on Jekyll's site)
+collections:
+  tabs:
+    output: true
+    sort_by: order
+
 defaults:
-  -
-    scope:
+  - scope:
       path: ""
-      type: "posts"
+      type: posts
     values:
-      layout: "post"
-      comments: true  # add comments to all blog posts
-      social-share: true # add social media sharing buttons to all blog posts
-  -
-    scope:
-      path: "" # any file that's not a post will be a "page" layout by default
+      layout: post
+      comments: true
+      toc: true
+      # 기존 URL 유지 (Beautiful Jekyll 시절과 동일)
+      permalink: /:year-:month-:day-:title/
+  - scope:
+      path: _drafts
     values:
-      layout: "page"
+      comments: false
+  - scope:
+      path: ""
+      type: tabs
+    values:
+      layout: page
+      permalink: /:title/
 
-# Exclude these files from production site
+sass:
+  style: compressed
+
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  profile: false
+  blanklines: false
+  ignore:
+    envs: [development]
+
 exclude:
-  - CHANGELOG.md
+  - "*.gem"
+  - "*.gemspec"
+  - docs
+  - tools
+  - scripts
+  - README.md
+  - LICENSE
   - CNAME
   - Gemfile
   - Gemfile.lock
-  - LICENSE
-  - README.md
-  - screenshot.png
-  - docs/
+  - cleanup_files.txt
+  - fix_image_paths.py
+  - fix_markdown_images.py
+  - fix_old_image_paths.py
+  - favicon_origin.png
+  - purgecss.js
+  - "*.config.js"
+  - "package*.json"
 
-plugins:
-  - jekyll-paginate
-  - jekyll-remote-theme
-  # jekyll-sitemap disabled - using custom sitemap.xml
-
+jekyll-archives:
+  enabled: [categories, tags]
+  layouts:
+    category: category
+    tag: tag
+  permalinks:
+    tag: /tags/:name/
+    category: /categories/:name/

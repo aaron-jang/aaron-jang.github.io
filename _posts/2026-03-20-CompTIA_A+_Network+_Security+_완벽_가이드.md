@@ -1,16 +1,15 @@
 ---
 layout: post
 title: "CompTIA A+ / Network+ / Security+ 완벽 가이드"
-subtitle: "시험 구성·도메인별 비중·공부법·추천 교재까지 — 3대 핵심 자격증 한 번에 정리"
-share-description: "CompTIA A+, Network+, Security+ 시험의 도메인별 비중, 합격 점수, 추천 공부 순서, 무료·유료 교재, 합격 전략을 한 글로 정리했습니다. IT 자격증 시리즈 2편."
+description: "시험 구성·도메인별 비중·공부법·추천 교재까지 — 3대 핵심 자격증 한 번에 정리"
 date: 2026-03-20T09:30:00+09:00
-lastmod: 2026-08-30T23:37:00+09:00
+lastmod: 2026-09-23T16:21:19+09:00
+last_modified_at: 2026-08-30T23:37:00+09:00
 author: 수수
 tags: ["CompTIA", "A+", "Network+", "Security+", "IT자격증", "IT취업", "사이버보안", "공부법", "자격증시험", "커리어"]
 categories: ["개발"]
-cover-img: /assets/images/comptia_roadmap.webp
-thumbnail-img: /assets/images/comptia_roadmap.thumb.webp
-share-img: /assets/images/comptia_roadmap.png
+image:
+  path: /assets/images/comptia_roadmap.webp
 ---
 
 안녕하세요. 수수입니다.
@@ -21,13 +20,6 @@ share-img: /assets/images/comptia_roadmap.png
 
 ---
 
-## 목차
-{: .no_toc}
-
-* TOC
-{:toc}
-
----
 
 ## 30초 핵심 요약
 

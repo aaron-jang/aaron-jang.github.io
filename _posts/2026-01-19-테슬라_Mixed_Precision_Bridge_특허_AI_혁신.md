@@ -1,14 +1,15 @@
 ---
 layout: post
 title: 테슬라의 '수학적 치트코드' - 8비트 칩으로 32비트 AI를 구동하는 혁신 특허 공개
-subtitle: 일론 머스크 "Tesla AI 팀은 극한의 하드코어, 누구도 테슬라의 실전 AI를 따라올 수 없다"
+description: 일론 머스크 "Tesla AI 팀은 극한의 하드코어, 누구도 테슬라의 실전 AI를 따라올 수 없다"
 date: 2026-01-19T00:00:00+09:00
-lastmod: 2026-08-30T23:37:00+09:00
+lastmod: 2026-09-23T16:21:19+09:00
+last_modified_at: 2026-08-30T23:37:00+09:00
 author: 수수
 tags: ["테슬라", "AI", "특허", "Mixed-Precision", "FSD", "Optimus", "일론머스크", "반도체", "AI5칩"]
 categories: ["칼럼"]
-cover-img: /assets/img/tesla_autopilot.jpg
-thumbnail-img: /assets/img/tesla_autopilot_thumb.jpg
+image:
+  path: /assets/img/tesla_autopilot.jpg
 ---
 
 안녕하세요. 수수입니다. <br />
@@ -26,13 +27,6 @@ thumbnail-img: /assets/img/tesla_autopilot_thumb.jpg
 
 ---
 
-## 목차
-{: .no_toc}
-
-* TOC
-{:toc}
-
----
 
 ![테슬라 Mixed-Precision 특허 문서](/assets/images/tesla_mixed_precision_patent.jpeg)
 *테슬라 특허 US20260017019 - 8비트 하드웨어에서 고정밀 회전 위치 인코딩 계산*

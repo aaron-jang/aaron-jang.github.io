@@ -1,14 +1,15 @@
 ---
 layout: post
 title: SpaceX 2026년 IPO 확정 - 빌 애크먼의 SPARC 제안과 1.5조 달러 밸류에이션 완벽 분석
-subtitle: 일론 머스크가 확인한 2026년 SpaceX 상장, 역대 최대 IPO 가능성과 테슬라 주주 우선 투자 기회
+description: 일론 머스크가 확인한 2026년 SpaceX 상장, 역대 최대 IPO 가능성과 테슬라 주주 우선 투자 기회
 date: 2026-01-08T00:00:00+09:00
-lastmod: 2026-08-30T23:37:00+09:00
+lastmod: 2026-09-23T16:21:19+09:00
+last_modified_at: 2026-08-30T23:37:00+09:00
 author: 수수
 tags: ["SpaceX", "IPO", "일론머스크", "SPARC", "빌애크먼", "스타링크"]
 categories: ["투자"]
-cover-img: /assets/img/spacex.jpg
-thumbnail-img: /assets/img/spacex_thumb.jpg
+image:
+  path: /assets/img/spacex.jpg
 ---
 
 안녕하세요. 수수입니다. <br />
