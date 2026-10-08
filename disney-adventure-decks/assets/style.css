@@ -85,6 +85,8 @@ h1{font-size:clamp(1.6rem,4.5vw,2.4rem);line-height:1.25;margin:0;font-weight:90
 .deckbtn.cabins .lbl{font-size:.75rem;color:var(--dim)}
 .deckbtn.active{background:var(--hull)}
 .deckbtn.active .n,.deckbtn.active .lbl{color:var(--hull-ink)}
+.cabrow{margin:3px 0}
+.cabrow-in{display:block;font-size:.72rem;color:var(--dim);text-align:center;padding:3px 6px;border:1px dashed var(--line);border-radius:8px;background:var(--bg)}
 .hull{background:var(--red);color:#fff;font-size:.75rem;text-align:center;padding:6px;border-radius:6px 6px 14px 14px;margin-top:4px}
 .waterline{height:6px;background:repeating-linear-gradient(90deg,var(--c-pool) 0 10px,transparent 10px 16px);opacity:.5;margin-top:6px;border-radius:3px}
 
@@ -136,6 +138,8 @@ h1{font-size:clamp(1.6rem,4.5vw,2.4rem);line-height:1.25;margin:0;font-weight:90
   .deckbtn.cabins .lbl{display:none}
   .deckbtn .ticks{justify-content:center;max-width:44px}
   .hull,.waterline{display:none}
+  .cabrow{flex:none;display:flex;align-items:center}
+  .cabrow-in{font-size:.68rem;padding:4px 8px;white-space:nowrap;border-radius:999px}
   .deck{padding:16px}
   .deck-num{font-size:2.1rem}
 }

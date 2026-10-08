@@ -4,12 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Disney Adventure Deck-by-Deck Guide · 디즈니 어드벤처호 층별 시설 가이드 | 수수라이프</title>
-<meta name="description" content="Deck-by-deck public venue guide for Disney Adventure (Singapore). Available in 한국어, English, 日本語, 简体中文.">
+<meta name="description" content="Deck-by-deck public venue guide for Disney Adventure (Singapore). Available in 한국어, English, 日本語, 简体中文, 繁體中文.">
 <link rel="canonical" href="https://soosoo.life/disney-adventure-decks/">
 <link rel="alternate" hreflang="ko" href="https://soosoo.life/disney-adventure-decks/ko/">
 <link rel="alternate" hreflang="en" href="https://soosoo.life/disney-adventure-decks/en/">
 <link rel="alternate" hreflang="ja" href="https://soosoo.life/disney-adventure-decks/ja/">
-<link rel="alternate" hreflang="zh-Hans" href="https://soosoo.life/disney-adventure-decks/zh/">
+<link rel="alternate" hreflang="zh-Hans" href="https://soosoo.life/disney-adventure-decks/zh-cn/">
+<link rel="alternate" hreflang="zh-Hant" href="https://soosoo.life/disney-adventure-decks/zh-tw/">
 <link rel="alternate" hreflang="x-default" href="https://soosoo.life/disney-adventure-decks/">
 <meta property="og:title" content="Disney Adventure Deck-by-Deck Guide">
 <meta property="og:image" content="https://soosoo.life/assets/images/disney_adventure_singapore.jpg">
@@ -21,7 +22,7 @@
   var saved=null; try{saved=localStorage.getItem('da-lang')}catch(e){}
   var langs=(navigator.languages&&navigator.languages.length?navigator.languages:[navigator.language||'en']).map(function(l){return String(l).toLowerCase()});
   var pick=saved;
-  if(!pick){ for(var i=0;i<langs.length&&!pick;i++){ var l=langs[i]; if(l.indexOf('ko')===0)pick='ko'; else if(l.indexOf('ja')===0)pick='ja'; else if(l.indexOf('zh')===0)pick='zh'; else if(l.indexOf('en')===0)pick='en'; } }
+  if(!pick){ for(var i=0;i<langs.length&&!pick;i++){ var l=langs[i]; if(l.indexOf('ko')===0)pick='ko'; else if(l.indexOf('ja')===0)pick='ja'; else if(l.indexOf('zh')===0)pick=(/zh-(tw|hk|mo|hant)/.test(l)?'zh-tw':'zh-cn'); else if(l.indexOf('en')===0)pick='en'; } }
   if(!pick)pick='en';
   location.replace('/disney-adventure-decks/'+pick+'/');
 })();
@@ -30,8 +31,8 @@
 <body>
 <main class="wrap" style="padding-top:40px">
   <h1>Disney Adventure Deck-by-Deck Guide</h1>
-  <p class="sub">Choose a language · 언어를 선택하세요 · 言語を選択 · 选择语言</p>
-  <ul class="langlist"><li><a href="/disney-adventure-decks/ko/" hreflang="ko" lang="ko">한국어 — 디즈니 어드벤처호 층별 시설 가이드</a></li><li><a href="/disney-adventure-decks/en/" hreflang="en" lang="en">English — Disney Adventure Deck-by-Deck Guide</a></li><li><a href="/disney-adventure-decks/ja/" hreflang="ja" lang="ja">日本語 — ディズニー・アドベンチャー デッキ別施設ガイド</a></li><li><a href="/disney-adventure-decks/zh/" hreflang="zh-Hans" lang="zh-Hans">简体中文 — 迪士尼冒险号 分层设施指南</a></li></ul>
+  <p class="sub">Choose a language · 언어를 선택하세요 · 言語を選択 · 选择语言 · 選擇語言</p>
+  <ul class="langlist"><li><a href="/disney-adventure-decks/ko/" hreflang="ko" lang="ko">한국어 — 디즈니 어드벤처호 층별 시설 가이드</a></li><li><a href="/disney-adventure-decks/en/" hreflang="en" lang="en">English — Disney Adventure Deck-by-Deck Guide</a></li><li><a href="/disney-adventure-decks/ja/" hreflang="ja" lang="ja">日本語 — ディズニー・アドベンチャー デッキ別施設ガイド</a></li><li><a href="/disney-adventure-decks/zh-cn/" hreflang="zh-Hans" lang="zh-Hans">简体中文 — 迪士尼冒险号 分层设施指南</a></li><li><a href="/disney-adventure-decks/zh-tw/" hreflang="zh-Hant" lang="zh-Hant">繁體中文 — 迪士尼冒險號 分層設施指南</a></li></ul>
 </main>
 </body>
 </html>

@@ -14,9 +14,32 @@ ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "disney-ad
 SITE = "https://soosoo.life"
 BASE = "/disney-adventure-decks"
 UPDATED = "2026-10-08"
-LANGS = ["ko", "en", "ja", "zh"]
-HREFLANG = {"ko": "ko", "en": "en", "ja": "ja", "zh": "zh-Hans"}
-LANG_NAME = {"ko": "한국어", "en": "English", "ja": "日本語", "zh": "简体中文"}
+LANGS = ["ko", "en", "ja", "zh-cn", "zh-tw"]
+HREFLANG = {"ko": "ko", "en": "en", "ja": "ja", "zh-cn": "zh-Hans", "zh-tw": "zh-Hant"}
+LANG_NAME = {"ko": "한국어", "en": "English", "ja": "日本語", "zh-cn": "简体中文", "zh-tw": "繁體中文"}
+OG_LOCALE = {"ko": "ko_KR", "en": "en_US", "ja": "ja_JP", "zh-cn": "zh_CN", "zh-tw": "zh_TW"}
+# 데이터는 간체(zh)로 작성하고, 번체(zh-tw)는 OpenCC(s2twp)로 변환 + 대만 용어 보정
+DATA_KEY = {"ko": "ko", "en": "en", "ja": "ja", "zh-cn": "zh", "zh-tw": "zh"}
+TW_FIX = {"過山車": "雲霄飛車", "無邊泳池": "無邊際泳池", "KTV包間": "KTV包廂", "影院": "電影院",
+          "幼兒戲水池": "幼兒戲水區", "托兒所": "托嬰中心"}
+try:
+    from opencc import OpenCC
+    _cc = OpenCC("s2twp")
+except ImportError:
+    raise SystemExit("opencc 가 필요합니다: pip3 install --break-system-packages opencc-python-reimplemented")
+def to_tw(x):
+    if isinstance(x, str):
+        y = _cc.convert(x)
+        for a, b in TW_FIX.items(): y = y.replace(a, b)
+        return y
+    if isinstance(x, list): return [to_tw(i) for i in x]
+    if isinstance(x, tuple): return tuple(to_tw(i) for i in x)
+    if isinstance(x, dict): return {k: to_tw(v) for k, v in x.items()}
+    return x
+def tr(d, L):
+    """언어별 문자열 dict 에서 L 에 맞는 값 (zh-tw 는 zh 를 번체로 변환)"""
+    k = DATA_KEY[L]
+    return to_tw(d[k]) if L == "zh-tw" else d[k]
 
 # ---------------------------------------------------------------- UI 문자열
 UI = {
@@ -34,15 +57,12 @@ UI = {
   lbl_paid="유료", lbl_partpaid="일부 유료", lbl_lock="컨시어지", theme="테마", theme_aria="화면 테마 바꾸기",
   notes_aria="참고 사항", lang_label="언어", back="← 수수라이프 블로그", updated="업데이트",
   notes=[
-   ("🔒 컨시어지","표시와 취소선이 그어진 시설은 컨시어지 객실 투숙객 전용이라 일반 승객은 이용할 수 없어요."),
-   ("🎬 영화","는 7층 Baymax Cinemas(실내 4개관)와 17층 Toy Story Place 야외 대형 스크린 2곳이에요. 상영 시간표는 승선 후 Navigator 앱의 일일 일정에서 확인하세요."),
-   ("🍽️ 메인 다이닝","은 저녁마다 식당을 바꿔 가며 먹는 로테이션 식당 6곳이에요. 다른 디즈니 선박은 3곳이지만 어드벤처호는 6곳이고, 크루즈 요금에 포함이에요."),
-   ("🍱 뷔페","는 아침·점심에만 뷔페로 운영되고, 저녁에는 메인 다이닝(로테이션) 식당으로 바뀌어요. 요금은 크루즈 요금에 포함이에요."),
-   ("💰 유료","는 이용 시 추가 요금이 붙는 곳, 💰 일부 유료는 기본 음료는 무료지만 스페셜티 음료가 유료이거나 자료마다 엇갈리는 곳이에요. 일반 커피·차·탄산음료·주스는 식당과 음료 스테이션에서 무료예요. 바·라운지는 음료가 유료예요."),
-   ("Edge·Vibe 위치","는 공식 덱플랜 기준 자료에서 7층으로 나오지만, 일부 블로그는 11층으로 적고 있어요. 승선 후 내비게이터 앱으로 한 번 더 확인하세요."),
-   ("출처","WDW News Today 덱플랜 정리(2026년 3월, 공식 덱플랜 기반), Cruise Critic, CruiseMapper. 운영 중 변경될 수 있어요."),
+   ('🔒 컨시어지','표시·취소선 시설은 컨시어지 객실 투숙객 전용이에요.'),
+   ('🍽️ 메인 다이닝','은 저녁마다 식당을 바꿔 가며 먹는 로테이션 식당 6곳(크루즈 요금 포함)이고, 🍱 뷔페 2곳은 아침·점심에만 뷔페로 운영돼요.'),
+   ('💰 유료','는 추가 요금이 붙는 곳, 💰 일부 유료는 기본 음료는 무료지만 스페셜티 음료가 유료인 곳이에요. 일반 커피·차·탄산음료·주스는 무료, 바·라운지 음료는 유료예요.'),
+   ('출처','공식 덱플랜 기반 자료(WDW News Today 2026.3, Cruise Critic, CruiseMapper). 운영 중 변경될 수 있으니 승선 후 Navigator 앱으로 확인하세요.'),
   ],
-  cabins="객실", no_public="승객 시설 없음", cabins_laundry="객실 · 세탁실", cabins_medical="객실 · 의료센터",
+  decks_fmt="{n}층", cabins="객실", no_public="승객 시설 없음", cabins_laundry="객실 · 세탁실", cabins_medical="객실 · 의료센터",
  ),
  "en": dict(
   title="Disney Adventure Deck-by-Deck Guide", h1="Disney Adventure<br>Deck-by-Deck Venue Guide",
@@ -58,15 +78,12 @@ UI = {
   lbl_paid="Extra charge", lbl_partpaid="Partly extra", lbl_lock="Concierge", theme="Theme", theme_aria="Toggle color theme",
   notes_aria="Notes", lang_label="Language", back="← Soosoo Life blog", updated="Updated",
   notes=[
-   ("🔒 Concierge","-tagged venues with a strikethrough are reserved for concierge stateroom guests and are not open to regular guests."),
-   ("🎬 Movies","play at Baymax Cinemas on Deck 7 (four indoor screens) and on the two outdoor big screens at Toy Story Place on Deck 17. Showtimes are listed in the daily schedule in the Navigator app once on board."),
-   ("🍽️ Main dining","means the six rotational restaurants you cycle through each evening. Other Disney ships have three; Disney Adventure has six, all included in the cruise fare."),
-   ("🍱 Buffet","venues run as buffets at breakfast and lunch only, then switch to rotational main dining at dinner. Included in the cruise fare."),
-   ("💰 Extra charge","marks venues that cost extra. 💰 Partly extra means basic drinks are free but specialty drinks cost extra, or sources disagree. Regular coffee, tea, soft drinks and juice are free at restaurants and beverage stations. Drinks at bars and lounges cost extra."),
-   ("Edge & Vibe","are on Deck 7 according to the official deck plan, though some blogs list Deck 11. Double-check in the Navigator app once on board."),
-   ("Sources","WDW News Today deck-plan summary (March 2026, based on the official deck plans), Cruise Critic, CruiseMapper. Subject to change during operation."),
+   ('🔒 Concierge','-tagged venues with a strikethrough are reserved for concierge stateroom guests.'),
+   ('🍽️ Main dining','means the six rotational restaurants you cycle through each evening (included in the fare). The two 🍱 buffet venues run as buffets at breakfast and lunch only.'),
+   ('💰 Extra charge','marks venues that cost extra; 💰 Partly extra means basic drinks are free but specialty drinks cost extra. Regular coffee, tea, soft drinks and juice are free; drinks at bars and lounges cost extra.'),
+   ('Sources','Based on the official deck plans (WDW News Today, Mar 2026; Cruise Critic; CruiseMapper). Subject to change — confirm in the Navigator app once on board.'),
   ],
-  cabins="Staterooms", no_public="No public venues", cabins_laundry="Staterooms · Laundry", cabins_medical="Staterooms · Medical Center",
+  decks_fmt="Decks {n}", cabins="Staterooms", no_public="No public venues", cabins_laundry="Staterooms · Laundry", cabins_medical="Staterooms · Medical Center",
  ),
  "ja": dict(
   title="ディズニー・アドベンチャー デッキ別施設ガイド", h1="ディズニー・アドベンチャー<br>デッキ別パブリック施設ガイド",
@@ -82,15 +99,12 @@ UI = {
   lbl_paid="有料", lbl_partpaid="一部有料", lbl_lock="コンシェルジュ", theme="テーマ", theme_aria="画面テーマを切り替え",
   notes_aria="注意事項", lang_label="言語", back="← Soosoo Life ブログ", updated="更新",
   notes=[
-   ("🔒 コンシェルジュ","表示と取り消し線のある施設は、コンシェルジュ客室の宿泊者専用で、一般の乗客は利用できません。"),
-   ("🎬 映画","は7階の Baymax Cinemas（屋内4スクリーン）と、17階 Toy Story Place の屋外大型スクリーン2か所で上映されます。上映スケジュールは乗船後に Navigator アプリの日程で確認してください。"),
-   ("🍽️ メインダイニング","は、毎晩レストランを変えて食事するローテーション式のレストラン6か所です。他のディズニー船は3か所ですが、アドベンチャー号は6か所で、クルーズ料金に含まれます。"),
-   ("🍱 ビュッフェ","は朝食・昼食のみビュッフェとして営業し、夕食はメインダイニング（ローテーション）に切り替わります。料金はクルーズ料金に含まれます。"),
-   ("💰 有料","は利用時に追加料金がかかる施設、💰 一部有料は基本のドリンクは無料でもスペシャルティドリンクが有料、または資料によって異なる施設です。通常のコーヒー・紅茶・ソフトドリンク・ジュースはレストランとドリンクステーションで無料です。バー・ラウンジのドリンクは有料です。"),
-   ("Edge・Vibe の位置","は公式デッキプラン準拠の資料では7階ですが、一部のブログは11階と記載しています。乗船後に Navigator アプリでもう一度確認してください。"),
-   ("出典","WDW News Today のデッキプランまとめ（2026年3月、公式デッキプラン準拠）、Cruise Critic、CruiseMapper。運航中に変更される場合があります。"),
+   ('🔒 コンシェルジュ','表示・取り消し線の施設はコンシェルジュ客室の宿泊者専用です。'),
+   ('🍽️ メインダイニング','は毎晩レストランを変えて食事するローテーション式レストラン6か所（クルーズ料金込み）、🍱 ビュッフェ2か所は朝食・昼食のみビュッフェとして営業します。'),
+   ('💰 有料','は追加料金がかかる施設、💰 一部有料は基本ドリンクは無料でスペシャルティドリンクが有料の施設です。通常のコーヒー・紅茶・ソフトドリンク・ジュースは無料、バー・ラウンジのドリンクは有料です。'),
+   ('出典','公式デッキプラン準拠の資料（WDW News Today 2026年3月、Cruise Critic、CruiseMapper）。運航中に変更される場合があるため、乗船後に Navigator アプリで確認してください。'),
   ],
-  cabins="客室", no_public="乗客用施設なし", cabins_laundry="客室 · ランドリー", cabins_medical="客室 · メディカルセンター",
+  decks_fmt="{n}階", cabins="客室", no_public="乗客用施設なし", cabins_laundry="客室 · ランドリー", cabins_medical="客室 · メディカルセンター",
  ),
  "zh": dict(
   title="迪士尼冒险号 分层设施指南", h1="迪士尼冒险号<br>分层公共设施指南",
@@ -106,15 +120,12 @@ UI = {
   lbl_paid="收费", lbl_partpaid="部分收费", lbl_lock="礼宾", theme="主题", theme_aria="切换界面主题",
   notes_aria="注意事项", lang_label="语言", back="← Soosoo Life 博客", updated="更新",
   notes=[
-   ("🔒 礼宾","标记并带删除线的设施仅限礼宾客房住客使用，普通乘客无法使用。"),
-   ("🎬 电影","在7层 Baymax Cinemas（室内4个厅）和17层 Toy Story Place 的两块户外大屏幕放映。放映时间表请登船后在 Navigator 应用的每日日程中查看。"),
-   ("🍽️ 主餐厅","指每晚轮换就餐的6家轮换餐厅。其他迪士尼邮轮为3家，冒险号有6家，均包含在船票费用中。"),
-   ("🍱 自助餐","仅在早餐、午餐时段以自助形式运营，晚餐则改为主餐厅（轮换）模式。费用包含在船票中。"),
-   ("💰 收费","指使用时需额外付费的设施；💰 部分收费指基础饮品免费但特色饮品收费，或各资料说法不一的设施。普通咖啡、茶、碳酸饮料和果汁在餐厅及饮品站免费。酒吧、酒廊的饮品收费。"),
-   ("Edge·Vibe 的位置","在基于官方甲板图的资料中为7层，但部分博客写作11层。登船后请在 Navigator 应用中再次确认。"),
-   ("来源","WDW News Today 甲板图整理（2026年3月，基于官方甲板图）、Cruise Critic、CruiseMapper。运营期间可能变更。"),
+   ('🔒 礼宾','标记并带删除线的设施仅限礼宾客房住客使用。'),
+   ('🍽️ 主餐厅','指每晚轮换就餐的6家轮换餐厅（含在船票内），🍱 自助餐2处仅在早餐、午餐时段以自助形式运营。'),
+   ('💰 收费','指需额外付费的设施，💰 部分收费指基础饮品免费但特色饮品收费。普通咖啡、茶、碳酸饮料和果汁免费，酒吧、酒廊饮品收费。'),
+   ('来源','基于官方甲板图的资料（WDW News Today 2026年3月、Cruise Critic、CruiseMapper）。运营期间可能变更，请登船后在 Navigator 应用中确认。'),
   ],
-  cabins="客房", no_public="无乘客设施", cabins_laundry="客房 · 洗衣房", cabins_medical="客房 · 医疗中心",
+  decks_fmt="{n}层", cabins="客房", no_public="无乘客设施", cabins_laundry="客房 · 洗衣房", cabins_medical="客房 · 医疗中心",
  ),
 }
 
@@ -278,31 +289,46 @@ esc = lambda s: html.escape(s, quote=True)
 
 def deck_title(dk, L):
     t = dk["t"]
-    return UI[L][t] if isinstance(t, str) else t[L]
+    return ui_for(L)[t] if isinstance(t, str) else tr(t, L)
 
 # ---------------------------------------------------------------- 렌더링
+def ui_for(L):
+    base = UI[DATA_KEY[L]]
+    return to_tw(base) if L == "zh-tw" else base
+
 def render_lang(L):
-    u = UI[L]; hl = HREFLANG[L]
+    u = ui_for(L); hl = HREFLANG[L]
     url = f"{SITE}{BASE}/{L}/"
     alternates = "\n".join(f'<link rel="alternate" hreflang="{HREFLANG[x]}" href="{SITE}{BASE}/{x}/">' for x in LANGS)
     alternates += f'\n<link rel="alternate" hreflang="x-default" href="{SITE}{BASE}/">'
 
     # 선박 단면 내비
     stack = []
+    pending_cab = []
+    def flush_cab():
+        if pending_cab:
+            fmt = u["decks_fmt"] if len(pending_cab) > 1 else u["decks_fmt"].replace("Decks", "Deck")
+            label = f'{fmt.format(n="·".join(pending_cab))} · {u["cabins"]}'
+            stack.append(f'<li class="cabrow" aria-label="{esc(label)}"><span class="cabrow-in">{esc(label)}</span></li>')
+            pending_cab.clear()
     for dk in DECKS:
+        if dk.get("cab"):  # 객실 전용 층(20·15·13·12)은 버튼 대신 구간 표시 한 줄로
+            pending_cab.append(dk["n"]); continue
+        flush_cab()
         cats = []
         for v in dk["v"]:
             if v[2] not in cats: cats.append(v[2])
         if dk.get("cab"):
             lbl = f'<span class="lbl">{esc(deck_title(dk,L))}</span>'
         else:
-            ticks = "".join(f'<i style="background:var(--c-{c})" title="{esc(CATS[c][L])}"></i>' for c in cats)
+            ticks = "".join(f'<i style="background:var(--c-{c})" title="{esc(tr(CATS[c],L))}"></i>' for c in cats)
             lbl = f'<span class="lbl"><span class="ticks">{ticks}</span></span>'
         aria = f'{esc(u["deck_aria"].format(n=dk["n"]))}{esc(deck_title(dk,L))}'
         if dk.get("cab"):  # 객실 전용 층은 이동할 섹션이 없으므로 링크가 아닌 표시용
             stack.append(f'<li><span class="deckbtn cabins" data-deck="{dk["n"]}" aria-label="{aria}"><span class="n">{dk["n"]}</span>{lbl}</span></li>')
         else:
             stack.append(f'<li><a class="deckbtn" href="#d{dk["n"]}" data-deck="{dk["n"]}" aria-label="{aria}"><span class="n">{dk["n"]}</span>{lbl}</a></li>')
+    flush_cab()
 
     # 층 섹션
     secs = []
@@ -310,14 +336,14 @@ def render_lang(L):
         if dk.get("cab"): continue
         items = []
         for name, desc, c, lock in dk["v"]:
-            d = desc[L]
+            d = tr(desc, L)
             paid = PAID.get(name) if not lock else None
-            text = " ".join(filter(None, [name, d, CATS[c][L], CATS[c]["ko"], CATS[c]["en"],
+            text = " ".join(filter(None, [name, d, tr(CATS[c],L), CATS[c]["ko"], CATS[c]["en"],
                    (u["lbl_paid"] if paid=="paid" else u["lbl_partpaid"] if paid=="part" else ""),
                    ("buffet " + u["lbl_buffet"]) if name in BUFFET else "",
                    ("main dining " + u["lbl_main"]) if name in MAIN else "",
                    ("movie cinema 영화 映画 电影") if name in MOVIE else "", SYN[c]])).lower()
-            labels = [f'<span class="cat" style="color:var(--c-{c});background:color-mix(in srgb,var(--c-{c}) 12%,transparent)">{esc(CATS[c][L])}</span>']
+            labels = [f'<span class="cat" style="color:var(--c-{c});background:color-mix(in srgb,var(--c-{c}) 12%,transparent)">{esc(tr(CATS[c],L))}</span>']
             if name in MOVIE: labels.append(f'<span class="movie">🎬 {esc(u["lbl_cinema"] if MOVIE[name]=="cinema" else u["lbl_screen"])}</span>')
             if name in MAIN: labels.append(f'<span class="main">🍽️ {esc(u["lbl_main"])}</span>')
             if name in BUFFET: labels.append(f'<span class="buffet">🍱 {esc(u["lbl_buffet"])}</span>')
@@ -327,10 +353,10 @@ def render_lang(L):
             items.append(
               f'<li class="v{" concierge" if lock else ""}" data-cat="{c}" data-paid="{1 if paid else ""}" data-buffet="{1 if name in BUFFET else ""}" '
               f'data-main="{1 if name in MAIN else ""}" data-movie="{1 if name in MOVIE else ""}" data-text="{esc(text)}">'
-              f'<span class="tag" style="background:color-mix(in srgb,var(--c-{c}) 16%,transparent)" title="{esc(CATS[c][L])}" aria-label="{esc(CATS[c][L])}">{CATS[c]["e"]}</span>'
+              f'<span class="tag" style="background:color-mix(in srgb,var(--c-{c}) 16%,transparent)" title="{esc(tr(CATS[c],L))}" aria-label="{esc(tr(CATS[c],L))}">{CATS[c]["e"]}</span>'
               f'<span><span class="name">{nm}</span><span class="labels">{"".join(labels)}</span>'
               + (f'<span class="ko">{esc(d)}</span>' if d else "") + '</span></li>')
-        desc_html = f'<p class="deck-desc">{esc(dk["d"][L])}</p>' if dk.get("d") else ""
+        desc_html = f'<p class="deck-desc">{esc(tr(dk["d"],L))}</p>' if dk.get("d") else ""
         secs.append(
           f'<section class="deck" id="d{dk["n"]}" data-deck="{dk["n"]}" aria-labelledby="h{dk["n"]}">'
           f'<div class="deck-head"><span class="deck-num" aria-hidden="true">{dk["n"]}<small>{esc(u["deck_unit"])}</small></span>'
@@ -344,7 +370,7 @@ def render_lang(L):
             if v[2] not in used: used.append(v[2])
     chips = {"all": f'<button class="chip" type="button" data-cat="all" aria-pressed="true">{esc(u["all"])}</button>'}
     for k in used:
-        chips[k] = f'<button class="chip" type="button" data-cat="{k}" aria-pressed="false"><span class="dot" style="background:var(--c-{k})"></span>{CATS[k]["e"]} {esc(CATS[k][L])}</button>'
+        chips[k] = f'<button class="chip" type="button" data-cat="{k}" aria-pressed="false"><span class="dot" style="background:var(--c-{k})"></span>{CATS[k]["e"]} {esc(tr(CATS[k],L))}</button>'
     chips["paid"] = f'<button class="chip" type="button" data-cat="paid" aria-pressed="false"><span class="dot" style="background:var(--paid)"></span>💰 {esc(u["paid_chip"])}</button>'
     chips["movie"] = f'<button class="chip" type="button" data-cat="movie" aria-pressed="false"><span class="dot" style="background:var(--c-show)"></span>🎬 {esc(u["movie_chip"])}</button>'
     chips["main"] = f'<button class="chip" type="button" data-cat="main" aria-pressed="false"><span class="dot" style="background:var(--hull)"></span>🍽️ {esc(u["main_chip"])}</button>'
@@ -365,8 +391,8 @@ def render_lang(L):
         pos += 1
         deck_items.append({"@type": "ListItem", "position": pos, "url": f"{url}#d{dk['n']}",
             "item": {"@type": "Place", "name": f"Deck {dk['n']} – {deck_title(dk,L)}",
-                     "description": (dk["d"][L] if dk.get("d") else "") or None,
-                     "containsPlace": [{"@type": "Place", "name": n, **({"description": d[L]} if d[L] else {})} for n, d, c, l in dk["v"]]}})
+                     "description": (tr(dk["d"],L) if dk.get("d") else "") or None,
+                     "containsPlace": [{"@type": "Place", "name": n, **({"description": tr(d,L)} if tr(d,L) else {})} for n, d, c, l in dk["v"]]}})
     for it in deck_items:
         if it["item"]["description"] is None: del it["item"]["description"]
     ld = [
@@ -396,7 +422,7 @@ def render_lang(L):
 <meta property="og:description" content="{esc(u["desc"])}">
 <meta property="og:url" content="{url}">
 <meta property="og:image" content="{SITE}/assets/images/disney_adventure_singapore.jpg">
-<meta property="og:locale" content="{ {"ko":"ko_KR","en":"en_US","ja":"ja_JP","zh":"zh_CN"}[L] }">
+<meta property="og:locale" content="{OG_LOCALE[L]}">
 <meta property="og:site_name" content="수수라이프">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="robots" content="index, follow, max-image-preview:large">
@@ -451,14 +477,14 @@ def render_lang(L):
 
 def render_root():
     alternates = "\n".join(f'<link rel="alternate" hreflang="{HREFLANG[x]}" href="{SITE}{BASE}/{x}/">' for x in LANGS)
-    links = "".join(f'<li><a href="{BASE}/{x}/" hreflang="{HREFLANG[x]}" lang="{HREFLANG[x]}">{LANG_NAME[x]} — {esc(UI[x]["title"])}</a></li>' for x in LANGS)
+    links = "".join(f'<li><a href="{BASE}/{x}/" hreflang="{HREFLANG[x]}" lang="{HREFLANG[x]}">{LANG_NAME[x]} — {esc(ui_for(x)["title"])}</a></li>' for x in LANGS)
     return f'''<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Disney Adventure Deck-by-Deck Guide · 디즈니 어드벤처호 층별 시설 가이드 | 수수라이프</title>
-<meta name="description" content="Deck-by-deck public venue guide for Disney Adventure (Singapore). Available in 한국어, English, 日本語, 简体中文.">
+<meta name="description" content="Deck-by-deck public venue guide for Disney Adventure (Singapore). Available in 한국어, English, 日本語, 简体中文, 繁體中文.">
 <link rel="canonical" href="{SITE}{BASE}/">
 {alternates}
 <link rel="alternate" hreflang="x-default" href="{SITE}{BASE}/">
@@ -472,7 +498,7 @@ def render_root():
   var saved=null; try{{saved=localStorage.getItem('da-lang')}}catch(e){{}}
   var langs=(navigator.languages&&navigator.languages.length?navigator.languages:[navigator.language||'en']).map(function(l){{return String(l).toLowerCase()}});
   var pick=saved;
-  if(!pick){{ for(var i=0;i<langs.length&&!pick;i++){{ var l=langs[i]; if(l.indexOf('ko')===0)pick='ko'; else if(l.indexOf('ja')===0)pick='ja'; else if(l.indexOf('zh')===0)pick='zh'; else if(l.indexOf('en')===0)pick='en'; }} }}
+  if(!pick){{ for(var i=0;i<langs.length&&!pick;i++){{ var l=langs[i]; if(l.indexOf('ko')===0)pick='ko'; else if(l.indexOf('ja')===0)pick='ja'; else if(l.indexOf('zh')===0)pick=(/zh-(tw|hk|mo|hant)/.test(l)?'zh-tw':'zh-cn'); else if(l.indexOf('en')===0)pick='en'; }} }}
   if(!pick)pick='en';
   location.replace('{BASE}/'+pick+'/');
 }})();
@@ -481,7 +507,7 @@ def render_root():
 <body>
 <main class="wrap" style="padding-top:40px">
   <h1>Disney Adventure Deck-by-Deck Guide</h1>
-  <p class="sub">Choose a language · 언어를 선택하세요 · 言語を選択 · 选择语言</p>
+  <p class="sub">Choose a language · 언어를 선택하세요 · 言語を選択 · 选择语言 · 選擇語言</p>
   <ul class="langlist">{links}</ul>
 </main>
 </body>
@@ -576,6 +602,8 @@ h1{font-size:clamp(1.6rem,4.5vw,2.4rem);line-height:1.25;margin:0;font-weight:90
 .deckbtn.cabins .lbl{font-size:.75rem;color:var(--dim)}
 .deckbtn.active{background:var(--hull)}
 .deckbtn.active .n,.deckbtn.active .lbl{color:var(--hull-ink)}
+.cabrow{margin:3px 0}
+.cabrow-in{display:block;font-size:.72rem;color:var(--dim);text-align:center;padding:3px 6px;border:1px dashed var(--line);border-radius:8px;background:var(--bg)}
 .hull{background:var(--red);color:#fff;font-size:.75rem;text-align:center;padding:6px;border-radius:6px 6px 14px 14px;margin-top:4px}
 .waterline{height:6px;background:repeating-linear-gradient(90deg,var(--c-pool) 0 10px,transparent 10px 16px);opacity:.5;margin-top:6px;border-radius:3px}
 
@@ -627,6 +655,8 @@ h1{font-size:clamp(1.6rem,4.5vw,2.4rem);line-height:1.25;margin:0;font-weight:90
   .deckbtn.cabins .lbl{display:none}
   .deckbtn .ticks{justify-content:center;max-width:44px}
   .hull,.waterline{display:none}
+  .cabrow{flex:none;display:flex;align-items:center}
+  .cabrow-in{font-size:.68rem;padding:4px 8px;white-space:nowrap;border-radius:999px}
   .deck{padding:16px}
   .deck-num{font-size:2.1rem}
 }
@@ -712,6 +742,10 @@ def main():
         os.makedirs(os.path.join(ROOT, L), exist_ok=True)
         with open(os.path.join(ROOT, L, "index.html"), "w", encoding="utf-8") as f: f.write(render_lang(L))
     with open(os.path.join(ROOT, "index.html"), "w", encoding="utf-8") as f: f.write(render_root())
+    # 초기 배포 때 쓰던 /zh/ 경로는 /zh-cn/ 으로 안내
+    os.makedirs(os.path.join(ROOT, "zh"), exist_ok=True)
+    with open(os.path.join(ROOT, "zh", "index.html"), "w", encoding="utf-8") as f:
+        f.write(f'<!DOCTYPE html><html lang="zh-Hans"><head><meta charset="utf-8"><title>Redirecting…</title><meta name="robots" content="noindex"><link rel="canonical" href="{SITE}{BASE}/zh-cn/"><meta http-equiv="refresh" content="0; url={BASE}/zh-cn/"><script>location.replace("{BASE}/zh-cn/")</script></head><body><a href="{BASE}/zh-cn/">简体中文</a></body></html>\n')
     with open(os.path.join(ROOT, "assets", "style.css"), "w", encoding="utf-8") as f: f.write(CSS.strip() + "\n")
     with open(os.path.join(ROOT, "assets", "app.js"), "w", encoding="utf-8") as f: f.write(JS)
     print("generated:", ", ".join(f"{L}/index.html" for L in LANGS), "+ index.html, assets/style.css, assets/app.js")

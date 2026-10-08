@@ -64,7 +64,13 @@ layout: null
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://soosoo.life/disney-adventure-decks/zh/</loc>
+    <loc>https://soosoo.life/disney-adventure-decks/zh-cn/</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://soosoo.life/disney-adventure-decks/zh-tw/</loc>
     <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
