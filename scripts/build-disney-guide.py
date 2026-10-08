@@ -60,6 +60,7 @@ UI = {
    ('🔒 컨시어지','표시·취소선 시설은 컨시어지 객실 투숙객 전용이에요.'),
    ('🍽️ 메인 다이닝','은 저녁마다 식당을 바꿔 가며 먹는 로테이션 식당 6곳(크루즈 요금 포함)이고, 🍱 뷔페 2곳은 아침·점심에만 뷔페로 운영돼요.'),
    ('💰 유료','는 추가 요금이 붙는 곳, 💰 일부 유료는 기본 음료는 무료지만 스페셜티 음료가 유료인 곳이에요. 일반 커피·차·탄산음료·주스는 무료, 바·라운지 음료는 유료예요.'),
+   ('🕒 운영 시간',"은 항해일마다 달라 승선 후 Navigator 앱에만 표시돼요. 여기 적은 시간은 공개 자료로 확인된 것만이에요. 룸서비스는 24시간 무료예요."),
    ('출처','공식 덱플랜 기반 자료(WDW News Today 2026.3, Cruise Critic, CruiseMapper). 운영 중 변경될 수 있으니 승선 후 Navigator 앱으로 확인하세요.'),
   ],
   decks_fmt="{n}층", cabins="객실", no_public="승객 시설 없음", cabins_laundry="객실 · 세탁실", cabins_medical="객실 · 의료센터",
@@ -81,6 +82,7 @@ UI = {
    ('🔒 Concierge','-tagged venues with a strikethrough are reserved for concierge stateroom guests.'),
    ('🍽️ Main dining','means the six rotational restaurants you cycle through each evening (included in the fare). The two 🍱 buffet venues run as buffets at breakfast and lunch only.'),
    ('💰 Extra charge','marks venues that cost extra; 💰 Partly extra means basic drinks are free but specialty drinks cost extra. Regular coffee, tea, soft drinks and juice are free; drinks at bars and lounges cost extra.'),
+   ('🕒 Hours',"vary by sailing day and are published only in the Navigator app once on board. Only times confirmed by public sources are listed here. Room service is free around the clock."),
    ('Sources','Based on the official deck plans (WDW News Today, Mar 2026; Cruise Critic; CruiseMapper). Subject to change — confirm in the Navigator app once on board.'),
   ],
   decks_fmt="Decks {n}", cabins="Staterooms", no_public="No public venues", cabins_laundry="Staterooms · Laundry", cabins_medical="Staterooms · Medical Center",
@@ -102,6 +104,7 @@ UI = {
    ('🔒 コンシェルジュ','表示・取り消し線の施設はコンシェルジュ客室の宿泊者専用です。'),
    ('🍽️ メインダイニング','は毎晩レストランを変えて食事するローテーション式レストラン6か所（クルーズ料金込み）、🍱 ビュッフェ2か所は朝食・昼食のみビュッフェとして営業します。'),
    ('💰 有料','は追加料金がかかる施設、💰 一部有料は基本ドリンクは無料でスペシャルティドリンクが有料の施設です。通常のコーヒー・紅茶・ソフトドリンク・ジュースは無料、バー・ラウンジのドリンクは有料です。'),
+   ('🕒 営業時間','は航海日によって異なり、乗船後の Navigator アプリにのみ表示されます。ここに記載の時間は公開資料で確認できたもののみです。ルームサービスは24時間無料です。'),
    ('出典','公式デッキプラン準拠の資料（WDW News Today 2026年3月、Cruise Critic、CruiseMapper）。運航中に変更される場合があるため、乗船後に Navigator アプリで確認してください。'),
   ],
   decks_fmt="{n}階", cabins="客室", no_public="乗客用施設なし", cabins_laundry="客室 · ランドリー", cabins_medical="客室 · メディカルセンター",
@@ -123,6 +126,7 @@ UI = {
    ('🔒 礼宾','标记并带删除线的设施仅限礼宾客房住客使用。'),
    ('🍽️ 主餐厅','指每晚轮换就餐的6家轮换餐厅（含在船票内），🍱 自助餐2处仅在早餐、午餐时段以自助形式运营。'),
    ('💰 收费','指需额外付费的设施，💰 部分收费指基础饮品免费但特色饮品收费。普通咖啡、茶、碳酸饮料和果汁免费，酒吧、酒廊饮品收费。'),
+   ('🕒 营业时间','因航行日而异，仅在登船后的 Navigator 应用中显示。此处仅列出公开资料可确认的时间。客房送餐 24 小时免费。'),
    ('来源','基于官方甲板图的资料（WDW News Today 2026年3月、Cruise Critic、CruiseMapper）。运营期间可能变更，请登船后在 Navigator 应用中确认。'),
   ],
   decks_fmt="{n}层", cabins="客房", no_public="无乘客设施", cabins_laundry="客房 · 洗衣房", cabins_medical="客房 · 医疗中心",
@@ -278,6 +282,19 @@ DECKS = [
    ("Tiana's Bayou Lounge",T("라운지","Lounge","ラウンジ","酒廊"),"bar",0),
    ("World of Disney",T("대형 기념품숍","Large Disney store","大型ディズニーストア","大型迪士尼商店"),"shop",0)]},
 ]
+# 운영 시간·예약 (공개 자료에서 확인된 것만). 정확한 시간은 항해일마다 달라 Navigator 앱에만 표시됨
+H_MAIN   = T("저녁 2회 좌석 17:45 / 20:15 (예약 시 배정)", "Dinner seatings 5:45 PM / 8:15 PM (assigned at booking)", "夕食2回制 17:45 / 20:15（予約時に割り当て）", "晚餐两场 17:45 / 20:15（预订时分配）")
+H_BUFFET = T("아침·점심 뷔페 · 저녁 2회 좌석 17:45 / 20:15", "Breakfast & lunch buffet · dinner seatings 5:45 / 8:15 PM", "朝・昼ビュッフェ · 夕食2回制 17:45 / 20:15", "早午自助餐 · 晚餐两场 17:45 / 20:15")
+HOURS = {
+  "Palo Trattoria": T("저녁 전용 · 18세 이상 · 예약 필수 · 1인 $55", "Dinner only · ages 18+ · reservation required · $55 per person", "夕食のみ · 18歳以上 · 要予約 · 1人 $55", "仅晚餐 · 18岁以上 · 需预订 · 每人 $55"),
+  "Mike & Sulley's Flavors of Asia": T("예약 필수 · 코스 $115~200", "Reservation required · set menus $115–200", "要予約 · コース $115〜200", "需预订 · 套餐 $115~200"),
+  "Mowgli's Eatery": T("Navigator 앱에서 사전 예약 권장", "Reservation via the Navigator app recommended", "Navigator アプリでの事前予約推奨", "建议通过 Navigator 应用预订"),
+  "Wheezy's Freezies": T("매일 자정까지 · 소프트아이스크림 무료", "Open until midnight daily · soft-serve is free", "毎日深夜0時まで · ソフトクリーム無料", "每日营业至午夜 · 软冰淇淋免费"),
+}
+def hours_for(name, L):
+    if name in MAIN: return tr(H_BUFFET if name in BUFFET else H_MAIN, L)
+    return tr(HOURS[name], L) if name in HOURS else ""
+
 PAID = {"Palo Trattoria":"paid","Mike & Sulley's Flavors of Asia":"paid","Bacha Coffee":"paid","TWG Tea":"paid","Palo Cafe":"paid",
         "Spellbound":"paid","Tiana's Bayou Lounge":"paid","Buccaneer Bar":"paid","Garden Bar":"paid","Wayfinder Bar":"paid",
         "Market Bar":"paid","Infinity Bar":"paid","Taverna Portorosso":"paid","Bewitching Boba & Brews":"part","Alley Cat Cafe":"part"}
@@ -338,7 +355,8 @@ def render_lang(L):
         for name, desc, c, lock in dk["v"]:
             d = tr(desc, L)
             paid = PAID.get(name) if not lock else None
-            text = " ".join(filter(None, [name, d, tr(CATS[c],L), CATS[c]["ko"], CATS[c]["en"],
+            hrs = hours_for(name, L) if not lock else ""
+            text = " ".join(filter(None, [name, d, hrs, tr(CATS[c],L), CATS[c]["ko"], CATS[c]["en"],
                    (u["lbl_paid"] if paid=="paid" else u["lbl_partpaid"] if paid=="part" else ""),
                    ("buffet " + u["lbl_buffet"]) if name in BUFFET else "",
                    ("main dining " + u["lbl_main"]) if name in MAIN else "",
@@ -355,7 +373,7 @@ def render_lang(L):
               f'data-main="{1 if name in MAIN else ""}" data-movie="{1 if name in MOVIE else ""}" data-text="{esc(text)}">'
               f'<span class="tag" style="background:color-mix(in srgb,var(--c-{c}) 16%,transparent)" title="{esc(tr(CATS[c],L))}" aria-label="{esc(tr(CATS[c],L))}">{CATS[c]["e"]}</span>'
               f'<span><span class="name">{nm}</span><span class="labels">{"".join(labels)}</span>'
-              + (f'<span class="ko">{esc(d)}</span>' if d else "") + '</span></li>')
+              + (f'<span class="ko">{esc(d)}</span>' if d else "") + (f'<span class="hrs">🕒 {esc(hrs)}</span>' if hrs else "") + '</span></li>')
         desc_html = f'<p class="deck-desc">{esc(tr(dk["d"],L))}</p>' if dk.get("d") else ""
         secs.append(
           f'<section class="deck" id="d{dk["n"]}" data-deck="{dk["n"]}" aria-labelledby="h{dk["n"]}">'
@@ -392,7 +410,7 @@ def render_lang(L):
         deck_items.append({"@type": "ListItem", "position": pos, "url": f"{url}#d{dk['n']}",
             "item": {"@type": "Place", "name": f"Deck {dk['n']} – {deck_title(dk,L)}",
                      "description": (tr(dk["d"],L) if dk.get("d") else "") or None,
-                     "containsPlace": [{"@type": "Place", "name": n, **({"description": tr(d,L)} if tr(d,L) else {})} for n, d, c, l in dk["v"]]}})
+                     "containsPlace": [{"@type": "Place", "name": n, **({"description": " · ".join(filter(None, [tr(d,L), hours_for(n,L) if not l else ""]))} if (tr(d,L) or hours_for(n,L)) else {})} for n, d, c, l in dk["v"]]}})
     for it in deck_items:
         if it["item"]["description"] is None: del it["item"]["description"]
     ld = [
@@ -624,6 +642,7 @@ h1{font-size:clamp(1.6rem,4.5vw,2.4rem);line-height:1.25;margin:0;font-weight:90
 .v .tag{flex:none;width:26px;height:26px;border-radius:8px;display:grid;place-items:center;font-size:.85rem;margin-top:1px}
 .v .name{font-weight:700;line-height:1.35;overflow-wrap:anywhere}
 .v .ko{display:block;font-size:.85rem;color:var(--muted);font-weight:400;line-height:1.45}
+.v .hrs{display:block;font-size:.8rem;color:var(--muted);line-height:1.45;margin-top:2px}
 .v.concierge .name s{text-decoration-thickness:2px;color:var(--muted)}
 .v.concierge .ko{text-decoration:line-through}
 .labels{display:flex;flex-wrap:wrap;gap:4px;margin:3px 0 1px}
