@@ -38,6 +38,14 @@ layout: null
     {% endunless %}
   {% endfor %}
 
+  <!-- 저장소 내 독립 도구 페이지 (프런트매터 없음) -->
+  <url>
+    <loc>https://soosoo.life/disney-adventure-decks/</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
   <!-- 외부 GitHub Pages 리포지토리 페이지들 -->
   <url>
     <loc>https://soosoo.life/todaydone/</loc>

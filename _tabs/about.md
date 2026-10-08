@@ -33,6 +33,7 @@ description: "수수라이프 - IT, 재테크, 생활정보 블로그"
 | [불렛저널 플래너](/bullet_journal_planner/) | 온라인 불렛저널 플래너 |
 | [오늘 뭐 했지?](/todaydone/) | 하루 기록 도구 |
 | [텐비 페낭 링크](/tenby-penang-links/) | 유용한 링크 모음 |
+| [디즈니 어드벤처호 층별 시설 가이드](/disney-adventure-decks/) | 싱가포르 디즈니 크루즈 공용 시설 검색·필터 |
 
 ### 연락처
 
