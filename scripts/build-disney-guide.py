@@ -8,7 +8,8 @@
 
 데이터·번역을 이 파일에서만 관리하고, 수정 후 `python3 scripts/build-disney-guide.py` 로 재생성한다.
 """
-import json, os, html, datetime
+import json, os, html, datetime, re as _re
+def slug(x): return _re.sub(r"[^a-z0-9]+", "-", x.lower()).strip("-")
 
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "disney-adventure-decks")
 SITE = "https://soosoo.life"
@@ -49,7 +50,7 @@ UI = {
   desc="싱가포르 모항 디즈니 크루즈 '디즈니 어드벤처'의 5~19층 공용 시설을 층별·카테고리별로 정리한 가이드. 메인 다이닝 6곳, 뷔페, 수영장, 키즈클럽, 영화관, 유료 시설, 컨시어지 전용 구역까지 한눈에.",
   facts=[("승객 층","19개","(14층 없음)"),("테마 구역","7곳",""),("키즈클럽","3~10세","· 틴 11~17세"),("첫 출항","2026.3.10","")],
   search_label="시설 이름 검색", search_ph="시설 이름 검색 (예: 수영장, Palo, 커피)", filter_label="카테고리 필터",
-  all="전체", paid_chip="유료 식음료", movie_chip="영화", main_chip="메인 다이닝", buffet_chip="뷔페",
+  all="전체", fav_chip="즐겨찾기", fav_add="즐겨찾기에 추가", fav_remove="즐겨찾기에서 제거", fav_empty="아직 즐겨찾기한 시설이 없어요. 시설 옆 ☆를 눌러 추가하세요.", paid_chip="유료 식음료", movie_chip="영화", main_chip="메인 다이닝", buffet_chip="뷔페",
   ship_nav="층 바로가기", ship_label="선박 단면 · 위가 최상층", hull="1–4층 · 승무원 전용",
   none="조건에 맞는 시설이 없어요. 검색어를 지우거나 다른 카테고리를 골라보세요.", result="{n}개 시설이 보여요",
   deck_unit="층", deck_aria="{n}층 ", concierge_only="(일반 승객 이용 불가)",
@@ -71,7 +72,7 @@ UI = {
   desc="A deck-by-deck guide to the public venues on Disney Adventure, Disney Cruise Line's Singapore-homeported ship (Decks 5–19): six rotational dining restaurants, buffets, pools, kids clubs, cinemas, extra-charge venues and concierge-only areas.",
   facts=[("Passenger decks","19","(no Deck 14)"),("Themed areas","7",""),("Kids club","ages 3–10","· teens 11–17"),("Maiden voyage","Mar 10, 2026","")],
   search_label="Search venues", search_ph="Search venues (e.g. pool, Palo, coffee)", filter_label="Category filter",
-  all="All", paid_chip="Extra charge", movie_chip="Movies", main_chip="Main dining", buffet_chip="Buffet",
+  all="All", fav_chip="Favorites", fav_add="Add to favorites", fav_remove="Remove from favorites", fav_empty="No favorites yet. Tap ☆ next to a venue to add it.", paid_chip="Extra charge", movie_chip="Movies", main_chip="Main dining", buffet_chip="Buffet",
   ship_nav="Jump to deck", ship_label="Ship cross-section · top deck first", hull="Decks 1–4 · crew only",
   none="No venues match. Clear the search or pick another category.", result="{n} venues shown",
   deck_unit="", deck_aria="Deck {n}: ", concierge_only="(not available to regular guests)",
@@ -93,7 +94,7 @@ UI = {
   desc="シンガポールを母港とするディズニークルーズ「ディズニー・アドベンチャー」の5〜19階パブリック施設をデッキ別・カテゴリー別に整理したガイド。ローテーションダイニング6か所、ビュッフェ、プール、キッズクラブ、映画館、有料施設、コンシェルジュ専用エリアまで一目で。",
   facts=[("乗客デッキ","19層","(14階なし)"),("テーマエリア","7か所",""),("キッズクラブ","3〜10歳","· ティーン 11〜17歳"),("初航海","2026.3.10","")],
   search_label="施設名で検索", search_ph="施設名で検索（例：プール、Palo、コーヒー）", filter_label="カテゴリーフィルター",
-  all="すべて", paid_chip="有料の飲食", movie_chip="映画", main_chip="メインダイニング", buffet_chip="ビュッフェ",
+  all="すべて", fav_chip="お気に入り", fav_add="お気に入りに追加", fav_remove="お気に入りから削除", fav_empty="まだお気に入りがありません。施設の横の ☆ をタップして追加してください。", paid_chip="有料の飲食", movie_chip="映画", main_chip="メインダイニング", buffet_chip="ビュッフェ",
   ship_nav="デッキへ移動", ship_label="船体断面 · 上が最上階", hull="1〜4階 · クルー専用",
   none="条件に合う施設がありません。検索語を消すか、別のカテゴリーを選んでください。", result="{n}件の施設を表示中",
   deck_unit="階", deck_aria="{n}階 ", concierge_only="（一般の乗客は利用不可）",
@@ -115,7 +116,7 @@ UI = {
   desc="以新加坡为母港的迪士尼邮轮“迪士尼冒险号”5至19层公共设施分层、分类整理指南：6家轮换主餐厅、自助餐、泳池、儿童俱乐部、影院、收费设施及礼宾专属区域一目了然。",
   facts=[("乘客楼层","19层","(无14层)"),("主题区域","7个",""),("儿童俱乐部","3~10岁","· 青少年 11~17岁"),("首航","2026.3.10","")],
   search_label="搜索设施名称", search_ph="搜索设施名称（如：泳池、Palo、咖啡）", filter_label="类别筛选",
-  all="全部", paid_chip="收费餐饮", movie_chip="电影", main_chip="主餐厅", buffet_chip="自助餐",
+  all="全部", fav_chip="收藏", fav_add="加入收藏", fav_remove="取消收藏", fav_empty="还没有收藏的设施。点击设施旁的 ☆ 即可加入。", paid_chip="收费餐饮", movie_chip="电影", main_chip="主餐厅", buffet_chip="自助餐",
   ship_nav="跳转楼层", ship_label="船体剖面 · 顶层在上", hull="1–4层 · 船员专用",
   none="没有符合条件的设施。请清除搜索词或选择其他类别。", result="显示 {n} 个设施",
   deck_unit="层", deck_aria="{n}层 ", concierge_only="（普通乘客不可使用）",
@@ -149,7 +150,7 @@ CATS = {
  "etc":{"e":"✨","ko":"기타","en":"Other","ja":"その他","zh":"其他"},
 }
 SYN = {"dining":"식당 레스토랑 밥 음식 restaurant food レストラン 餐厅","cafe":"커피 카페 티 차 음료 디저트 coffee tea cafe コーヒー 咖啡","bar":"술 칵테일 맥주 와인 바 cocktail beer wine バー 酒吧","show":"공연 쇼 영화 게임 show movie theatre ショー 演出","kids":"아이 어린이 키즈 틴 kids teens 子供 儿童","pool":"수영장 풀 물놀이 슬라이드 pool slide プール 泳池","ride":"놀이기구 롤러코스터 ride coaster アトラクション 游乐","shop":"쇼핑 기념품 매장 shop store ショップ 商店","well":"스파 헬스 운동 마사지 spa gym fitness スパ 水疗","svc":"서비스 service サービス 服务","space":"광장 구역 area plaza 広場 广场","etc":""}
-CHIP_ORDER = ["all","dining","buffet","main","pool","kids","ride","movie","show","cafe","paid","bar","shop","well","svc","space","etc"]
+CHIP_ORDER = ["all","fav","dining","buffet","main","pool","kids","ride","movie","show","cafe","paid","bar","shop","well","svc","space","etc"]
 
 def T(ko,en,ja,zh): return {"ko":ko,"en":en,"ja":ja,"zh":zh}
 E = T("","","","")
@@ -369,11 +370,12 @@ def render_lang(L):
             if lock: labels.append(f'<span class="lock">🔒 {esc(u["lbl_lock"])}</span>')
             nm = f'<s>{esc(name)}</s><span class="sr"> {esc(u["concierge_only"])}</span>' if lock else esc(name)
             items.append(
-              f'<li class="v{" concierge" if lock else ""}" data-cat="{c}" data-paid="{1 if paid else ""}" data-buffet="{1 if name in BUFFET else ""}" '
+              f'<li class="v{" concierge" if lock else ""}" data-id="{dk["n"]}-{slug(name)}" data-cat="{c}" data-paid="{1 if paid else ""}" data-buffet="{1 if name in BUFFET else ""}" '
               f'data-main="{1 if name in MAIN else ""}" data-movie="{1 if name in MOVIE else ""}" data-text="{esc(text)}">'
               f'<span class="tag" style="background:color-mix(in srgb,var(--c-{c}) 16%,transparent)" title="{esc(tr(CATS[c],L))}" aria-label="{esc(tr(CATS[c],L))}">{CATS[c]["e"]}</span>'
               f'<span><span class="name">{nm}</span><span class="labels">{"".join(labels)}</span>'
-              + (f'<span class="ko">{esc(d)}</span>' if d else "") + (f'<span class="hrs">🕒 {esc(hrs)}</span>' if hrs else "") + '</span></li>')
+              + (f'<span class="ko">{esc(d)}</span>' if d else "") + (f'<span class="hrs">🕒 {esc(hrs)}</span>' if hrs else "")
+              + f'</span><button class="fav" type="button" aria-pressed="false" aria-label="{esc(u["fav_add"])}" data-add="{esc(u["fav_add"])}" data-remove="{esc(u["fav_remove"])}">☆</button></li>')
         desc_html = f'<p class="deck-desc">{esc(tr(dk["d"],L))}</p>' if dk.get("d") else ""
         secs.append(
           f'<section class="deck" id="d{dk["n"]}" data-deck="{dk["n"]}" aria-labelledby="h{dk["n"]}">'
@@ -389,6 +391,7 @@ def render_lang(L):
     chips = {"all": f'<button class="chip" type="button" data-cat="all" aria-pressed="true">{esc(u["all"])}</button>'}
     for k in used:
         chips[k] = f'<button class="chip" type="button" data-cat="{k}" aria-pressed="false"><span class="dot" style="background:var(--c-{k})"></span>{CATS[k]["e"]} {esc(tr(CATS[k],L))}</button>'
+    chips["fav"] = f'<button class="chip chip-fav" type="button" data-cat="fav" aria-pressed="false"><span class="dot" style="background:var(--gold)"></span>⭐ {esc(u["fav_chip"])}<span class="cnt" hidden></span></button>'
     chips["paid"] = f'<button class="chip" type="button" data-cat="paid" aria-pressed="false"><span class="dot" style="background:var(--paid)"></span>💰 {esc(u["paid_chip"])}</button>'
     chips["movie"] = f'<button class="chip" type="button" data-cat="movie" aria-pressed="false"><span class="dot" style="background:var(--c-show)"></span>🎬 {esc(u["movie_chip"])}</button>'
     chips["main"] = f'<button class="chip" type="button" data-cat="main" aria-pressed="false"><span class="dot" style="background:var(--hull)"></span>🍽️ {esc(u["main_chip"])}</button>'
@@ -484,6 +487,7 @@ def render_lang(L):
   <div>
     <div id="decks">{"".join(secs)}</div>
     <p class="none-found" id="none">{esc(u["none"])}</p>
+    <p class="none-found" id="nofav">{esc(u["fav_empty"])}</p>
     <aside class="notes" aria-label="{esc(u["notes_aria"])}">{notes}</aside>
     <footer class="foot"><p>{esc(u["updated"])}: <time datetime="{UPDATED}">{UPDATED}</time> · <a href="{SITE}/">수수라이프 soosoo.life</a></p></footer>
   </div>
@@ -643,6 +647,10 @@ h1{font-size:clamp(1.6rem,4.5vw,2.4rem);line-height:1.25;margin:0;font-weight:90
 .v .name{font-weight:700;line-height:1.35;overflow-wrap:anywhere}
 .v .ko{display:block;font-size:.85rem;color:var(--muted);font-weight:400;line-height:1.45}
 .v .hrs{display:block;font-size:.8rem;color:var(--muted);line-height:1.45;margin-top:2px}
+.v .fav{flex:none;margin-left:auto;align-self:flex-start;border:0;background:transparent;color:var(--dim);font-size:1.15rem;line-height:1;padding:2px 4px;cursor:pointer;border-radius:6px;min-width:32px;min-height:32px}
+.v .fav:hover{background:var(--bg)}
+.v .fav[aria-pressed="true"]{color:var(--gold)}
+.chip .cnt{font-variant-numeric:tabular-nums;opacity:.75;margin-left:2px}
 .v.concierge .name s{text-decoration-thickness:2px;color:var(--muted)}
 .v.concierge .ko{text-decoration:line-through}
 .labels{display:flex;flex-wrap:wrap;gap:4px;margin:3px 0 1px}
@@ -688,6 +696,27 @@ JS = r'''/* 디즈니 어드벤처 가이드 — 서버 렌더링된 DOM 위에�
   var tpl=document.body.dataset.resultTpl||"{n}";
   var activeCat=null;
 
+  /* favorites: localStorage 에 시설 id 목록 저장 (언어 간 공유) */
+  var FAV_KEY="da-fav", favs={};
+  try{(JSON.parse(localStorage.getItem(FAV_KEY)||"[]")).forEach(function(id){favs[id]=1})}catch(e){}
+  function saveFavs(){try{localStorage.setItem(FAV_KEY,JSON.stringify(Object.keys(favs)))}catch(e){}}
+  function paintFavs(){
+    var n=0;
+    document.querySelectorAll(".v").forEach(function(v){
+      var on=!!favs[v.dataset.id], b=v.querySelector(".fav");
+      if(on)n++;
+      b.setAttribute("aria-pressed",String(on)); b.textContent=on?"★":"☆";
+      b.setAttribute("aria-label",on?b.dataset.remove:b.dataset.add);
+    });
+    var cnt=chipsEl.querySelector('.chip-fav .cnt'); if(cnt){cnt.textContent=n?" ("+n+")":""; cnt.hidden=!n}
+  }
+  document.addEventListener("click",function(e){
+    var b=e.target.closest(".fav"); if(!b)return;
+    var id=b.closest(".v").dataset.id;
+    if(favs[id])delete favs[id]; else favs[id]=1;
+    saveFavs(); paintFavs(); if(activeCat==="fav")sync();
+  });
+
   function sync(){
     var text=q.value.trim().toLowerCase();
     chipsEl.querySelectorAll(".chip").forEach(function(b){b.setAttribute("aria-pressed",String((b.dataset.cat==="all"?null:b.dataset.cat)===activeCat))});
@@ -695,14 +724,16 @@ JS = r'''/* 디즈니 어드벤처 가이드 — 서버 렌더링된 DOM 위에�
     document.querySelectorAll(".deck").forEach(function(sec){
       var n=0;
       sec.querySelectorAll(".v").forEach(function(v){
-        var ok=(!activeCat||(activeCat==="paid"?!!v.dataset.paid:activeCat==="buffet"?!!v.dataset.buffet:activeCat==="main"?!!v.dataset.main:activeCat==="movie"?!!v.dataset.movie:v.dataset.cat===activeCat))&&(!text||v.dataset.text.indexOf(text)>-1);
+        var ok=(!activeCat||(activeCat==="fav"?!!favs[v.dataset.id]:activeCat==="paid"?!!v.dataset.paid:activeCat==="buffet"?!!v.dataset.buffet:activeCat==="main"?!!v.dataset.main:activeCat==="movie"?!!v.dataset.movie:v.dataset.cat===activeCat))&&(!text||v.dataset.text.indexOf(text)>-1);
         v.classList.toggle("hidden",!ok); if(ok)n++;
       });
       sec.classList.toggle("hidden",n===0); total+=n;
       var btn=stack.querySelector('[data-deck="'+sec.dataset.deck+'"]');
       if(btn) btn.style.opacity=(filtering&&n===0)?".35":"";
     });
-    $("#none").style.display=total?"none":"block";
+    var favMode=activeCat==="fav"&&!Object.keys(favs).length;
+    $("#nofav").style.display=favMode?"block":"none";
+    $("#none").style.display=(total||favMode)?"none":"block";
     var vis=[].slice.call(document.querySelectorAll(".deck:not(.hidden)"));
     var top=(parseFloat(getComputedStyle(root).getPropertyValue("--ctl-h"))||150)+80;
     var cur=vis.filter(function(x){return x.getBoundingClientRect().bottom>top})[0]||vis[0];
@@ -748,7 +779,7 @@ JS = r'''/* 디즈니 어드벤처 가이드 — 서버 렌더링된 DOM 위에�
     var mob=window.innerWidth<=820;
     root.style.setProperty("--strip-h",mob?document.querySelector(".ship").offsetHeight+"px":"0px");
   }
-  measure();
+  measure(); paintFavs();
   if("ResizeObserver" in window){new ResizeObserver(measure).observe(document.querySelector(".controls"))}
   addEventListener("resize",measure);
   sync();
