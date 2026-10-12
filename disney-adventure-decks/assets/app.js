@@ -89,6 +89,19 @@
     root.style.setProperty("--strip-h",mob?document.querySelector(".ship").offsetHeight+"px":"0px");
   }
   measure(); paintFavs();
+
+  /* PWA: 서비스 워커 등록 (오프라인 캐시). 최초 설치 완료 시 한 번만 안내 */
+  if("serviceWorker" in navigator){
+    navigator.serviceWorker.register(document.body.dataset.swPath||"../sw.js").then(function(reg){
+      var sw=reg.installing; if(!sw)return;
+      sw.addEventListener("statechange",function(){
+        if(sw.state==="activated"&&!navigator.serviceWorker.controller){
+          var t=document.createElement("div"); t.className="toast"; t.textContent=document.body.dataset.offlineReady||"";
+          document.body.appendChild(t); setTimeout(function(){t.remove()},3500);
+        }
+      });
+    }).catch(function(){});
+  }
   if("ResizeObserver" in window){new ResizeObserver(measure).observe(document.querySelector(".controls"))}
   addEventListener("resize",measure);
   sync();

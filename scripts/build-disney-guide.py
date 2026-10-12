@@ -64,7 +64,7 @@ UI = {
    ('🕒 운영 시간',"은 항해일마다 달라 승선 후 Navigator 앱에만 표시돼요. 여기 적은 시간은 공개 자료로 확인된 것만이에요. 룸서비스는 24시간 운영되지만 배달료 $5와 봉사료 18%가 붙고(2026년 6월부터), 문고리에 거는 아침 주문 카드는 무료예요."),
    ('출처','공식 덱플랜 기반 자료(WDW News Today 2026.3, Cruise Critic, CruiseMapper). 운영 중 변경될 수 있으니 승선 후 Navigator 앱으로 확인하세요.'),
   ],
-  decks_fmt="{n}층", cabins="객실", no_public="승객 시설 없음", cabins_laundry="객실 · 세탁실", cabins_medical="객실 · 의료센터",
+  app_name="디즈니 어드벤처 가이드", offline_ready="오프라인에서도 열 수 있게 저장됐어요", decks_fmt="{n}층", cabins="객실", no_public="승객 시설 없음", cabins_laundry="객실 · 세탁실", cabins_medical="객실 · 의료센터",
  ),
  "en": dict(
   title="Disney Adventure Deck-by-Deck Guide", h1="Disney Adventure<br>Deck-by-Deck Venue Guide",
@@ -86,7 +86,7 @@ UI = {
    ('🕒 Hours',"vary by sailing day and are published only in the Navigator app once on board. Only times confirmed by public sources are listed here. Room service runs 24 hours but carries a $5 delivery fee plus 18% gratuity (since June 2026); breakfast ordered with the door hanger is free."),
    ('Sources','Based on the official deck plans (WDW News Today, Mar 2026; Cruise Critic; CruiseMapper). Subject to change — confirm in the Navigator app once on board.'),
   ],
-  decks_fmt="Decks {n}", cabins="Staterooms", no_public="No public venues", cabins_laundry="Staterooms · Laundry", cabins_medical="Staterooms · Medical Center",
+  app_name="Disney Adventure Guide", offline_ready="Saved for offline use", decks_fmt="Decks {n}", cabins="Staterooms", no_public="No public venues", cabins_laundry="Staterooms · Laundry", cabins_medical="Staterooms · Medical Center",
  ),
  "ja": dict(
   title="ディズニー・アドベンチャー デッキ別施設ガイド", h1="ディズニー・アドベンチャー<br>デッキ別パブリック施設ガイド",
@@ -108,7 +108,7 @@ UI = {
    ('🕒 営業時間','は航海日によって異なり、乗船後の Navigator アプリにのみ表示されます。ここに記載の時間は公開資料で確認できたもののみです。ルームサービスは24時間利用できますが、配達料 $5 とサービス料 18% がかかります（2026年6月〜）。ドアハンガーで注文する朝食は無料です。'),
    ('出典','公式デッキプラン準拠の資料（WDW News Today 2026年3月、Cruise Critic、CruiseMapper）。運航中に変更される場合があるため、乗船後に Navigator アプリで確認してください。'),
   ],
-  decks_fmt="{n}階", cabins="客室", no_public="乗客用施設なし", cabins_laundry="客室 · ランドリー", cabins_medical="客室 · メディカルセンター",
+  app_name="ディズニー・アドベンチャー ガイド", offline_ready="オフラインでも開けるように保存しました", decks_fmt="{n}階", cabins="客室", no_public="乗客用施設なし", cabins_laundry="客室 · ランドリー", cabins_medical="客室 · メディカルセンター",
  ),
  "zh": dict(
   title="迪士尼冒险号 分层设施指南", h1="迪士尼冒险号<br>分层公共设施指南",
@@ -130,7 +130,7 @@ UI = {
    ('🕒 营业时间','因航行日而异，仅在登船后的 Navigator 应用中显示。此处仅列出公开资料可确认的时间。客房送餐 24 小时提供，但收取 $5 送餐费和 18% 服务费（2026年6月起）；用门挂卡预订的早餐免费。'),
    ('来源','基于官方甲板图的资料（WDW News Today 2026年3月、Cruise Critic、CruiseMapper）。运营期间可能变更，请登船后在 Navigator 应用中确认。'),
   ],
-  decks_fmt="{n}层", cabins="客房", no_public="无乘客设施", cabins_laundry="客房 · 洗衣房", cabins_medical="客房 · 医疗中心",
+  app_name="迪士尼冒险号指南", offline_ready="已保存，可离线使用", decks_fmt="{n}层", cabins="客房", no_public="无乘客设施", cabins_laundry="客房 · 洗衣房", cabins_medical="客房 · 医疗中心",
  ),
 }
 
@@ -448,11 +448,18 @@ def render_lang(L):
 <meta name="twitter:card" content="summary_large_image">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <link rel="icon" href="/assets/img/favicons/favicon.ico">
+<link rel="manifest" href="{BASE}/manifest.webmanifest">
+<meta name="theme-color" content="#1B3A6B" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0C1524" media="(prefers-color-scheme: dark)">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="{esc(u["app_name"])}">
+<link rel="apple-touch-icon" href="{BASE}/assets/icon-192.png">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretendard@1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.css">
 <link rel="stylesheet" href="{BASE}/assets/style.css">
 <script type="application/ld+json">{ld_json}</script>
 </head>
-<body data-lang="{L}" data-result-tpl="{esc(u["result"])}">
+<body data-lang="{L}" data-result-tpl="{esc(u["result"])}" data-offline-ready="{esc(u["offline_ready"])}" data-sw-path="{BASE}/sw.js">
 <header class="top wrap">
   <nav class="langnav" aria-label="{esc(u["lang_label"])}">
     <a class="back" href="{SITE}/">{esc(u["back"])}</a>
@@ -513,8 +520,11 @@ def render_root():
 <meta property="og:title" content="Disney Adventure Deck-by-Deck Guide">
 <meta property="og:image" content="{SITE}/assets/images/disney_adventure_singapore.jpg">
 <link rel="icon" href="/assets/img/favicons/favicon.ico">
+<link rel="manifest" href="{BASE}/manifest.webmanifest">
+<meta name="theme-color" content="#1B3A6B">
 <link rel="stylesheet" href="{BASE}/assets/style.css">
 <script>
+if("serviceWorker" in navigator){{navigator.serviceWorker.register("{BASE}/sw.js")}}
 /* 브라우저 언어(또는 이전 선택)에 맞는 언어 페이지로 이동. 검색엔진은 아래 링크 목록을 따라간다. */
 (function(){{
   var saved=null; try{{saved=localStorage.getItem('da-lang')}}catch(e){{}}
@@ -666,6 +676,7 @@ h1{font-size:clamp(1.6rem,4.5vw,2.4rem);line-height:1.25;margin:0;font-weight:90
 .notes p{margin:4px 0}
 .notes strong{color:var(--ink)}
 .none-found{display:none;padding:30px;text-align:center;color:var(--muted)}
+.toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:10px 16px;border-radius:999px;font-size:.88rem;z-index:50;box-shadow:0 6px 20px rgba(0,0,0,.2)}
 .foot{font-size:.82rem;color:var(--muted);margin-top:18px}
 .foot a{text-decoration:none}
 
@@ -780,13 +791,73 @@ JS = r'''/* 디즈니 어드벤처 가이드 — 서버 렌더링된 DOM 위에�
     root.style.setProperty("--strip-h",mob?document.querySelector(".ship").offsetHeight+"px":"0px");
   }
   measure(); paintFavs();
+
+  /* PWA: 서비스 워커 등록 (오프라인 캐시). 최초 설치 완료 시 한 번만 안내 */
+  if("serviceWorker" in navigator){
+    navigator.serviceWorker.register(document.body.dataset.swPath||"../sw.js").then(function(reg){
+      var sw=reg.installing; if(!sw)return;
+      sw.addEventListener("statechange",function(){
+        if(sw.state==="activated"&&!navigator.serviceWorker.controller){
+          var t=document.createElement("div"); t.className="toast"; t.textContent=document.body.dataset.offlineReady||"";
+          document.body.appendChild(t); setTimeout(function(){t.remove()},3500);
+        }
+      });
+    }).catch(function(){});
+  }
   if("ResizeObserver" in window){new ResizeObserver(measure).observe(document.querySelector(".controls"))}
   addEventListener("resize",measure);
   sync();
 })();
 '''
 
+SW_TEMPLATE = """/* 디즈니 어드벤처 가이드 서비스 워커: 모든 언어 페이지와 자원을 미리 저장해 오프라인에서도 열림 */
+const VERSION = "__VERSION__";
+const CACHE = "da-guide-" + VERSION;
+const PRECACHE = __PRECACHE__;
+const BASE = "__BASE__";
+const FONT_HOSTS = ["cdn.jsdelivr.net"];
+
+self.addEventListener("install", e => {
+  e.waitUntil(caches.open(CACHE).then(c => c.addAll(PRECACHE)).then(() => self.skipWaiting()));
+});
+self.addEventListener("activate", e => {
+  e.waitUntil(caches.keys().then(keys => Promise.all(keys.filter(k => k.startsWith("da-guide-") && k !== CACHE).map(k => caches.delete(k)))).then(() => self.clients.claim()));
+});
+self.addEventListener("fetch", e => {
+  const req = e.request; if (req.method !== "GET") return;
+  const url = new URL(req.url);
+  const inScope = url.origin === location.origin && url.pathname.startsWith(BASE + "/");
+  const isFont = FONT_HOSTS.includes(url.hostname);
+  if (!inScope && !isFont) return;
+  if (req.mode === "navigate" || req.destination === "document") {
+    /* 페이지: 네트워크 우선(최신 내용), 실패 시 캐시 */
+    e.respondWith(fetch(req).then(r => { const cp = r.clone(); caches.open(CACHE).then(c => c.put(req, cp)); return r; })
+      .catch(() => caches.match(req, {ignoreSearch: true}).then(r => r || caches.match(BASE + "/ko/"))));
+    return;
+  }
+  /* 자원·폰트: 캐시 우선, 백그라운드 갱신 */
+  e.respondWith(caches.match(req).then(cached => {
+    const fresh = fetch(req).then(r => { if (r.ok || r.type === "opaque") { const cp = r.clone(); caches.open(CACHE).then(c => c.put(req, cp)); } return r; }).catch(() => cached);
+    return cached || fresh;
+  }));
+});
+"""
+
+def render_manifest():
+    return json.dumps({
+      "name": "Disney Adventure Deck Guide · 디즈니 어드벤처 가이드", "short_name": "DA Guide",
+      "description": UI["en"]["desc"], "start_url": f"{BASE}/", "scope": f"{BASE}/", "id": f"{BASE}/",
+      "display": "standalone", "background_color": "#F4F7FB", "theme_color": "#1B3A6B", "lang": "en",
+      "icons": [{"src": f"{BASE}/assets/icon-192.png", "sizes": "192x192", "type": "image/png"},
+                {"src": f"{BASE}/assets/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable"}],
+    }, ensure_ascii=False, indent=1)
+
+def render_sw(version):
+    precache = [f"{BASE}/"] + [f"{BASE}/{L}/" for L in LANGS] + [f"{BASE}/assets/style.css", f"{BASE}/assets/app.js", f"{BASE}/manifest.webmanifest", f"{BASE}/assets/icon-192.png", f"{BASE}/assets/icon-512.png"]
+    return SW_TEMPLATE.replace("__VERSION__", version).replace("__PRECACHE__", json.dumps(precache)).replace("__BASE__", BASE)
+
 def main():
+    import hashlib
     os.makedirs(os.path.join(ROOT, "assets"), exist_ok=True)
     for L in LANGS:
         os.makedirs(os.path.join(ROOT, L), exist_ok=True)
@@ -798,6 +869,12 @@ def main():
         f.write(f'<!DOCTYPE html><html lang="zh-Hans"><head><meta charset="utf-8"><title>Redirecting…</title><meta name="robots" content="noindex"><link rel="canonical" href="{SITE}{BASE}/zh-cn/"><meta http-equiv="refresh" content="0; url={BASE}/zh-cn/"><script>location.replace("{BASE}/zh-cn/")</script></head><body><a href="{BASE}/zh-cn/">简体中文</a></body></html>\n')
     with open(os.path.join(ROOT, "assets", "style.css"), "w", encoding="utf-8") as f: f.write(CSS.strip() + "\n")
     with open(os.path.join(ROOT, "assets", "app.js"), "w", encoding="utf-8") as f: f.write(JS)
+    with open(os.path.join(ROOT, "manifest.webmanifest"), "w", encoding="utf-8") as f: f.write(render_manifest())
+    # 버전 = 생성된 페이지·자원 내용 해시 → 내용이 바뀔 때만 캐시 갱신
+    h = hashlib.sha1()
+    for L in LANGS: h.update(open(os.path.join(ROOT, L, "index.html"), "rb").read())
+    h.update(CSS.encode()); h.update(JS.encode())
+    with open(os.path.join(ROOT, "sw.js"), "w", encoding="utf-8") as f: f.write(render_sw(h.hexdigest()[:10]))
     print("generated:", ", ".join(f"{L}/index.html" for L in LANGS), "+ index.html, assets/style.css, assets/app.js")
 
 if __name__ == "__main__":

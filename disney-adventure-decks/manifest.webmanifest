@@ -1,0 +1,25 @@
+{
+ "name": "Disney Adventure Deck Guide · 디즈니 어드벤처 가이드",
+ "short_name": "DA Guide",
+ "description": "A deck-by-deck guide to the public venues on Disney Adventure, Disney Cruise Line's Singapore-homeported ship (Decks 5–19): six rotational dining restaurants, buffets, pools, kids clubs, cinemas, extra-charge venues and concierge-only areas.",
+ "start_url": "/disney-adventure-decks/",
+ "scope": "/disney-adventure-decks/",
+ "id": "/disney-adventure-decks/",
+ "display": "standalone",
+ "background_color": "#F4F7FB",
+ "theme_color": "#1B3A6B",
+ "lang": "en",
+ "icons": [
+  {
+   "src": "/disney-adventure-decks/assets/icon-192.png",
+   "sizes": "192x192",
+   "type": "image/png"
+  },
+  {
+   "src": "/disney-adventure-decks/assets/icon-512.png",
+   "sizes": "512x512",
+   "type": "image/png",
+   "purpose": "any maskable"
+  }
+ ]
+}

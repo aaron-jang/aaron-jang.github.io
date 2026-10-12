@@ -15,8 +15,11 @@
 <meta property="og:title" content="Disney Adventure Deck-by-Deck Guide">
 <meta property="og:image" content="https://soosoo.life/assets/images/disney_adventure_singapore.jpg">
 <link rel="icon" href="/assets/img/favicons/favicon.ico">
+<link rel="manifest" href="/disney-adventure-decks/manifest.webmanifest">
+<meta name="theme-color" content="#1B3A6B">
 <link rel="stylesheet" href="/disney-adventure-decks/assets/style.css">
 <script>
+if("serviceWorker" in navigator){navigator.serviceWorker.register("/disney-adventure-decks/sw.js")}
 /* 브라우저 언어(또는 이전 선택)에 맞는 언어 페이지로 이동. 검색엔진은 아래 링크 목록을 따라간다. */
 (function(){
   var saved=null; try{saved=localStorage.getItem('da-lang')}catch(e){}
