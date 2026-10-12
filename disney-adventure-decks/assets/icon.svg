@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <!-- background (maskable-safe: content kept within central 80%) -->
+  <rect width="512" height="512" rx="112" fill="#2A66B2"/>
+  <!-- sun -->
+  <circle cx="372" cy="150" r="34" fill="#F2BC45"/>
+  <!-- sea -->
+  <path d="M0 356 C 60 336, 110 376, 170 356 S 280 336, 340 356 S 452 376, 512 356 V512 H0 Z" fill="#2F8FD6"/>
+  <path d="M0 392 C 60 372, 110 412, 170 392 S 280 372, 340 392 S 452 412, 512 392 V512 H0 Z" fill="#164F8F" opacity=".9"/>
+  <!-- hull -->
+  <path d="M74 330 L438 330 L402 386 Q 256 404 110 386 Z" fill="#F4F7FB"/>
+  <path d="M74 330 L438 330 L426 350 L92 350 Z" fill="#C8372D"/>
+  <!-- decks -->
+  <rect x="118" y="286" width="286" height="44" rx="10" fill="#FFFFFF"/>
+  <rect x="146" y="246" width="230" height="40" rx="10" fill="#FFFFFF"/>
+  <rect x="178" y="210" width="156" height="36" rx="10" fill="#FFFFFF"/>
+  <!-- portholes / windows -->
+  <g fill="#2E6BB8">
+    <circle cx="150" cy="308" r="6"/><circle cx="182" cy="308" r="6"/><circle cx="214" cy="308" r="6"/><circle cx="246" cy="308" r="6"/>
+    <circle cx="278" cy="308" r="6"/><circle cx="310" cy="308" r="6"/><circle cx="342" cy="308" r="6"/><circle cx="374" cy="308" r="6"/>
+    <rect x="166" y="258" width="18" height="14" rx="3"/><rect x="196" y="258" width="18" height="14" rx="3"/><rect x="226" y="258" width="18" height="14" rx="3"/>
+    <rect x="256" y="258" width="18" height="14" rx="3"/><rect x="286" y="258" width="18" height="14" rx="3"/><rect x="316" y="258" width="18" height="14" rx="3"/><rect x="346" y="258" width="18" height="14" rx="3"/>
+  </g>
+  <!-- funnel -->
+  <rect x="232" y="162" width="48" height="52" rx="8" fill="#C8372D"/>
+  <rect x="232" y="162" width="48" height="14" rx="6" fill="#8E2B23"/>
+</svg>

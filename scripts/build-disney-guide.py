@@ -849,7 +849,8 @@ def render_manifest():
       "description": UI["en"]["desc"], "start_url": f"{BASE}/", "scope": f"{BASE}/", "id": f"{BASE}/",
       "display": "standalone", "background_color": "#F4F7FB", "theme_color": "#1B3A6B", "lang": "en",
       "icons": [{"src": f"{BASE}/assets/icon-192.png", "sizes": "192x192", "type": "image/png"},
-                {"src": f"{BASE}/assets/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable"}],
+                {"src": f"{BASE}/assets/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable"},
+                {"src": f"{BASE}/assets/icon.svg", "sizes": "any", "type": "image/svg+xml"}],
     }, ensure_ascii=False, indent=1)
 
 def render_sw(version):
@@ -874,6 +875,8 @@ def main():
     h = hashlib.sha1()
     for L in LANGS: h.update(open(os.path.join(ROOT, L, "index.html"), "rb").read())
     h.update(CSS.encode()); h.update(JS.encode())
+    for icon in ("icon-192.png", "icon-512.png"):
+        h.update(open(os.path.join(ROOT, "assets", icon), "rb").read())
     with open(os.path.join(ROOT, "sw.js"), "w", encoding="utf-8") as f: f.write(render_sw(h.hexdigest()[:10]))
     print("generated:", ", ".join(f"{L}/index.html" for L in LANGS), "+ index.html, assets/style.css, assets/app.js")
 

@@ -1,5 +1,5 @@
 /* 디즈니 어드벤처 가이드 서비스 워커: 모든 언어 페이지와 자원을 미리 저장해 오프라인에서도 열림 */
-const VERSION = "f2f47eae7d";
+const VERSION = "da23e0afad";
 const CACHE = "da-guide-" + VERSION;
 const PRECACHE = ["/disney-adventure-decks/", "/disney-adventure-decks/ko/", "/disney-adventure-decks/en/", "/disney-adventure-decks/ja/", "/disney-adventure-decks/zh-cn/", "/disney-adventure-decks/zh-tw/", "/disney-adventure-decks/assets/style.css", "/disney-adventure-decks/assets/app.js", "/disney-adventure-decks/manifest.webmanifest", "/disney-adventure-decks/assets/icon-192.png", "/disney-adventure-decks/assets/icon-512.png"];
 const BASE = "/disney-adventure-decks";
