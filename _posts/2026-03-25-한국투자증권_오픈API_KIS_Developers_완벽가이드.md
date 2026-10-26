@@ -5,7 +5,7 @@ description: "계좌 개설부터 API 키 발급, Python 자동매매, 실시간
 date: 2026-03-25T18:00:00+09:00
 last_modified_at: 2026-08-30T23:37:00+09:00
 author: 수수
-tags: ["한국투자증권", "KIS Developers", "오픈API", "자동매매", "Python"]
+tags: ["한국투자증권", "오픈API", "자동매매", "KIS Developers", "REST API"]
 categories: ["투자"]
 image:
   path: /assets/images/kis_developers.jpg

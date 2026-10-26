@@ -5,7 +5,7 @@ description: 일론 머스크가 확인한 2026년 SpaceX 상장, 역대 최대 
 date: 2026-01-08T00:00:00+09:00
 last_modified_at: 2026-08-30T23:37:00+09:00
 author: 수수
-tags: ["SpaceX", "IPO", "일론머스크", "SPARC", "빌애크먼"]
+tags: ["SpaceX", "IPO", "SPARC", "일론머스크", "빌애크먼"]
 categories: ["투자"]
 image:
   path: /assets/img/spacex.jpg

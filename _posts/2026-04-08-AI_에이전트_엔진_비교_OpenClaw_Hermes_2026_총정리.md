@@ -5,7 +5,7 @@ description: "내 AI 비서를 만들려면 어떤 프레임워크를 골라야 
 date: 2026-04-08T12:00:00+09:00
 last_modified_at: 2026-04-08T13:09:58+09:00
 author: 수수
-tags: ["AI에이전트", "OpenClaw", "Hermes", "LangGraph", "CrewAI"]
+tags: ["OpenClaw", "Hermes", "LangGraph", "CrewAI", "OpenAI"]
 categories: ["AI"]
 image:
   path: /assets/images/ai_agent_engine_compare.webp

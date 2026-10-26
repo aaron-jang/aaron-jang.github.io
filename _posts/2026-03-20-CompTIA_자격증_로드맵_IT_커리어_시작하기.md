@@ -5,7 +5,7 @@ description: "자격증 종류·순서·시험 절차·갱신까지 — 비전�
 date: 2026-03-20T09:00:00+09:00
 last_modified_at: 2026-08-30T23:37:00+09:00
 author: 수수
-tags: ["CompTIA", "IT자격증", "A+", "Network+", "Security+"]
+tags: ["커리어", "CompTIA", "IT자격증", "IT취업", "사이버보안"]
 categories: ["개발"]
 image:
   path: /assets/images/comptia_roadmap.webp
