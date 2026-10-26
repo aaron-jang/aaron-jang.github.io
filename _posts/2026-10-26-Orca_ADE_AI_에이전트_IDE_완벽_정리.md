@@ -6,8 +6,8 @@ date: 2026-10-26T00:00:00+09:00
 author: 수수
 tags: ["Orca", "ADE", "AI코딩"]
 categories: ["개발"]
-cover-img: /assets/images/orca_ade_cover.jpg
-thumbnail-img: /assets/images/orca_ade_thumb.jpg
+image:
+  path: /assets/images/orca_ade_cover.jpg
 ---
 
 안녕하세요. 수수입니다.
