@@ -5,7 +5,7 @@ description: Liquid Glass 디자인부터 Apple Intelligence까지, 달라진 �
 date: 2026-01-13T00:00:00+09:00
 last_modified_at: 2026-08-30T23:37:00+09:00
 author: 수수
-tags: ["macOS", "Tahoe", "Apple", "업데이트", "AppleIntelligence"]
+tags: ["macOS", "Tahoe", "Apple"]
 categories: ["가젯"]
 image:
   path: /assets/img/macos-tahoe-hero.jpg

@@ -5,7 +5,7 @@ description: "시험 구성·도메인별 비중·공부법·추천 교재까지
 date: 2026-03-20T09:30:00+09:00
 last_modified_at: 2026-08-30T23:37:00+09:00
 author: 수수
-tags: ["CompTIA", "A+", "Network+", "Security+", "IT자격증"]
+tags: ["CompTIA", "A+", "Network+"]
 categories: ["개발"]
 image:
   path: /assets/images/comptia_roadmap.webp

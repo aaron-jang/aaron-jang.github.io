@@ -5,7 +5,7 @@ description: "서브에이전트와 에이전트 팀, 두 가지 방식으로 �
 date: 2026-03-10T13:00:00+09:00
 last_modified_at: 2026-08-30T23:37:00+09:00
 author: 수수
-tags: ["AI", "에이전트", "Anthropic", "멀티에이전트", "서브에이전트"]
+tags: ["AI", "에이전트", "Anthropic"]
 categories: ["AI"]
 image:
   path: /assets/images/claude_agent_team.webp

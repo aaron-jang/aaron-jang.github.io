@@ -4,7 +4,7 @@ title: "Hugo에서 Jekyll로 마이그레이션하기"
 date: 2025-12-16T13:30:00+09:00
 last_modified_at: 2025-12-17T21:15:51+09:00
 author: 수수
-tags: ["마이그레이션", "Hugo", "Jekyll", "정적 사이트 생성기", "블로그"]
+tags: ["마이그레이션", "Hugo", "Jekyll"]
 categories: ["개발"]
 image:
   path: ./assets/images/jekyll.webp

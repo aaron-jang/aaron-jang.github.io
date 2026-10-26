@@ -5,7 +5,7 @@ description: "ChatGPT 공동 개발자가 2년간 숨어서 만든 '결정 전�
 date: 2026-09-20T16:00:00+09:00
 last_modified_at: 2026-09-20T16:00:00+09:00
 author: 수수
-tags: ["제브", "Jev", "Vercel", "AI모델", "AI에이전트"]
+tags: ["제브", "Jev", "Vercel"]
 categories: ["AI"]
 image:
   path: /assets/images/jev_typesafe_cover.jpg

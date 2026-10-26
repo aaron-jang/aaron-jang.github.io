@@ -5,7 +5,7 @@ description: "Hard takeoff은 이미 시작됐다 — Optimus 3 양산, UHI, 다
 date: 2026-05-29T01:00:00+09:00
 last_modified_at: 2026-06-22T00:32:56+09:00
 author: 수수
-tags: ["Moonshots", "일론머스크", "테슬라", "SpaceX", "하드테이크오프"]
+tags: ["Moonshots", "일론머스크", "테슬라"]
 categories: ["AI"]
 ---
 

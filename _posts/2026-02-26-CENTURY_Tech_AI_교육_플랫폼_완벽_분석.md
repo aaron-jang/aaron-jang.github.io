@@ -5,7 +5,7 @@ description: "신경과학 + AI로 학생 개개인에게 맞춤 학습 경로�
 date: 2026-02-26T21:00:00+09:00
 last_modified_at: 2026-08-30T23:37:00+09:00
 author: 수수
-tags: ["CENTURY", "말레이시아", "에듀테크", "AI교육", "국제학교"]
+tags: ["CENTURY", "말레이시아", "에듀테크"]
 categories: ["AI"]
 image:
   path: /assets/images/century_cover.jpg

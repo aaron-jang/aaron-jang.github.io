@@ -5,7 +5,7 @@ description: 일론 머스크 "Tesla AI 팀은 극한의 하드코어, 누구도
 date: 2026-01-19T00:00:00+09:00
 last_modified_at: 2026-08-30T23:37:00+09:00
 author: 수수
-tags: ["테슬라", "AI", "특허", "일론머스크", "반도체"]
+tags: ["테슬라", "AI", "특허"]
 categories: ["칼럼"]
 image:
   path: /assets/img/tesla_autopilot.jpg

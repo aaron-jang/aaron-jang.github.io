@@ -5,7 +5,7 @@ description: "Nous Research의 자기 개선 AI 에이전트를 내 서버·PC·
 date: 2026-05-02T00:00:00+09:00
 last_modified_at: 2026-05-04T12:39:17+09:00
 author: 수수
-tags: ["셀프호스팅", "안드로이드", "hermes-agent", "Docker", "Ubuntu"]
+tags: ["셀프호스팅", "안드로이드", "hermes-agent"]
 categories: ["IT"]
 ---
 

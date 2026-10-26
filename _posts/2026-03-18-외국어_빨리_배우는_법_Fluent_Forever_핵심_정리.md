@@ -5,7 +5,7 @@ description: "발음 먼저·번역 금지·간격 반복 — 언어학자가 �
 date: 2026-03-18T12:00:00+09:00
 last_modified_at: 2026-08-30T23:37:00+09:00
 author: 수수
-tags: ["외국어", "영어공부", "언어학습", "간격반복", "발음"]
+tags: ["외국어", "영어공부", "언어학습"]
 categories: ["생활"]
 image:
   path: /assets/images/fluent_forever.webp

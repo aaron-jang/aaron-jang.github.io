@@ -5,7 +5,7 @@ description: "KV 캐시를 3비트로 줄이면서 정확도 손실 제로, 학�
 date: 2026-03-26T12:00:00+09:00
 last_modified_at: 2026-08-30T23:37:00+09:00
 author: 수수
-tags: ["구글", "터보퀀트", "TurboQuant", "삼성전자", "SK하이닉스"]
+tags: ["구글", "터보퀀트", "TurboQuant"]
 categories: ["AI"]
 ---
 
