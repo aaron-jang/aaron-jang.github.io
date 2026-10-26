@@ -4,7 +4,7 @@ title: "Orca ADE 완벽 정리 — AI 코딩 에이전트를 병렬로 돌리는
 subtitle: "Claude Code, Codex, Gemini를 한 화면에서 동시에 — Git Worktree 기반 에이전트 관제탑"
 date: 2026-10-26T00:00:00+09:00
 author: 수수
-tags: ["Orca", "ADE", "AI코딩", "ClaudeCode", "Codex", "GitWorktree", "에이전트IDE", "바이브코딩", "오픈소스", "StablyAI"]
+tags: ["Orca", "ADE", "AI코딩", "ClaudeCode", "Codex"]
 categories: ["개발"]
 cover-img: /assets/images/orca_ade_cover.jpg
 thumbnail-img: /assets/images/orca_ade_thumb.jpg

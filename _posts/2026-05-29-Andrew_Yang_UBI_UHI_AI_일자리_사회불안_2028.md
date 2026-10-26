@@ -5,7 +5,7 @@ description: "Moonshots #236 인터뷰 정리 — 화이트칼라 50% 자동화,
 date: 2026-05-29T00:00:00+09:00
 last_modified_at: 2026-05-29T10:10:47+09:00
 author: 수수
-tags: ["앤드류양", "AndrewYang", "UBI", "보편적기본소득", "UHI", "보편적고소득", "AI일자리", "자동화", "사회계약", "2028미국대선", "ForwardParty", "AmericaParty", "일론머스크", "PeterDiamandis", "Moonshots", "DarioAmodei", "Anthropic", "화이트칼라", "AI에이전트", "휴머노이드로봇", "Optimus", "기술실업", "긱이코노미", "AI여친", "출산율"]
+tags: ["앤드류양", "AndrewYang", "UBI", "보편적기본소득", "UHI"]
 categories: ["AI"]
 ---
 

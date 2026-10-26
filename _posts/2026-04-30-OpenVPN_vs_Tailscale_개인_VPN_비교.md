@@ -5,7 +5,7 @@ description: "직접 구축하는 OpenVPN과 제로 설정 Tailscale, 목적별 
 date: 2026-04-30T00:00:00+09:00
 last_modified_at: 2026-04-30T00:00:00+09:00
 author: 수수
-tags: ["VPN", "OpenVPN", "Tailscale", "WireGuard", "홈서버", "네트워크", "보안", "셀프호스팅"]
+tags: ["VPN", "OpenVPN", "Tailscale", "WireGuard", "홈서버"]
 categories: ["IT"]
 ---
 

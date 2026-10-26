@@ -5,7 +5,7 @@ description: "머스크, AI의 미래는 우주에 있다며 우주 데이터센
 date: 2026-02-03T00:00:00+09:00
 last_modified_at: 2026-08-30T23:37:00+09:00
 author: 수수
-tags: ["SpaceX", "xAI", "일론머스크", "합병", "우주", "AI", "데이터센터", "IPO", "테슬라", "X", "트위터"]
+tags: ["SpaceX", "xAI", "일론머스크", "합병", "우주"]
 categories: ["AI"]
 image:
   path: /assets/images/spacex_xai_merger.jpg

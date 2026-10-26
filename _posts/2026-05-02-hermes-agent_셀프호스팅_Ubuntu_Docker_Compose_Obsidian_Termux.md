@@ -5,7 +5,7 @@ description: "Nous Research의 자기 개선 AI 에이전트를 내 서버·PC·
 date: 2026-05-02T00:00:00+09:00
 last_modified_at: 2026-05-04T12:39:17+09:00
 author: 수수
-tags: ["hermes-agent", "AI에이전트", "NousResearch", "Docker", "DockerCompose", "Ubuntu", "셀프호스팅", "Obsidian", "구글연동", "GoogleWorkspace", "Termux", "안드로이드", "OpenRouter", "Anthropic", "Claude", "ClaudeCode", "ClaudeMax"]
+tags: ["hermes-agent", "AI에이전트", "NousResearch", "Docker", "DockerCompose"]
 categories: ["IT"]
 ---
 

@@ -5,7 +5,7 @@ description: "Hard takeoff은 이미 시작됐다 — Optimus 3 양산, UHI, 다
 date: 2026-05-29T01:00:00+09:00
 last_modified_at: 2026-06-22T00:32:56+09:00
 author: 수수
-tags: ["일론머스크", "Moonshots", "PeterDiamandis", "SpaceX", "xAI", "Optimus", "Optimus3", "Grok", "Grok420", "AGI", "ASI", "하드테이크오프", "hardtakeoff", "재귀적자기개선", "UHI", "보편적고소득", "10배경제", "디플레이션", "다이슨스웜", "DysonSwarm", "매스드라이버", "GerardONeill", "테슬라", "기가팩토리", "특이점", "Singularity", "IainBanks", "Culture", "Colossal", "BenLamm", "매머드", "JurassicPark"]
+tags: ["일론머스크", "Moonshots", "PeterDiamandis", "SpaceX", "xAI"]
 categories: ["AI"]
 ---
 

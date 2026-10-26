@@ -5,7 +5,7 @@ description: "스마트폰에서 코딩 에이전트를 쓴다고? — claude-co
 date: 2026-03-23T09:00:00+09:00
 last_modified_at: 2026-08-30T23:37:00+09:00
 author: 수수
-tags: ["ClaudeCode", "텔레그램", "AI코딩", "원격개발", "개발도구", "Python", "자동화", "봇"]
+tags: ["ClaudeCode", "텔레그램", "AI코딩", "원격개발", "개발도구"]
 categories: ["개발"]
 ---
 

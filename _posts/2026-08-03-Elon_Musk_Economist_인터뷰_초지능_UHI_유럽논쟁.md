@@ -5,7 +5,7 @@ description: "초지능 타임라인, 돈이 무의미해지는 경제, p(doom) 
 date: 2026-08-03T09:00:00+09:00
 last_modified_at: 2026-08-03T11:14:47+09:00
 author: 수수
-tags: ["일론머스크", "이코노미스트", "재니민턴베도스", "AI", "초지능", "ASI", "AGI", "특이점", "Singularity", "UHI", "보편적고소득", "디플레이션", "Optimus", "로봇", "휴머노이드로봇", "SpaceX", "Starlink", "테슬라", "xAI", "Anthropic", "OpenAI", "중국AI", "우주데이터센터", "DOGE", "AI안전", "IainBanks", "Culture"]
+tags: ["일론머스크", "이코노미스트", "재니민턴베도스", "AI", "초지능"]
 categories: ["AI"]
 image:
   path: /assets/images/musk_economist_interview.webp
