@@ -3,9 +3,9 @@ layout: post
 title: "hermes-agent 셀프호스팅 가이드 — Ubuntu Docker Compose + LLM·구글·옵시디언 연동, 안드로이드(Termux)까지"
 description: "Nous Research의 자기 개선 AI 에이전트를 내 서버·PC·폰까지 한 번에 연결하기"
 date: 2026-05-02T00:00:00+09:00
-last_modified_at: 2026-05-04T12:39:17+09:00
+last_modified_at: 2026-10-31T08:30:48+09:00
 author: 수수
-tags: ["셀프호스팅", "안드로이드", "hermes-agent"]
+tags: ["셀프호스팅", "안드로이드", "Hermes"]
 categories: ["IT"]
 ---
 

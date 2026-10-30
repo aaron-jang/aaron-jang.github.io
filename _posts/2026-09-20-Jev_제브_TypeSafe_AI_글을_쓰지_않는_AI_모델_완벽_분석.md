@@ -3,9 +3,9 @@ layout: post
 title: "Jev(제브) 완벽 분석 — 글을 쓰지 않는 AI가 Vercel 최고 속도 채택 기록을 세운 이유"
 description: "ChatGPT 공동 개발자가 2년간 숨어서 만든 '결정 전용 모델'. 193배 빠르다는 숫자, 어디까지 믿어야 할까"
 date: 2026-09-20T16:00:00+09:00
-last_modified_at: 2026-09-20T16:00:00+09:00
+last_modified_at: 2026-10-31T08:30:48+09:00
 author: 수수
-tags: ["제브", "Jev", "Vercel"]
+tags: ["제브", "Vercel"]
 categories: ["AI"]
 image:
   path: /assets/images/jev_typesafe_cover.jpg
