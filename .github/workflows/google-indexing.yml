@@ -1,6 +1,8 @@
 name: Google Indexing API
 
 on:
+  # 수동 실행은 Action 호환성 점검용이며 색인 요청을 보내지 않습니다.
+  workflow_dispatch:
   push:
     branches: [main]
     paths:
@@ -9,15 +11,15 @@ on:
 jobs:
   index:
     runs-on: ubuntu-latest
-    if: github.event_name == 'push'
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           fetch-depth: 2
 
       - name: 변경된 포스트 파일 감지
+        if: github.event_name == 'push'
         id: changed
         run: |
           git -c core.quotePath=false diff --name-only --diff-filter=ACMR HEAD~1 HEAD -- '_posts/*.md' > /tmp/changed_posts.txt || true
@@ -30,8 +32,8 @@ jobs:
           fi
 
       - name: Python 세팅
-        if: steps.changed.outputs.has_posts == 'true'
-        uses: actions/setup-python@v5
+        if: github.event_name == 'workflow_dispatch' || steps.changed.outputs.has_posts == 'true'
+        uses: actions/setup-python@v7
         with:
           python-version: '3.12'
 
