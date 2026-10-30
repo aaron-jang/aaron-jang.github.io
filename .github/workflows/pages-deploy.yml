@@ -24,7 +24,7 @@ concurrency:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
 
     steps:
       - name: Checkout
@@ -68,12 +68,17 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     needs: build
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v5
+        env:
+          # 공식 Action 의존성의 알려진 경고만 임시 억제합니다.
+          # https://github.com/actions/deploy-pages/issues/413
+          # upstream 수정 버전 적용 시 제거합니다. 다른 경고는 유지합니다.
+          NODE_OPTIONS: --disable-warning=DEP0040
 
   google-indexing:
     needs: deploy
