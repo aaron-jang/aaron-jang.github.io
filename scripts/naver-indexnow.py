@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 네이버 IndexNow - 새 포스트 자동 색인 요청 스크립트
-GitHub Actions에서 push 이벤트 시 실행됩니다.
+GitHub Actions에서 main 브랜치의 Pages 배포 성공 후 실행됩니다.
 
 Google Indexing API(google-indexing.py)와 동일한 트리거/URL 추출 로직을 쓰되,
 서비스 계정 인증 없이 IndexNow 키만으로 네이버 서치어드바이저에 색인을 요청합니다.

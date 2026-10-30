@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Google Indexing API - 새 포스트 자동 인덱싱 요청 스크립트
-GitHub Actions에서 push 이벤트 시 실행됩니다.
+GitHub Actions에서 main 브랜치의 Pages 배포 성공 후 실행됩니다.
 
 사용법:
   python3 scripts/google-indexing.py --file /tmp/changed_posts.txt

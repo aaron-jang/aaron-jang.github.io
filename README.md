@@ -66,7 +66,7 @@ _site/          # Jekyll 빌드 결과 (Git 추적 제외)
 
 `.github/workflows/pages-deploy.yml`이 `main` 또는 `master` 브랜치에 푸시할 때 실행됩니다. 프로덕션 빌드 후 HTMLProofer로 내부 링크 등을 검사하고 GitHub Pages에 배포합니다. Actions 탭에서 수동 실행도 가능합니다. README, LICENSE, `.gitignore`만 변경한 푸시는 배포를 실행하지 않습니다.
 
-`main` 브랜치의 `_posts/` 변경 시 별도 워크플로가 Google Indexing API와 네이버 IndexNow에 색인 요청을 보냅니다. Google 요청에는 저장소 시크릿 `GOOGLE_SERVICE_ACCOUNT_JSON`이 필요합니다.
+`main` 브랜치의 배포가 성공한 뒤 Google·네이버 색인 워크플로를 호출합니다. 각 워크플로는 해당 푸시 전체에서 변경된 `_posts/*.md`가 있을 때만 색인 요청을 보냅니다. 빌드·검사·배포가 실패하거나 취소되면 요청하지 않습니다. 색인 워크플로의 개별 수동 실행은 Action 호환성 점검용으로 실제 요청을 건너뜁니다. Google 요청에는 저장소 시크릿 `GOOGLE_SERVICE_ACCOUNT_JSON`이 필요합니다.
 
 ## Disney Adventure Guide
 
