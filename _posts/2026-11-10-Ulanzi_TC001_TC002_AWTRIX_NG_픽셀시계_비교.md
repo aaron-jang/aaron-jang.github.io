@@ -108,6 +108,10 @@ TC002에서 새로 추가된 핵심 기능들입니다.
 
 **TC002가 맞는 사람**: 넓은 디스플레이에 더 많은 정보를 표시하고 싶은 분. 스피커를 활용한 TTS 알림이나 인터넷 라디오를 원하는 분. Home Assistant 연동을 본격적으로 활용할 분.
 
+> 현재 알리익스프레스에서 TC001은 약 49,837원, TC002는 약 128,978원에 구매할 수 있습니다.
+> - [TC001 구매하기 (알리익스프레스)](https://s.click.aliexpress.com/e/_c3fahImj)
+> - [TC002 구매하기 (알리익스프레스)](https://s.click.aliexpress.com/e/_c3IPKWeL)
+
 ## 5. AWTRIX NG란
 
 **AWTRIX NG(Next Generation)**는 Blueforcer가 개발한 오픈소스 펌웨어로, Ulanzi 픽셀 시계의 잠재력을 100% 끌어내는 핵심 소프트웨어입니다.
