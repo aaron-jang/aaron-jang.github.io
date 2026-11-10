@@ -39,7 +39,7 @@ pageviews:
 theme_mode: # light | dark — 비우면 시스템 설정을 따름
 cdn:
 avatar: /assets/img/avatar-icon.webp
-social_preview_image:
+social_preview_image: /assets/img/avatar-icon.webp
 toc: true
 
 actions:
