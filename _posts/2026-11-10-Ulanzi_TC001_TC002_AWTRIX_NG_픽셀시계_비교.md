@@ -12,7 +12,7 @@ image:
 
 안녕하세요. 수수입니다.
 
-책상 위에 놓을 시계를 찾다 보면 한 번쯤 마주치는 제품이 있습니다. 바로 **Ulanzi 픽셀 시계**인데요. 레트로 감성의 LED 도트 디스플레이에 시간, 날씨, SNS 팔로워 수까지 표시하는 독특한 시계입니다. 여기에 오픈소스 펌웨어 **AWTRIX NG**를 올리면 Home Assistant와 연동되는 본격 스마트홈 디스플레이로 변신합니다. 오늘은 1세대 TC001과 2세대 TC002의 차이점을 꼼꼼히 비교하고, AWTRIX NG 활용법까지 한번에 정리해 보겠습니다.
+책상 위에 놓을 시계를 찾다 보면 한 번쯤 마주치는 제품이 있습니다. 바로 **Ulanzi 픽셀 시계**인데요. 레트로 감성의 LED 도트 디스플레이에 시간, 날씨, SNS 팔로워 수까지 표시하는 독특한 시계입니다. 여기에 오픈소스 펌웨어 **AWTRIX NG**를 올리면 Home Assistant와 연동되는 본격 스마트홈 디스플레이로 변신합니다. 이전에 [TC001 소개 글](/posts/ulanzi_tc001_스마트_픽셀_시계_추천/)을 작성한 적이 있는데, 이번에는 2세대 TC002가 출시되면서 1세대 TC001과의 차이점을 꼼꼼히 비교하고, AWTRIX NG 활용법까지 한번에 정리해 보겠습니다.
 
 ## 목차
 {: .no_toc}
@@ -175,6 +175,7 @@ Ulanzi TC001은 6만 원대에 픽셀 시계의 매력을 경험할 수 있는 �
 
 ## 참고 링크
 
+- [Ulanzi TC001 스마트 픽셀 시계 — 가성비 최고의 데스크 시계 (이전 포스트)](/posts/ulanzi_tc001_스마트_픽셀_시계_추천/)
 - [Ulanzi TC001 vs TC002 공식 비교](https://www.ulanzi.com/blogs/knowledges/ulanzi-tc001-vs-tc002-comparison)
 - [AWTRIX NG GitHub (Blueforcer)](https://github.com/Blueforcer/awtrix-ng)
 - [AWTRIX NG 공식 문서](https://blueforcer.github.io/awtrix-ng/)
