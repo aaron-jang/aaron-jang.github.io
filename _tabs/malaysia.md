@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 말레이시아 생활 가이드
+title: malaysia
 description: "말레이시아·페낭 국제학교, 숙소, 은행, 교통, 생활 정보를 한곳에 정리했습니다."
 permalink: /malaysia/
 order: 6
